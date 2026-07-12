@@ -1,22 +1,16 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
-
-const placeholderServices = Array.from({ length: 6 }, (_, index) => ({
-  title: `Service ${index + 1}`,
-  description: "Description placeholder",
-  href: "/services",
-  icon: <span className="text-body-sm font-bold">S</span>,
-}));
+import { services } from "@/lib/services";
 
 export function Services() {
   return (
     <Section>
       <Container>
         <div className="grid gap-6 tablet:grid-cols-2 laptop:grid-cols-3">
-          {placeholderServices.map((service, index) => (
+          {services.map((service) => (
             <ServiceCard
-              key={index}
+              key={service.href}
               title={service.title}
               description={service.description}
               href={service.href}
