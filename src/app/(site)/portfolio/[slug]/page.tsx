@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
 
-import {
-  getAllProjectSlugs,
-  getProjectBySlug,
-} from "@/lib/project-details";
+import { ProjectDetailHero } from "@/components/sections/portfolio/ProjectDetailHero";
+import { getAllProjectSlugs, getProjectBySlug } from "@/lib/project-details";
 
 type ProjectDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -37,5 +35,5 @@ export default async function ProjectDetailPage({
     notFound();
   }
 
-  return null;
+  return <ProjectDetailHero project={project} />;
 }
