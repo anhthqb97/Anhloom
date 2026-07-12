@@ -25,7 +25,7 @@ export function SolutionCard({
     <Card
       className={cn(
         "flex h-full min-w-[260px] flex-col p-6",
-        featured && "border-accent-200 bg-accent-50/30",
+        featured && "border-accent-200 bg-accent-50/30 dark:border-accent-700 dark:bg-accent-900/20",
         className,
       )}
     >

@@ -85,7 +85,7 @@ export function CareersOpenPositions() {
                 </div>
                 <a
                   href="#apply"
-                  className="inline-flex h-10 shrink-0 items-center justify-center rounded-sm border border-primary-600 px-4 text-body-sm font-medium text-primary-600 transition-colors hover:bg-primary-50"
+                  className="inline-flex h-10 shrink-0 items-center justify-center rounded-sm border border-primary-600 px-4 text-body-sm font-medium text-primary-600 transition-colors hover:bg-primary-50 dark:hover:bg-primary-100/40"
                 >
                   Apply now
                 </a>
