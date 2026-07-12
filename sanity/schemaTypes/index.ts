@@ -1,3 +1,5 @@
 import type { SchemaTypeDefinition } from "sanity";
 
-export const schemaTypes: SchemaTypeDefinition[] = [];
+import { siteSettings } from "./siteSettings";
+
+export const schemaTypes: SchemaTypeDefinition[] = [siteSettings];
