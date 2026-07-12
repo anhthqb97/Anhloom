@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
 
+import {
+  ProjectArchitecture,
+  ProjectTechnologies,
+} from "@/components/sections/portfolio/ProjectArchitecture";
 import { ProjectDetailHero } from "@/components/sections/portfolio/ProjectDetailHero";
 import {
   ProjectOverview,
@@ -44,6 +48,8 @@ export default async function ProjectDetailPage({
       <ProjectDetailHero project={project} />
       <ProjectOverview project={project} />
       <ProjectSolution project={project} />
+      <ProjectArchitecture project={project} />
+      <ProjectTechnologies project={project} />
     </>
   );
 }
