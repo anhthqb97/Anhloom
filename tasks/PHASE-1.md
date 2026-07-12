@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `██████░░░░` **65%** (93 / 143)
+**Progress:** `████████░░` **84%** (120 / 143)
 
 ---
 
@@ -137,44 +137,44 @@
 - [x] **P1-092** Filter tab click → filter grid logic
 - [x] **P1-093** Projects section heading
 
-### 1.10 Homepage — Tech, Testimonials, CTA `0/10`
+### 1.10 Homepage — Tech, Testimonials, CTA `10/10`
 
-- [ ] **P1-094** `TechCategory` group component
-- [ ] **P1-095** Tech stack grid — Frontend category
-- [ ] **P1-096** Tech stack grid — Backend, Cloud, Database, AI categories
-- [ ] **P1-097** Tech stack section heading
-- [ ] **P1-098** `TestimonialCard` (photo, rating, quote, company)
-- [ ] **P1-099** Testimonials carousel with 3+ slides
-- [ ] **P1-100** Testimonials section heading
-- [ ] **P1-101** `CTABanner` gradient section
-- [ ] **P1-102** CTA headline + "Schedule Consultation" + "Contact Sales" buttons
-- [ ] **P1-103** Assemble all sections in `app/page.tsx`
+- [x] **P1-094** `TechCategory` group component
+- [x] **P1-095** Tech stack grid — Frontend category
+- [x] **P1-096** Tech stack grid — Backend, Cloud, Database, AI categories
+- [x] **P1-097** Tech stack section heading
+- [x] **P1-098** `TestimonialCard` (photo, rating, quote, company)
+- [x] **P1-099** Testimonials carousel with 3+ slides
+- [x] **P1-100** Testimonials section heading
+- [x] **P1-101** `CTABanner` gradient section
+- [x] **P1-102** CTA headline + "Schedule Consultation" + "Contact Sales" buttons
+- [x] **P1-103** Assemble all sections in `app/page.tsx`
 
-### 1.11 About Page `0/8`
+### 1.11 About Page `8/8`
 
-- [ ] **P1-104** About page route `app/about/page.tsx`
-- [ ] **P1-105** About hero with page title
-- [ ] **P1-106** Company story section (text + image)
-- [ ] **P1-107** Vision + Mission side-by-side cards
-- [ ] **P1-108** Core values 4-icon grid
-- [ ] **P1-109** Leadership `TeamCard` component
-- [ ] **P1-110** Leadership team 3-column grid
-- [ ] **P1-111** Company timeline vertical section
+- [x] **P1-104** About page route `app/about/page.tsx`
+- [x] **P1-105** About hero with page title
+- [x] **P1-106** Company story section (text + image)
+- [x] **P1-107** Vision + Mission side-by-side cards
+- [x] **P1-108** Core values 4-icon grid
+- [x] **P1-109** Leadership `TeamCard` component
+- [x] **P1-110** Leadership team 3-column grid
+- [x] **P1-111** Company timeline vertical section
 
-### 1.12 Contact Page `0/7`
+### 1.12 Contact Page `7/7`
 
-- [ ] **P1-112** Contact page route `app/contact/page.tsx`
-- [ ] **P1-113** Contact form — name, email, company fields
-- [ ] **P1-114** Contact form — service dropdown + message textarea
-- [ ] **P1-115** Contact form client-side validation
-- [ ] **P1-116** Contact info panel (email, phone, address)
-- [ ] **P1-117** Google Maps embed placeholder
-- [ ] **P1-118** Social links in contact panel
+- [x] **P1-112** Contact page route `app/contact/page.tsx`
+- [x] **P1-113** Contact form — name, email, company fields
+- [x] **P1-114** Contact form — service dropdown + message textarea
+- [x] **P1-115** Contact form client-side validation
+- [x] **P1-116** Contact info panel (email, phone, address)
+- [x] **P1-117** Google Maps embed placeholder
+- [x] **P1-118** Social links in contact panel
 
-### 1.13 Privacy Page `0/2`
+### 1.13 Privacy Page `2/2`
 
-- [ ] **P1-119** Privacy Policy page route with static content
-- [ ] **P1-120** Privacy page prose typography styling
+- [x] **P1-119** Privacy Policy page route with static content
+- [x] **P1-120** Privacy page prose typography styling
 
 ### 1.14 Sanity CMS `0/11`
 
