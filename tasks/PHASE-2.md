@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `███░░░░░░░` **26%** (25 / 98)
+**Progress:** `███░░░░░░░` **33%** (32 / 98)
 
 ---
 
@@ -51,15 +51,15 @@
 - [x] **P2-024** Solution detail — features + benefits + integrations
 - [x] **P2-025** Solution detail — screenshots gallery + demo request form
 
-### 2.4 Solutions — CMS Content `0/7`
+### 2.4 Solutions — CMS Content `7/7`
 
-- [ ] **P2-026** Seed CMS — AI Chatbot
-- [ ] **P2-027** Seed CMS — AI Agent
-- [ ] **P2-028** Seed CMS — CRM
-- [ ] **P2-029** Seed CMS — ERP
-- [ ] **P2-030** Seed CMS — SaaS
-- [ ] **P2-031** Seed CMS — Marketplace
-- [ ] **P2-032** Seed CMS — E-commerce
+- [x] **P2-026** Seed CMS — AI Chatbot
+- [x] **P2-027** Seed CMS — AI Agent
+- [x] **P2-028** Seed CMS — CRM
+- [x] **P2-029** Seed CMS — ERP
+- [x] **P2-030** Seed CMS — SaaS
+- [x] **P2-031** Seed CMS — Marketplace
+- [x] **P2-032** Seed CMS — E-commerce
 
 ### 2.5 Portfolio `0/10`
 
