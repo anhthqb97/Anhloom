@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { AboutHero } from "@/components/sections/AboutHero";
+
 export const metadata: Metadata = {
   title: "About — Anhloom",
   description:
@@ -7,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return null;
+  return <AboutHero />;
 }
