@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `█░░░░░░░░░` **8%** (12 / 143)
+**Progress:** `█░░░░░░░░░` **10%** (15 / 143)
 
 ---
 
@@ -32,11 +32,11 @@
 - [x] **P1-011** Configure `next/font` — Geist Mono + Inter fallback
 - [x] **P1-012** Create folder structure (`app`, `components`, `lib`, `hooks`, `types`, `styles`)
 
-### 1.2 Design Tokens `0/19`
+### 1.2 Design Tokens `3/19`
 
-- [ ] **P1-013** Add primary Indigo color scale (50–900) to Tailwind
-- [ ] **P1-014** Add secondary Cyan tokens
-- [ ] **P1-015** Add accent Purple tokens
+- [x] **P1-013** Add primary Indigo color scale (50–900) to Tailwind
+- [x] **P1-014** Add secondary Cyan tokens
+- [x] **P1-015** Add accent Purple tokens
 - [ ] **P1-016** Add neutral gray scale
 - [ ] **P1-017** Add semantic colors (success, warning, error, info)
 - [ ] **P1-018** Add light mode bg/surface/text CSS variables
