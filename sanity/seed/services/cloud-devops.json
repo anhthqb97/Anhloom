@@ -1,0 +1,70 @@
+{
+  "_type": "service",
+  "_id": "service-cloud-devops",
+  "title": "Cloud & DevOps",
+  "slug": {
+    "_type": "slug",
+    "current": "cloud-devops"
+  },
+  "tagline": "Reliable cloud infrastructure, CI/CD, and observability for growing teams.",
+  "overviewHeading": "Infrastructure that keeps pace with your product",
+  "overview": "We design cloud-native architectures on AWS, GCP, and Azure with automated pipelines, monitoring, and cost optimization.",
+  "benefits": [
+    {
+      "title": "Faster delivery",
+      "description": "Ship validated features in iterative sprints with clear milestones.",
+      "icon": "FD"
+    },
+    {
+      "title": "Production quality",
+      "description": "Architecture, testing, and observability built in from day one.",
+      "icon": "PQ"
+    },
+    {
+      "title": "Scalable foundation",
+      "description": "Systems designed to grow from MVP to enterprise scale.",
+      "icon": "SF"
+    }
+  ],
+  "features": [
+    {
+      "title": "Infrastructure as code",
+      "description": "Terraform and CDK modules for reproducible, auditable environments.",
+      "imageSide": "left"
+    },
+    {
+      "title": "Observability stack",
+      "description": "Metrics, logs, and tracing with alerting tuned to your SLOs.",
+      "imageSide": "right"
+    }
+  ],
+  "technologies": [
+    "AWS",
+    "Terraform",
+    "Docker",
+    "Kubernetes",
+    "GitHub Actions"
+  ],
+  "workflow": [
+    "Discovery & requirements",
+    "Architecture & design",
+    "Implementation sprints",
+    "QA & performance testing",
+    "Launch & handoff",
+    "Ongoing optimization"
+  ],
+  "faq": [
+    {
+      "question": "How long does a typical engagement take?",
+      "answer": "Most projects run 8–16 weeks depending on scope. We provide a timeline estimate after discovery."
+    },
+    {
+      "question": "Do you work with existing teams?",
+      "answer": "Yes. We embed alongside your engineers and product managers using your tools and rituals."
+    },
+    {
+      "question": "What does onboarding look like?",
+      "answer": "We start with a discovery workshop, align on goals, then move into a two-week pilot sprint."
+    }
+  ]
+}
