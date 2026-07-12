@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `██████░░░░` **59%** (84 / 143)
+**Progress:** `██████░░░░` **65%** (93 / 143)
 
 ---
 
@@ -125,17 +125,17 @@
 - [x] **P1-083** Populate 7 solution cards with content
 - [x] **P1-084** Solutions section heading + intro text
 
-### 1.9 Homepage — Process & Projects `0/9`
+### 1.9 Homepage — Process & Projects `9/9`
 
-- [ ] **P1-085** `Timeline` step component (number + title)
-- [ ] **P1-086** Process timeline — 8 steps vertical layout
-- [ ] **P1-087** Process section heading
-- [ ] **P1-088** `ProjectCard` (cover, category, tech, results)
-- [ ] **P1-089** Project filter tabs (AI, SaaS, FinTech, etc.)
-- [ ] **P1-090** Featured projects 3-column grid
-- [ ] **P1-091** Seed 6 sample project cards
-- [ ] **P1-092** Filter tab click → filter grid logic
-- [ ] **P1-093** Projects section heading
+- [x] **P1-085** `Timeline` step component (number + title)
+- [x] **P1-086** Process timeline — 8 steps vertical layout
+- [x] **P1-087** Process section heading
+- [x] **P1-088** `ProjectCard` (cover, category, tech, results)
+- [x] **P1-089** Project filter tabs (AI, SaaS, FinTech, etc.)
+- [x] **P1-090** Featured projects 3-column grid
+- [x] **P1-091** Seed 6 sample project cards
+- [x] **P1-092** Filter tab click → filter grid logic
+- [x] **P1-093** Projects section heading
 
 ### 1.10 Homepage — Tech, Testimonials, CTA `0/10`
 
