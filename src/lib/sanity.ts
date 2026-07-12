@@ -68,6 +68,7 @@ export type SiteSettings = {
 };
 
 import type { ServiceDetail } from "@/lib/service-details";
+import type { SolutionDetail } from "@/lib/solution-details";
 
 export type CmsService = {
   title: string;
@@ -117,6 +118,59 @@ export async function getCmsServiceBySlug(
       technologies,
       workflow,
       faq
+    }`,
+    { slug },
+  );
+}
+
+export type CmsSolution = {
+  title: string;
+  slug: string;
+  headline?: string;
+  tagline?: string;
+  problems?: SolutionDetail["problems"];
+  solutionSummary?: string;
+  architectureNote?: string;
+  features?: SolutionDetail["features"];
+  benefits?: string[];
+  integrations?: string[];
+};
+
+export function mapCmsSolutionToDetail(cms: CmsSolution): SolutionDetail {
+  return {
+    slug: cms.slug,
+    title: cms.title,
+    headline: cms.headline ?? cms.title,
+    tagline: cms.tagline ?? "",
+    problems: cms.problems ?? [],
+    solutionSummary: cms.solutionSummary ?? "",
+    architectureNote: cms.architectureNote ?? "",
+    features: cms.features ?? [],
+    benefits: cms.benefits ?? [],
+    integrations: cms.integrations ?? [],
+  };
+}
+
+export async function getCmsSolutionBySlug(
+  slug: string,
+): Promise<CmsSolution | null> {
+  const client = getSanityClient();
+  if (!client) {
+    return null;
+  }
+
+  return client.fetch<CmsSolution | null>(
+    `*[_type == "solution" && slug.current == $slug][0]{
+      title,
+      "slug": slug.current,
+      headline,
+      tagline,
+      problems,
+      solutionSummary,
+      architectureNote,
+      features,
+      benefits,
+      integrations
     }`,
     { slug },
   );

@@ -9,7 +9,7 @@ import { SolutionProposed } from "@/components/sections/solutions/SolutionPropos
 import {
   getAllSolutionSlugs,
   getSolutionBySlug,
-} from "@/lib/solution-details";
+} from "@/lib/resolve-solution";
 
 type SolutionDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -21,7 +21,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: SolutionDetailPageProps) {
   const { slug } = await params;
-  const solution = getSolutionBySlug(slug);
+  const solution = await getSolutionBySlug(slug);
 
   if (!solution) {
     return { title: "Solution Not Found — Anhloom" };
@@ -37,7 +37,7 @@ export default async function SolutionDetailPage({
   params,
 }: SolutionDetailPageProps) {
   const { slug } = await params;
-  const solution = getSolutionBySlug(slug);
+  const solution = await getSolutionBySlug(slug);
 
   if (!solution) {
     notFound();
