@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `███░░░░░░░` **33%** (32 / 98)
+**Progress:** `████░░░░░░` **43%** (42 / 98)
 
 ---
 
@@ -61,18 +61,18 @@
 - [x] **P2-031** Seed CMS — Marketplace
 - [x] **P2-032** Seed CMS — E-commerce
 
-### 2.5 Portfolio `0/10`
+### 2.5 Portfolio `10/10`
 
-- [ ] **P2-033** CMS schema — `project`
-- [ ] **P2-034** Portfolio listing route `/portfolio`
-- [ ] **P2-035** Portfolio filter bar (AI, Healthcare, Finance, etc.)
-- [ ] **P2-036** Portfolio project card grid
-- [ ] **P2-037** Project detail route `/portfolio/[slug]`
-- [ ] **P2-038** Project detail — hero image full bleed
-- [ ] **P2-039** Project detail — overview + challenges + solution
-- [ ] **P2-040** Project detail — architecture + technologies
-- [ ] **P2-041** Project detail — results metrics + image gallery
-- [ ] **P2-042** Seed 6 portfolio projects in CMS
+- [x] **P2-033** CMS schema — `project`
+- [x] **P2-034** Portfolio listing route `/portfolio`
+- [x] **P2-035** Portfolio filter bar (AI, Healthcare, Finance, etc.)
+- [x] **P2-036** Portfolio project card grid
+- [x] **P2-037** Project detail route `/portfolio/[slug]`
+- [x] **P2-038** Project detail — hero image full bleed
+- [x] **P2-039** Project detail — overview + challenges + solution
+- [x] **P2-040** Project detail — architecture + technologies
+- [x] **P2-041** Project detail — results metrics + image gallery
+- [x] **P2-042** Seed 6 portfolio projects in CMS
 
 ### 2.6 Case Studies `0/8`
 
