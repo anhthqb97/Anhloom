@@ -34,7 +34,7 @@ function FooterLinkGroup({ title, links }: FooterLinkGroupProps) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-bg-subtle">
+    <footer className="border-t border-border bg-bg-subtle dark:bg-bg">
       <Container className="py-16">
         <div className="grid grid-cols-2 gap-8 laptop:grid-cols-4">
           <FooterLinkGroup title="Company" links={footerLinkGroups.company} />
