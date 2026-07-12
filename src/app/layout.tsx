@@ -10,6 +10,8 @@ const inter = Inter({
   display: "swap",
 });
 
+// Geist Mono + Inter complete the font stack per plan.md §2.2
+
 export const metadata: Metadata = {
   title: "Anhloom",
   description: "Grow your product with us",
