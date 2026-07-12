@@ -8,6 +8,7 @@ from app.database import init_db
 from app.middleware.api_key import ApiKeyMiddleware
 from app.middleware.rate_limit import RateLimitMiddleware
 from app.middleware.sanitization import SanitizationMiddleware
+from app.routers.chat import router as chat_router
 from app.routers.health import router as health_router
 
 
@@ -31,6 +32,7 @@ app.add_middleware(ApiKeyMiddleware)
 app.add_middleware(RateLimitMiddleware)
 
 app.include_router(health_router)
+app.include_router(chat_router)
 
 
 @app.get("/")

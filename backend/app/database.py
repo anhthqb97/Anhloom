@@ -22,6 +22,6 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def init_db() -> None:
-    from app.models import base  # noqa: F401
+    from app.models import chat  # noqa: F401
 
     Base.metadata.create_all(bind=engine)
