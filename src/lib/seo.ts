@@ -92,6 +92,7 @@ export function buildCanonicalMetadata(path = "/"): Metadata["alternates"] {
 }
 
 export function buildSiteMetadata(input: SiteMetadataInput): Metadata {
+  // Combines title, description, canonical URL, Open Graph, and Twitter tags.
   const base = generatePageMetadata(input);
 
   return {
