@@ -22,3 +22,25 @@ export const primaryNavLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Careers", href: "/careers" },
 ] as const;
+
+export const footerLinkGroups = {
+  company: [
+    { label: "About", href: "/about" },
+    { label: "Careers", href: "/careers" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
+  ],
+  services: [
+    { label: "AI Engineering", href: "/services/ai-engineering" },
+    { label: "Custom Software", href: "/services/custom-software" },
+    { label: "Cloud & DevOps", href: "/services/cloud-devops" },
+    { label: "Dedicated Team", href: "/services/dedicated-team" },
+  ],
+  resources: [
+    { label: "Portfolio", href: "/portfolio" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: "Technologies", href: "/technologies" },
+    { label: "Pricing", href: "/pricing" },
+  ],
+  legal: [{ label: "Privacy Policy", href: "/privacy" }],
+} as const;
