@@ -9,9 +9,14 @@ import {
   CaseStudyHero,
 } from "@/components/sections/case-studies/CaseStudyExecutiveSummary";
 import {
+  CaseStudyLessons,
+  CaseStudyResults,
+} from "@/components/sections/case-studies/CaseStudyResults";
+import {
   CaseStudyArchitecture,
   CaseStudySolution,
 } from "@/components/sections/case-studies/CaseStudySolution";
+import { CaseStudyTimeline } from "@/components/sections/case-studies/CaseStudyTimeline";
 import {
   getAllCaseStudySlugs,
   getCaseStudyBySlug,
@@ -57,6 +62,9 @@ export default async function CaseStudyDetailPage({
       <CaseStudyResearch caseStudy={caseStudy} />
       <CaseStudySolution caseStudy={caseStudy} />
       <CaseStudyArchitecture caseStudy={caseStudy} />
+      <CaseStudyTimeline caseStudy={caseStudy} />
+      <CaseStudyResults caseStudy={caseStudy} />
+      <CaseStudyLessons caseStudy={caseStudy} />
     </>
   );
 }
