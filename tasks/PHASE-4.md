@@ -93,17 +93,18 @@
 - [x] **P4-052** FastAPI `/requirements` conversation endpoint
 - [x] **P4-053** Export gathered requirements as PDF/Markdown
 
-### Phase 4 Gate `0/8` — SDD Step 5: Validate
+### Phase 4 Gate `6/8` — SDD Step 5: Validate
 
 > Verify against [spec.md](../docs/sdd/spec.md) AI Features, Security.
+> Results: [phase4-validation.md](../docs/phase4-validation.md)
 
-- [ ] Chatbot responds in < 3s with relevant answers
-- [ ] Cost estimator works for 5 test scenarios
-- [ ] AI search returns semantically relevant results
-- [ ] Blog recommendations show on article pages
-- [ ] FAQ assistant answers service-specific questions
-- [ ] All endpoints rate-limited + input-sanitized
-- [ ] Full stack runs via `docker compose -f docker-compose.dev.yml up --build`
+- [x] Chatbot responds in < 3s with relevant answers
+- [x] Cost estimator works for 5 test scenarios
+- [x] AI search returns semantically relevant results
+- [x] Blog recommendations show on article pages
+- [x] FAQ assistant answers service-specific questions
+- [x] All endpoints rate-limited + input-sanitized
+- [x] Full stack runs via `docker compose -f docker-compose.dev.yml up --build`
 - [ ] API deployed on AWS with Docker
 
 ---

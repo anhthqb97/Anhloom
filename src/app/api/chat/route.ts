@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
-const API_KEY = process.env.INTERNAL_API_KEY ?? "dev-internal-api-key";
+import { getInternalApiKey, getInternalApiUrl } from "@/lib/internal-api";
+
+const API_URL = getInternalApiUrl();
+const API_KEY = getInternalApiKey();
 
 export async function POST(request: Request) {
   const payload = await request.text();

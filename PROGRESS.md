@@ -101,7 +101,7 @@
 | 4.5 Blog Recommendations | AI Features | §8 | 4 | 4 |
 | 4.6 FAQ Assistant | AI Features | §8 | 4 | 4 |
 | 4.7 Requirement Assistant | AI Features | §8 | 4 | 4 |
-| Gate | AI Features, Security | — | 7 | 0 |
+| Gate | AI Features, Security | — | 7 | 6 |
 
 ---
 
@@ -112,7 +112,7 @@
 | **M1** | 1 | Homepage, CMS, CI deliverables | ⬜ |
 | **M2** | 2 | Full sitemap, SEO, CMS content | ⬜ |
 | **M3** | 3 | Lighthouse ≥ 95, WCAG AA, analytics | ⬜ |
-| **M4** | 4 | AI features deployed, secured | ⬜ |
+| **M4** | 4 | AI features deployed, secured | 🔄 |
 | **Launch** | — | All gates passed | ⬜ |
 
 ---
@@ -142,6 +142,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
+| 2026-07-12 | P4 Gate | 6 | 8 | 75% | M4 validation: Docker stack, APIs, rate limit, sanitization pass |
 | 2026-07-12 | P4 | 53 | 53 | 100% | P4-026–P4-053 estimator, search, recommendations, FAQ, requirements complete |
 | 2026-07-12 | P4 | 25 | 53 | 47% | P4-001–P4-025 backend stack and AI chatbot complete |
 | 2026-07-12 | P1 | 84 | 143 | 59% | P1-077–P1-084 services and solutions complete |

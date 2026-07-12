@@ -1,0 +1,11 @@
+export function getInternalApiUrl(): string {
+  return (
+    process.env.INTERNAL_API_URL ??
+    process.env.NEXT_PUBLIC_API_URL ??
+    "http://localhost:8000"
+  );
+}
+
+export function getInternalApiKey(): string {
+  return process.env.INTERNAL_API_KEY ?? "dev-internal-api-key";
+}
