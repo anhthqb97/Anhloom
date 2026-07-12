@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Container } from "@/components/Container";
+import { HeroMockup } from "@/components/sections/HeroMockup";
 import { Section } from "@/components/Section";
 
 export function Hero() {
@@ -38,7 +39,9 @@ export function Hero() {
               </Link>
             </div>
           </div>
-          <div className="relative flex items-center justify-center" />
+          <div className="relative flex items-center justify-center">
+            <HeroMockup />
+          </div>
         </div>
       </Container>
     </Section>
