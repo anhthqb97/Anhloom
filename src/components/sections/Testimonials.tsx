@@ -25,6 +25,18 @@ export function Testimonials() {
   return (
     <Section className="bg-bg-subtle">
       <Container>
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <p className="text-label font-semibold uppercase tracking-wide text-primary-600">
+            Testimonials
+          </p>
+          <h2 className="mt-2 text-heading-xl font-semibold text-text-primary laptop:text-display-md">
+            Trusted by teams shipping real products
+          </h2>
+          <p className="mt-4 text-body-lg text-text-secondary">
+            Hear from leaders who partnered with Anhloom to launch, scale, and
+            optimize their digital platforms.
+          </p>
+        </div>
         <div className="mx-auto max-w-3xl">
           <TestimonialCard
             key={activeTestimonial.name}
