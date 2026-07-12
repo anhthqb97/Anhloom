@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `██░░░░░░░░` **10%** (10 / 98)
+**Progress:** `███░░░░░░░` **26%** (25 / 98)
 
 ---
 
@@ -30,26 +30,26 @@
 - [x] **P2-009** Service detail — workflow numbered steps
 - [x] **P2-010** Service detail — FAQ accordion + CTA banner
 
-### 2.2 Services — CMS Content `0/6`
+### 2.2 Services — CMS Content `6/6`
 
-- [ ] **P2-011** Seed CMS — AI Engineering
-- [ ] **P2-012** Seed CMS — Web Development
-- [ ] **P2-013** Seed CMS — Mobile Development
-- [ ] **P2-014** Seed CMS — Cloud & DevOps
-- [ ] **P2-015** Seed CMS — DevOps
-- [ ] **P2-016** Seed CMS — Dedicated Team
+- [x] **P2-011** Seed CMS — AI Engineering
+- [x] **P2-012** Seed CMS — Web Development
+- [x] **P2-013** Seed CMS — Mobile Development
+- [x] **P2-014** Seed CMS — Cloud & DevOps
+- [x] **P2-015** Seed CMS — DevOps
+- [x] **P2-016** Seed CMS — Dedicated Team
 
-### 2.3 Solutions — Template `0/9`
+### 2.3 Solutions — Template `9/9`
 
-- [ ] **P2-017** Solutions listing page route `/solutions`
-- [ ] **P2-018** Solutions listing hero + card grid
-- [ ] **P2-019** Solution detail route `/solutions/[slug]`
-- [ ] **P2-020** Solution detail — hero + problem statement
-- [ ] **P2-021** Solution detail — business problems cards
-- [ ] **P2-022** Solution detail — proposed solution section
-- [ ] **P2-023** Solution detail — architecture diagram area
-- [ ] **P2-024** Solution detail — features + benefits + integrations
-- [ ] **P2-025** Solution detail — screenshots gallery + demo request form
+- [x] **P2-017** Solutions listing page route `/solutions`
+- [x] **P2-018** Solutions listing hero + card grid
+- [x] **P2-019** Solution detail route `/solutions/[slug]`
+- [x] **P2-020** Solution detail — hero + problem statement
+- [x] **P2-021** Solution detail — business problems cards
+- [x] **P2-022** Solution detail — proposed solution section
+- [x] **P2-023** Solution detail — architecture diagram area
+- [x] **P2-024** Solution detail — features + benefits + integrations
+- [x] **P2-025** Solution detail — screenshots gallery + demo request form
 
 ### 2.4 Solutions — CMS Content `0/7`
 
