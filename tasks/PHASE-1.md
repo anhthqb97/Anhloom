@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `██░░░░░░░░` **22%** (31 / 143)
+**Progress:** `███░░░░░░░` **33%** (47 / 143)
 
 ---
 
@@ -54,24 +54,24 @@
 - [x] **P1-030** Build `Section` component (padding variants)
 - [x] **P1-031** Add `cn()` utility (clsx + tailwind-merge)
 
-### 1.3 UI Primitives `0/16`
+### 1.3 UI Primitives `16/16`
 
-- [ ] **P1-032** `Button` base component with `forwardRef`
-- [ ] **P1-033** `Button` — primary variant
-- [ ] **P1-034** `Button` — secondary variant
-- [ ] **P1-035** `Button` — ghost variant
-- [ ] **P1-036** `Button` — accent variant
-- [ ] **P1-037** `Button` — size variants (sm, md, lg, xl)
-- [ ] **P1-038** `Button` — loading + disabled states
-- [ ] **P1-039** `Card` base wrapper
-- [ ] **P1-040** `CardHeader` sub-component
-- [ ] **P1-041** `CardBody` sub-component
-- [ ] **P1-042** `Badge` component
-- [ ] **P1-043** `Pill` component with tone variants
-- [ ] **P1-044** `Input` base component
-- [ ] **P1-045** `Textarea` component
-- [ ] **P1-046** `Select` component
-- [ ] **P1-047** `Checkbox` component
+- [x] **P1-032** `Button` base component with `forwardRef`
+- [x] **P1-033** `Button` — primary variant
+- [x] **P1-034** `Button` — secondary variant
+- [x] **P1-035** `Button` — ghost variant
+- [x] **P1-036** `Button` — accent variant
+- [x] **P1-037** `Button` — size variants (sm, md, lg, xl)
+- [x] **P1-038** `Button` — loading + disabled states
+- [x] **P1-039** `Card` base wrapper
+- [x] **P1-040** `CardHeader` sub-component
+- [x] **P1-041** `CardBody` sub-component
+- [x] **P1-042** `Badge` component
+- [x] **P1-043** `Pill` component with tone variants
+- [x] **P1-044** `Input` base component
+- [x] **P1-045** `Textarea` component
+- [x] **P1-046** `Select` component
+- [x] **P1-047** `Checkbox` component
 
 ### 1.4 Layout — Navbar `0/10`
 

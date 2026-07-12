@@ -23,23 +23,23 @@
 
 | Phase | SDD Tasks | Weeks | Tasks | Done | Progress | Gate |
 |-------|-----------|-------|-------|------|----------|------|
-| **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 31 | `██░░░░░░░░` 22% | M1 ⬜ |
+| **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 47 | `███░░░░░░░` 33% | M1 ⬜ |
 | **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 0 | `░░░░░░░░░░` 0% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 0 | `░░░░░░░░░░` 0% | M3 ⬜ |
 | **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **31** | **`█░░░░░░░░░` 9%** | Launch ⬜ |
+| | **Total** | **14 wks** | **346** | **47** | **`█░░░░░░░░░` 14%** | Launch ⬜ |
 
 ---
 
 ## Phase Summary
 
-### Phase 1 — Foundation `31/143` → Gate M1
+### Phase 1 — Foundation `47/143` → Gate M1
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
 | 1.1 Project Setup | Tech Stack | §7.1 | 12 | 12 |
 | 1.2 Design Tokens | Color, Typography | §2 | 19 | 19 |
-| 1.3 UI Primitives | Shared Components | §3 | 16 | 0 |
+| 1.3 UI Primitives | Shared Components | §3 | 16 | 16 |
 | 1.4 Navbar | Shared Components | §3.1 | 10 | 0 |
 | 1.5 Footer + Layout | Shared Components | §3.1 | 5 | 0 |
 | 1.6 Hero | Homepage | §4.1 | 8 | 0 |
@@ -142,6 +142,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
+| 2026-07-12 | P1 | 47 | 143 | 33% | P1-032–P1-047 UI primitives complete |
 | 2026-07-12 | P1 | 31 | 143 | 22% | P1-016–P1-031 design tokens + layout primitives complete |
 | 2026-07-12 | P1 | 12 | 143 | 8% | P1-001–P1-012 project setup complete |
 | | | | | | |
