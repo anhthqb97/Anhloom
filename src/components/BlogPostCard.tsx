@@ -10,6 +10,8 @@ type BlogPostCardProps = {
   className?: string;
 };
 
+export type { BlogPostCardProps };
+
 export function BlogPostCard({ post, className }: BlogPostCardProps) {
   return (
     <Card
