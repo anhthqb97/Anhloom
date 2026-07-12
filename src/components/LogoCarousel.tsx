@@ -11,7 +11,7 @@ type LogoCarouselProps = {
 function PartnerLogo({ name }: { name: string }) {
   return (
     <div
-      className="flex h-12 min-w-[140px] items-center justify-center rounded-md border border-border bg-surface px-6"
+      className="flex h-12 min-w-[140px] shrink-0 items-center justify-center rounded-md border border-border bg-surface px-6"
       aria-label={name}
     >
       <span className="text-body-sm font-semibold tracking-wide text-text-muted">
@@ -22,13 +22,17 @@ function PartnerLogo({ name }: { name: string }) {
 }
 
 export function LogoCarousel({ children, className }: LogoCarouselProps) {
+  const logos =
+    children ??
+    partnerLogos.map((partner) => (
+      <PartnerLogo key={partner.slug} name={partner.name} />
+    ));
+
   return (
     <div className={cn("overflow-hidden", className)}>
-      <div className="flex w-max items-center gap-12">
-        {children ??
-          partnerLogos.map((partner) => (
-            <PartnerLogo key={partner.slug} name={partner.name} />
-          ))}
+      <div className="logo-carousel-track flex w-max items-center gap-12">
+        {logos}
+        {logos}
       </div>
     </div>
   );
