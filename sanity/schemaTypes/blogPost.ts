@@ -93,5 +93,24 @@ export const blogPost = defineType({
         }),
       ],
     }),
+    defineField({
+      name: "seo",
+      title: "SEO",
+      type: "object",
+      fields: [
+        defineField({ name: "title", type: "string", title: "Meta Title" }),
+        defineField({
+          name: "description",
+          type: "text",
+          title: "Meta Description",
+          rows: 3,
+        }),
+        defineField({
+          name: "ogImage",
+          type: "url",
+          title: "Open Graph Image URL",
+        }),
+      ],
+    }),
   ],
 });
