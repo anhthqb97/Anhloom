@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { type ReactNode } from "react";
+import { type ReactNode, useEffect, useId, useRef, useState } from "react";
 
 import { cn } from "@/lib/cn";
 
@@ -12,23 +12,75 @@ type MegaMenuProps = {
 };
 
 export function MegaMenu({ label, href, children }: MegaMenuProps) {
+  const [open, setOpen] = useState(false);
+  const menuId = useId();
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) {
+      return;
+    }
+
+    function handlePointerDown(event: MouseEvent) {
+      if (!containerRef.current?.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [open]);
+
   return (
-    <div className="group relative">
-      <Link
-        href={href}
-        className="inline-flex items-center text-body-md font-medium text-text-secondary transition-colors hover:text-text-primary"
-      >
-        {label}
-        <span className="ml-0.5 text-text-muted" aria-hidden="true">
-          ▾
-        </span>
-      </Link>
+    <div
+      ref={containerRef}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <div className="inline-flex items-center gap-1">
+        <Link
+          href={href}
+          className="text-body-md font-medium text-text-secondary transition-colors hover:text-text-primary"
+        >
+          {label}
+        </Link>
+        <button
+          type="button"
+          className="inline-flex size-8 items-center justify-center rounded-sm text-text-muted transition-colors hover:bg-bg-muted hover:text-text-primary"
+          aria-expanded={open}
+          aria-controls={menuId}
+          aria-haspopup="true"
+          aria-label={`${label} menu`}
+          onClick={() => setOpen((current) => !current)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              setOpen(true);
+            }
+          }}
+        >
+          <span aria-hidden="true">▾</span>
+        </button>
+      </div>
       <div
+        id={menuId}
         className={cn(
-          "invisible absolute left-0 top-full z-50 pt-4 opacity-0",
-          "translate-y-1 transition-all duration-200",
-          "group-hover:visible group-hover:translate-y-0 group-hover:opacity-100",
-          "group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100",
+          "absolute left-0 top-full z-50 pt-4 transition-all duration-200",
+          open
+            ? "visible translate-y-0 opacity-100"
+            : "invisible translate-y-1 opacity-0",
         )}
       >
         <div className="w-[720px] rounded-lg border border-border bg-surface p-6 shadow-lg">
