@@ -1,16 +1,31 @@
+import dynamic from "next/dynamic";
+
 import { CTA } from "@/components/sections/CTA";
-import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { Hero } from "@/components/sections/Hero";
-import { Process } from "@/components/sections/Process";
 import { Services } from "@/components/sections/Services";
-import { Solutions } from "@/components/sections/Solutions";
 import { Stats } from "@/components/sections/Stats";
-import { TechStack } from "@/components/sections/TechStack";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { TrustedBy } from "@/components/sections/TrustedBy";
 import { JsonLd } from "@/components/JsonLd";
 import { organizationJsonLd } from "@/lib/json-ld";
 import { buildSiteMetadata, siteConfig } from "@/lib/seo";
+
+const Solutions = dynamic(() =>
+  import("@/components/sections/Solutions").then((mod) => mod.Solutions),
+);
+const Process = dynamic(() =>
+  import("@/components/sections/Process").then((mod) => mod.Process),
+);
+const FeaturedProjects = dynamic(() =>
+  import("@/components/sections/FeaturedProjects").then(
+    (mod) => mod.FeaturedProjects,
+  ),
+);
+const TechStack = dynamic(() =>
+  import("@/components/sections/TechStack").then((mod) => mod.TechStack),
+);
+const Testimonials = dynamic(() =>
+  import("@/components/sections/Testimonials").then((mod) => mod.Testimonials),
+);
 
 export const metadata = buildSiteMetadata({
   title: siteConfig.name,
