@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 
 import { SolutionArchitecture } from "@/components/sections/solutions/SolutionArchitecture";
 import { SolutionDetailHero } from "@/components/sections/solutions/SolutionDetailHero";
+import { SolutionFeaturesBenefits } from "@/components/sections/solutions/SolutionFeaturesBenefits";
 import { SolutionProblems } from "@/components/sections/solutions/SolutionProblems";
 import { SolutionProposed } from "@/components/sections/solutions/SolutionProposed";
 import {
@@ -47,6 +48,7 @@ export default async function SolutionDetailPage({
       <SolutionProblems solution={solution} />
       <SolutionProposed solution={solution} />
       <SolutionArchitecture solution={solution} />
+      <SolutionFeaturesBenefits solution={solution} />
     </>
   );
 }
