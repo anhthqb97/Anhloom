@@ -46,6 +46,7 @@ function resolveAbsoluteUrl(path: string): string {
   return path.startsWith("http") ? path : `${siteConfig.url}${path}`;
 }
 
+/** Builds Open Graph tags for social sharing previews. */
 export function buildOpenGraphMetadata({
   title,
   description,
@@ -66,6 +67,7 @@ export function buildOpenGraphMetadata({
   };
 }
 
+/** Builds Twitter Card metadata for X link previews. */
 export function buildTwitterMetadata({
   title,
   description,
@@ -82,6 +84,7 @@ export function buildTwitterMetadata({
   };
 }
 
+/** Builds canonical URL alternates for duplicate content prevention. */
 export function buildCanonicalMetadata(path = "/"): Metadata["alternates"] {
   return {
     canonical: resolveAbsoluteUrl(path),
