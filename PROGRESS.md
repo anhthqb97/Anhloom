@@ -86,9 +86,6 @@
 | 3.5 Performance | Success Metrics | §13 | 8 | 8 |
 | 3.6 Accessibility | Accessibility | §10 | 10 | 10 |
 | 3.7 Analytics | Analytics | spec | 11 | 11 |
-| 3.5 Performance | Success Metrics | §13 | 8 | 0 |
-| 3.6 Accessibility | Accessibility | §10 | 10 | 0 |
-| 3.7 Analytics | Analytics | — | 11 | 0 |
 | Gate | Success Metrics | — | 7 | 0 |
 
 ---
