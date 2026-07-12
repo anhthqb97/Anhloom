@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `█████░░░░░` **49%** (70 / 143)
+**Progress:** `█████░░░░░` **53%** (76 / 143)
 
 ---
 
@@ -105,14 +105,14 @@
 - [x] **P1-069** Hero dashboard mockup image/placeholder
 - [x] **P1-070** Hero responsive layout (stack on mobile)
 
-### 1.7 Homepage — Stats & Trusted By `0/6`
+### 1.7 Homepage — Stats & Trusted By `6/6`
 
-- [ ] **P1-071** `StatCard` component (label + value)
-- [ ] **P1-072** Stats bar section with 5 metrics
-- [ ] **P1-073** `LogoCarousel` component shell
-- [ ] **P1-074** Add 6 partner logos to carousel
-- [ ] **P1-075** Logo carousel CSS infinite scroll animation
-- [ ] **P1-076** Trusted By section heading + wrapper
+- [x] **P1-071** `StatCard` component (label + value)
+- [x] **P1-072** Stats bar section with 5 metrics
+- [x] **P1-073** `LogoCarousel` component shell
+- [x] **P1-074** Add 6 partner logos to carousel
+- [x] **P1-075** Logo carousel CSS infinite scroll animation
+- [x] **P1-076** Trusted By section heading + wrapper
 
 ### 1.8 Homepage — Services & Solutions `0/8`
 
