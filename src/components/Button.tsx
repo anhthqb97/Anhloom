@@ -5,6 +5,8 @@ import { cn } from "@/lib/cn";
 const variantClasses = {
   primary:
     "bg-primary-600 text-white hover:brightness-[1.04] hover:shadow-md",
+  secondary:
+    "border border-primary-600 bg-transparent text-primary-600 hover:brightness-[1.04] hover:shadow-md",
 } as const;
 
 type ButtonVariant = keyof typeof variantClasses;
