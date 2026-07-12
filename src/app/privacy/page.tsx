@@ -7,7 +7,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <article>
+    <div className="prose-page">
+      <div className="prose-container">
+        <article className="prose">
       <h1>Privacy Policy</h1>
       <p>Last updated: July 12, 2026</p>
 
@@ -85,6 +87,8 @@ export default function PrivacyPage() {
         <a href="mailto:privacy@anhloom.com">privacy@anhloom.com</a> or write to
         Anhloom, 123 Innovation Drive, San Francisco, CA 94105.
       </p>
-    </article>
+        </article>
+      </div>
+    </div>
   );
 }
