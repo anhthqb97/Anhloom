@@ -1,4 +1,6 @@
 import { Container } from "@/components/Container";
+import { StaggerChildren, StaggerItem } from "@/components/motion/Stagger";
+import { SlideUp } from "@/components/motion/SlideUp";
 import { Section } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
 import { services } from "@/lib/services";
@@ -7,7 +9,7 @@ export function Services() {
   return (
     <Section>
       <Container>
-        <div className="mx-auto mb-12 max-w-2xl text-center">
+        <SlideUp className="mx-auto mb-12 max-w-2xl text-center">
           <p className="text-label font-semibold uppercase tracking-wide text-primary-600">
             Services
           </p>
@@ -18,18 +20,19 @@ export function Services() {
             From AI systems to dedicated teams, Anhloom helps you design, build,
             and ship software that grows with your business.
           </p>
-        </div>
-        <div className="grid gap-6 tablet:grid-cols-2 laptop:grid-cols-3">
+        </SlideUp>
+        <StaggerChildren className="grid gap-6 tablet:grid-cols-2 laptop:grid-cols-3">
           {services.map((service) => (
-            <ServiceCard
-              key={service.href}
-              title={service.title}
-              description={service.description}
-              href={service.href}
-              icon={service.icon}
-            />
+            <StaggerItem key={service.href}>
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                href={service.href}
+                icon={service.icon}
+              />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerChildren>
       </Container>
     </Section>
   );
