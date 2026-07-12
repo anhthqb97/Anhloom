@@ -13,24 +13,24 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `░░░░░░░░░░` **0%** (0 / 143)
+**Progress:** `█░░░░░░░░░` **8%** (12 / 143)
 
 ---
 
-### 1.1 Project Setup `0/12`
+### 1.1 Project Setup `12/12`
 
-- [ ] **P1-001** Run `create-next-app` with App Router + TypeScript
-- [ ] **P1-002** Enable TypeScript `strict` mode in `tsconfig.json`
-- [ ] **P1-003** Install Tailwind CSS v4
-- [ ] **P1-004** Configure PostCSS for Tailwind
-- [ ] **P1-005** Install ESLint (`next/core-web-vitals`)
-- [ ] **P1-006** Install Prettier + add `format` script
-- [ ] **P1-007** Add `.prettierrc` and `.editorconfig`
-- [ ] **P1-008** Configure `@/` path alias in `tsconfig.json`
-- [ ] **P1-009** Install Geist font package
-- [ ] **P1-010** Configure `next/font` — Geist Sans
-- [ ] **P1-011** Configure `next/font` — Geist Mono + Inter fallback
-- [ ] **P1-012** Create folder structure (`app`, `components`, `lib`, `hooks`, `types`, `styles`)
+- [x] **P1-001** Run `create-next-app` with App Router + TypeScript
+- [x] **P1-002** Enable TypeScript `strict` mode in `tsconfig.json`
+- [x] **P1-003** Install Tailwind CSS v4
+- [x] **P1-004** Configure PostCSS for Tailwind
+- [x] **P1-005** Install ESLint (`next/core-web-vitals`)
+- [x] **P1-006** Install Prettier + add `format` script
+- [x] **P1-007** Add `.prettierrc` and `.editorconfig`
+- [x] **P1-008** Configure `@/` path alias in `tsconfig.json`
+- [x] **P1-009** Install Geist font package
+- [x] **P1-010** Configure `next/font` — Geist Sans
+- [x] **P1-011** Configure `next/font` — Geist Mono + Inter fallback
+- [x] **P1-012** Create folder structure (`app`, `components`, `lib`, `hooks`, `types`, `styles`)
 
 ### 1.2 Design Tokens `0/19`
 

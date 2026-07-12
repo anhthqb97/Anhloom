@@ -23,21 +23,21 @@
 
 | Phase | SDD Tasks | Weeks | Tasks | Done | Progress | Gate |
 |-------|-----------|-------|-------|------|----------|------|
-| **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 0 | `░░░░░░░░░░` 0% | M1 ⬜ |
+| **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 12 | `█░░░░░░░░░` 8% | M1 ⬜ |
 | **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 0 | `░░░░░░░░░░` 0% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 0 | `░░░░░░░░░░` 0% | M3 ⬜ |
 | **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **0** | **`░░░░░░░░░░` 0%** | Launch ⬜ |
+| | **Total** | **14 wks** | **346** | **12** | **`░░░░░░░░░░` 3%** | Launch ⬜ |
 
 ---
 
 ## Phase Summary
 
-### Phase 1 — Foundation `0/143` → Gate M1
+### Phase 1 — Foundation `12/143` → Gate M1
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
-| 1.1 Project Setup | Tech Stack | §7.1 | 12 | 0 |
+| 1.1 Project Setup | Tech Stack | §7.1 | 12 | 12 |
 | 1.2 Design Tokens | Color, Typography | §2 | 19 | 0 |
 | 1.3 UI Primitives | Shared Components | §3 | 16 | 0 |
 | 1.4 Navbar | Shared Components | §3.1 | 10 | 0 |
@@ -142,7 +142,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
-| 2026-07-12 | — | 0 | 346 | 0% | Brand: **Anhloom** — spec, plan, hero copy updated |
+| 2026-07-12 | P1 | 12 | 143 | 8% | P1-001–P1-012 project setup complete |
 | | | | | | |
 
 ---
