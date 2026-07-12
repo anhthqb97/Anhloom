@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { PlaceholderMedia } from "@/components/PlaceholderMedia";
 import { Card } from "@/components/Card";
 import { Pill } from "@/components/Pill";
 import { cn } from "@/lib/cn";
@@ -15,7 +16,7 @@ export type { BlogPostCardProps };
 export function BlogPostCard({ post, className }: BlogPostCardProps) {
   return (
     <Card className={cn("overflow-hidden", className)}>
-      <div className="aspect-video w-full bg-gradient-to-br from-primary-100 via-accent-50 to-secondary-500/10" />
+      <PlaceholderMedia alt={`${post.title} cover`} className="aspect-video w-full" />
       <div className="p-6">
         <Pill tone="primary">{post.category}</Pill>
         <h3 className="mt-4 text-heading-md font-semibold text-text-primary">

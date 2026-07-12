@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { PlaceholderMedia } from "@/components/PlaceholderMedia";
 import { Card } from "@/components/Card";
 import { Pill } from "@/components/Pill";
 import { cn } from "@/lib/cn";
@@ -25,7 +26,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card className={cn("overflow-hidden", className)}>
-      <div className="aspect-video w-full bg-gradient-to-br from-primary-100 via-accent-50 to-secondary-500/10" />
+      <PlaceholderMedia alt={`${title} project preview`} className="aspect-video w-full" />
       <div className="p-6">
         <div className="flex items-center gap-2">
           <Pill tone="primary">{category}</Pill>
