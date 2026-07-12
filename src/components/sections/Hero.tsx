@@ -5,7 +5,14 @@ import { Section } from "@/components/Section";
 
 export function Hero() {
   return (
-    <Section padding="lg">
+    <Section padding="lg" className="relative overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        aria-hidden="true"
+      >
+        <div className="hero-gradient-bg absolute -inset-[20%] opacity-20" />
+        <div className="hero-glow-bg absolute inset-0 opacity-80" />
+      </div>
       <Container>
         <div className="grid items-center gap-12 laptop:grid-cols-2 laptop:gap-16">
           <div className="flex flex-col">

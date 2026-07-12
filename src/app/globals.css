@@ -6,6 +6,7 @@
 @import "../styles/radius.css";
 @import "../styles/shadows.css";
 @import "../styles/breakpoints.css";
+@import "../styles/hero.css";
 
 @theme {
   --font-sans: var(--font-geist-sans), var(--font-inter), system-ui, sans-serif;

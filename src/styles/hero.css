@@ -1,0 +1,21 @@
+/* Hero section styles — see docs/sdd/plan.md §4.1 */
+
+@keyframes hero-gradient-shift {
+  0%,
+  100% {
+    transform: translate(0%, 0%) scale(1);
+  }
+
+  50% {
+    transform: translate(3%, -2%) scale(1.05);
+  }
+}
+
+.hero-gradient-bg {
+  background: var(--gradient-hero);
+  animation: hero-gradient-shift 10s ease-in-out infinite;
+}
+
+.hero-glow-bg {
+  background: var(--gradient-glow);
+}
