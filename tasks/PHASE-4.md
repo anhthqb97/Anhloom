@@ -13,7 +13,7 @@
 
 **Goal:** AI chatbot, cost estimator, search, recommendations in production.
 
-**Progress:** `████░░░░░░` **47%** (25 / 53)
+**Progress:** `██████████` **100%** (53 / 53)
 
 ---
 
@@ -50,48 +50,48 @@
 - [x] **P4-024** Load previous messages on panel reopen
 - [x] **P4-025** Chatbot responsive layout (full-screen on mobile)
 
-### 4.3 AI Cost Estimator `0/10`
+### 4.3 AI Cost Estimator `10/10`
 
-- [ ] **P4-026** Estimator route or modal trigger
-- [ ] **P4-027** Step 1 — project type selection
-- [ ] **P4-028** Step 2 — scope + feature checklist
-- [ ] **P4-029** Step 3 — timeline + team size
-- [ ] **P4-030** Step 4 — review answers summary
-- [ ] **P4-031** FastAPI `/estimate` endpoint
-- [ ] **P4-032** AI prompt for cost breakdown generation
-- [ ] **P4-033** Estimate results display (cost range + breakdown)
-- [ ] **P4-034** PDF export of estimate
-- [ ] **P4-035** Lead capture form on estimate completion
+- [x] **P4-026** Estimator route or modal trigger
+- [x] **P4-027** Step 1 — project type selection
+- [x] **P4-028** Step 2 — scope + feature checklist
+- [x] **P4-029** Step 3 — timeline + team size
+- [x] **P4-030** Step 4 — review answers summary
+- [x] **P4-031** FastAPI `/estimate` endpoint
+- [x] **P4-032** AI prompt for cost breakdown generation
+- [x] **P4-033** Estimate results display (cost range + breakdown)
+- [x] **P4-034** PDF export of estimate
+- [x] **P4-035** Lead capture form on estimate completion
 
-### 4.4 AI Search `0/6`
+### 4.4 AI Search `6/6`
 
-- [ ] **P4-036** Global search dialog (Cmd+K trigger)
-- [ ] **P4-037** Search input with debounce
-- [ ] **P4-038** Generate embeddings for blog posts
-- [ ] **P4-039** FastAPI `/search` semantic search endpoint
-- [ ] **P4-040** Search results list with highlighted snippets
-- [ ] **P4-041** Blog page search bar using same endpoint
+- [x] **P4-036** Global search dialog (Cmd+K trigger)
+- [x] **P4-037** Search input with debounce
+- [x] **P4-038** Generate embeddings for blog posts
+- [x] **P4-039** FastAPI `/search` semantic search endpoint
+- [x] **P4-040** Search results list with highlighted snippets
+- [x] **P4-041** Blog page search bar using same endpoint
 
-### 4.5 AI Blog Recommendations `0/4`
+### 4.5 AI Blog Recommendations `4/4`
 
-- [ ] **P4-042** Compute similarity between blog post embeddings
-- [ ] **P4-043** FastAPI `/recommendations` endpoint
-- [ ] **P4-044** "Related articles" section on blog article page
-- [ ] **P4-045** Display 3 recommended posts with thumbnails
+- [x] **P4-042** Compute similarity between blog post embeddings
+- [x] **P4-043** FastAPI `/recommendations` endpoint
+- [x] **P4-044** "Related articles" section on blog article page
+- [x] **P4-045** Display 3 recommended posts with thumbnails
 
-### 4.6 AI FAQ Assistant `0/4`
+### 4.6 AI FAQ Assistant `4/4`
 
-- [ ] **P4-046** FAQ expand + "Ask AI" button on service pages
-- [ ] **P4-047** Inline AI response below FAQ question
-- [ ] **P4-048** FastAPI `/faq` endpoint with service context
-- [ ] **P4-049** Follow-up question input under AI answer
+- [x] **P4-046** FAQ expand + "Ask AI" button on service pages
+- [x] **P4-047** Inline AI response below FAQ question
+- [x] **P4-048** FastAPI `/faq` endpoint with service context
+- [x] **P4-049** Follow-up question input under AI answer
 
-### 4.7 AI Requirement Assistant `0/4`
+### 4.7 AI Requirement Assistant `4/4`
 
-- [ ] **P4-050** Chat sidebar on service detail pages
-- [ ] **P4-051** Guided prompts ("What problem are you solving?")
-- [ ] **P4-052** FastAPI `/requirements` conversation endpoint
-- [ ] **P4-053** Export gathered requirements as PDF/Markdown
+- [x] **P4-050** Chat sidebar on service detail pages
+- [x] **P4-051** Guided prompts ("What problem are you solving?")
+- [x] **P4-052** FastAPI `/requirements` conversation endpoint
+- [x] **P4-053** Export gathered requirements as PDF/Markdown
 
 ### Phase 4 Gate `0/8` — SDD Step 5: Validate
 
