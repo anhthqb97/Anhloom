@@ -26,3 +26,9 @@ export function CardHeader({ className, ...props }: CardHeaderProps) {
     />
   );
 }
+
+type CardBodyProps = ComponentProps<"div">;
+
+export function CardBody({ className, ...props }: CardBodyProps) {
+  return <div className={cn("p-6 pt-4", className)} {...props} />;
+}
