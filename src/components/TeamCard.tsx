@@ -1,7 +1,7 @@
 import { Card } from "@/components/Card";
 import { cn } from "@/lib/cn";
 
-type TeamCardProps = {
+export type TeamCardProps = {
   name: string;
   role: string;
   bio: string;
