@@ -15,4 +15,16 @@
   --text-display-md--line-height: 1.15;
   --text-display-md--font-weight: 700;
   --text-display-md--letter-spacing: -0.02em;
+
+  --text-heading-xl: 2rem;
+  --text-heading-xl--line-height: 1.2;
+  --text-heading-xl--font-weight: 600;
+
+  --text-heading-lg: 1.5rem;
+  --text-heading-lg--line-height: 1.3;
+  --text-heading-lg--font-weight: 600;
+
+  --text-heading-md: 1.25rem;
+  --text-heading-md--line-height: 1.4;
+  --text-heading-md--font-weight: 600;
 }
