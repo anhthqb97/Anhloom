@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import {
   ProjectArchitecture,
   ProjectTechnologies,
@@ -14,6 +15,7 @@ import {
   ProjectResults,
 } from "@/components/sections/portfolio/ProjectResults";
 import { getAllProjectSlugs, getProjectBySlug } from "@/lib/resolve-project";
+import { buildSiteMetadata } from "@/lib/seo";
 
 type ProjectDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -28,13 +30,14 @@ export async function generateMetadata({ params }: ProjectDetailPageProps) {
   const project = await getProjectBySlug(slug);
 
   if (!project) {
-    return { title: "Project Not Found — Anhloom" };
+    return { title: "Project Not Found" };
   }
 
-  return {
-    title: `${project.title} — Anhloom`,
+  return buildSiteMetadata({
+    title: project.title,
     description: project.summary,
-  };
+    path: `/portfolio/${slug}`,
+  });
 }
 
 export default async function ProjectDetailPage({
@@ -49,6 +52,13 @@ export default async function ProjectDetailPage({
 
   return (
     <>
+      <PageBreadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Portfolio", href: "/portfolio" },
+          { label: project.title },
+        ]}
+      />
       <ProjectDetailHero project={project} />
       <ProjectOverview project={project} />
       <ProjectSolution project={project} />

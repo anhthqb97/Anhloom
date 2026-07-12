@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { ArticleBody } from "@/components/sections/blog/ArticleBody";
 import { ArticleHero } from "@/components/sections/blog/ArticleHero";
 import { ArticleRelated } from "@/components/sections/blog/ArticleRelated";
@@ -7,7 +8,10 @@ import { ArticleShare } from "@/components/sections/blog/ArticleShare";
 import { ArticleTOC } from "@/components/sections/blog/ArticleTOC";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { JsonLd } from "@/components/JsonLd";
+import { articleJsonLd } from "@/lib/json-ld";
 import { getAllBlogPostSlugs, getBlogPostBySlug } from "@/lib/resolve-blog";
+import { buildSiteMetadata } from "@/lib/seo";
 
 type BlogArticlePageProps = {
   params: Promise<{ slug: string }>;
@@ -22,13 +26,15 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
   const post = await getBlogPostBySlug(slug);
 
   if (!post) {
-    return { title: "Article Not Found — Anhloom" };
+    return { title: "Article Not Found" };
   }
 
-  return {
-    title: `${post.title} — Anhloom Blog`,
+  return buildSiteMetadata({
+    title: post.title,
     description: post.excerpt,
-  };
+    path: `/blog/${slug}`,
+    type: "article",
+  });
 }
 
 export default async function BlogArticlePage({ params }: BlogArticlePageProps) {
@@ -41,6 +47,22 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 
   return (
     <>
+      <PageBreadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: post.title },
+        ]}
+      />
+      <JsonLd
+        data={articleJsonLd({
+          title: post.title,
+          description: post.excerpt,
+          path: `/blog/${slug}`,
+          author: post.author,
+          publishedAt: post.publishedAt,
+        })}
+      />
       <ArticleHero post={post} />
       <Section>
         <Container>

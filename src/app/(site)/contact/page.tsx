@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-
 import { ContactForm } from "@/components/ContactForm";
 import { ContactInfo } from "@/components/ContactInfo";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { buildSiteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact — Anhloom",
+export const metadata = buildSiteMetadata({
+  title: "Contact",
   description:
     "Get in touch with Anhloom to discuss your product, schedule a consultation, or contact sales.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

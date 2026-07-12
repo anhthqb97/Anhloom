@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { SolutionArchitecture } from "@/components/sections/solutions/SolutionArchitecture";
 import { SolutionDetailHero } from "@/components/sections/solutions/SolutionDetailHero";
 import { SolutionFeaturesBenefits } from "@/components/sections/solutions/SolutionFeaturesBenefits";
@@ -10,6 +11,7 @@ import {
   getAllSolutionSlugs,
   getSolutionBySlug,
 } from "@/lib/resolve-solution";
+import { buildSiteMetadata } from "@/lib/seo";
 
 type SolutionDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -24,13 +26,14 @@ export async function generateMetadata({ params }: SolutionDetailPageProps) {
   const solution = await getSolutionBySlug(slug);
 
   if (!solution) {
-    return { title: "Solution Not Found — Anhloom" };
+    return { title: "Solution Not Found" };
   }
 
-  return {
-    title: `${solution.title} — Anhloom`,
+  return buildSiteMetadata({
+    title: solution.title,
     description: solution.tagline,
-  };
+    path: `/solutions/${slug}`,
+  });
 }
 
 export default async function SolutionDetailPage({
@@ -45,6 +48,13 @@ export default async function SolutionDetailPage({
 
   return (
     <>
+      <PageBreadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Solutions", href: "/solutions" },
+          { label: solution.title },
+        ]}
+      />
       <SolutionDetailHero solution={solution} />
       <SolutionProblems solution={solution} />
       <SolutionProposed solution={solution} />

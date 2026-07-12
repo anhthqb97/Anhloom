@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import { buildSiteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — Anhloom",
+export const metadata = buildSiteMetadata({
+  title: "Privacy Policy",
   description: "Anhloom privacy policy — how we collect, use, and protect your data.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

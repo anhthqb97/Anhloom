@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import {
   CaseStudyChallenges,
   CaseStudyResearch,
@@ -21,6 +22,7 @@ import {
   getAllCaseStudySlugs,
   getCaseStudyBySlug,
 } from "@/lib/case-study-details";
+import { buildSiteMetadata } from "@/lib/seo";
 
 type CaseStudyDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -38,10 +40,11 @@ export async function generateMetadata({ params }: CaseStudyDetailPageProps) {
     return { title: "Case Study Not Found — Anhloom" };
   }
 
-  return {
-    title: `${caseStudy.title} — Anhloom`,
+  return buildSiteMetadata({
+    title: caseStudy.title,
     description: caseStudy.summary,
-  };
+    path: `/case-studies/${slug}`,
+  });
 }
 
 export default async function CaseStudyDetailPage({
@@ -56,6 +59,13 @@ export default async function CaseStudyDetailPage({
 
   return (
     <>
+      <PageBreadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Case Studies", href: "/case-studies" },
+          { label: caseStudy.title },
+        ]}
+      />
       <CaseStudyHero caseStudy={caseStudy} />
       <CaseStudyExecutiveSummary caseStudy={caseStudy} />
       <CaseStudyChallenges caseStudy={caseStudy} />
