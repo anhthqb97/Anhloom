@@ -1,0 +1,18 @@
+/* Typography scale — see docs/sdd/plan.md §2.2 */
+
+@theme {
+  --text-display-xl: 4.5rem;
+  --text-display-xl--line-height: 1.05;
+  --text-display-xl--font-weight: 700;
+  --text-display-xl--letter-spacing: -0.02em;
+
+  --text-display-lg: 3.5rem;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--font-weight: 700;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-display-md: 2.5rem;
+  --text-display-md--line-height: 1.15;
+  --text-display-md--font-weight: 700;
+  --text-display-md--letter-spacing: -0.02em;
+}
