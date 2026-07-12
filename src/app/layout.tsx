@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 
-import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 
 const inter = Inter({
@@ -12,8 +10,6 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
-// Geist Mono + Inter complete the font stack per plan.md §2.2
 
 export const metadata: Metadata = {
   title: "Anhloom",
@@ -30,11 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${GeistSans.variable} ${GeistMono.variable} ${inter.variable}`}
     >
-      <body className="font-sans antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
