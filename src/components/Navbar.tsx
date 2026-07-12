@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { type ReactNode, useState } from "react";
 
 import { Container } from "@/components/Container";
+import { Button } from "@/components/Button";
 import { Drawer } from "@/components/Drawer";
 import {
   MegaMenu,
@@ -11,7 +13,11 @@ import {
   MegaMenuLink,
 } from "@/components/MegaMenu";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
-import { serviceNavLinks, solutionNavLinks } from "@/lib/nav";
+import {
+  primaryNavLinks,
+  serviceNavLinks,
+  solutionNavLinks,
+} from "@/lib/nav";
 import { cn } from "@/lib/cn";
 
 const desktopNavLinks = [
@@ -76,6 +82,88 @@ function NavbarDesktopLinks({ className }: { className?: string }) {
   );
 }
 
+function NavbarMobileMenu({ onNavigate }: { onNavigate: () => void }) {
+  const router = useRouter();
+
+  const handleNavigate = (href: string) => {
+    onNavigate();
+    router.push(href);
+  };
+
+  return (
+    <div className="flex h-full flex-col gap-6 overflow-y-auto">
+      <nav className="flex flex-col gap-6" aria-label="Mobile navigation">
+        <div>
+          <p className="mb-3 text-label font-semibold uppercase tracking-wide text-text-muted">
+            Services
+          </p>
+          <ul className="flex flex-col gap-2">
+            {serviceNavLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="block py-1 text-body-md text-text-secondary hover:text-text-primary"
+                  onClick={onNavigate}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="mb-3 text-label font-semibold uppercase tracking-wide text-text-muted">
+            Solutions
+          </p>
+          <ul className="flex flex-col gap-2">
+            {solutionNavLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="block py-1 text-body-md text-text-secondary hover:text-text-primary"
+                  onClick={onNavigate}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ul className="flex flex-col gap-2 border-t border-border pt-4">
+          {primaryNavLinks.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className="block py-1 text-body-md font-medium text-text-primary"
+                onClick={onNavigate}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div className="mt-auto flex flex-col gap-3 border-t border-border pt-6">
+        <Button
+          variant="secondary"
+          size="md"
+          className="w-full"
+          onClick={() => handleNavigate("/contact")}
+        >
+          Contact
+        </Button>
+        <Button
+          size="md"
+          className="w-full"
+          onClick={() => handleNavigate("/contact?intent=meeting")}
+        >
+          Book Meeting
+        </Button>
+      </div>
+    </div>
+  );
+}
+
 type NavbarProps = {
   logo?: ReactNode;
   children?: ReactNode;
@@ -133,7 +221,7 @@ export function Navbar({ logo, children }: NavbarProps) {
         </div>
       </Container>
       <Drawer open={mobileOpen} onClose={() => setMobileOpen(false)}>
-        <div />
+        <NavbarMobileMenu onNavigate={() => setMobileOpen(false)} />
       </Drawer>
     </header>
   );
