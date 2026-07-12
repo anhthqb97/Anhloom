@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { SolutionArchitecture } from "@/components/sections/solutions/SolutionArchitecture";
 import { SolutionDetailHero } from "@/components/sections/solutions/SolutionDetailHero";
 import { SolutionProblems } from "@/components/sections/solutions/SolutionProblems";
 import { SolutionProposed } from "@/components/sections/solutions/SolutionProposed";
@@ -45,6 +46,7 @@ export default async function SolutionDetailPage({
       <SolutionDetailHero solution={solution} />
       <SolutionProblems solution={solution} />
       <SolutionProposed solution={solution} />
+      <SolutionArchitecture solution={solution} />
     </>
   );
 }
