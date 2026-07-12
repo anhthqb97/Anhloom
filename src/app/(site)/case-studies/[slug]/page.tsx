@@ -1,6 +1,14 @@
 import { notFound } from "next/navigation";
 
 import {
+  CaseStudyChallenges,
+  CaseStudyResearch,
+} from "@/components/sections/case-studies/CaseStudyChallenges";
+import {
+  CaseStudyExecutiveSummary,
+  CaseStudyHero,
+} from "@/components/sections/case-studies/CaseStudyExecutiveSummary";
+import {
   getAllCaseStudySlugs,
   getCaseStudyBySlug,
 } from "@/lib/case-study-details";
@@ -37,5 +45,12 @@ export default async function CaseStudyDetailPage({
     notFound();
   }
 
-  return null;
+  return (
+    <>
+      <CaseStudyHero caseStudy={caseStudy} />
+      <CaseStudyExecutiveSummary caseStudy={caseStudy} />
+      <CaseStudyChallenges caseStudy={caseStudy} />
+      <CaseStudyResearch caseStudy={caseStudy} />
+    </>
+  );
 }
