@@ -14,7 +14,8 @@ export function PricingCard({ tier, className }: PricingCardProps) {
     <Card
       className={cn(
         "flex h-full flex-col p-8",
-        tier.popular && "border-primary-300 shadow-lg ring-2 ring-primary-200",
+        tier.popular &&
+          "relative z-10 scale-[1.02] border-primary-300 shadow-lg ring-2 ring-primary-200",
         className,
       )}
     >
