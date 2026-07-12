@@ -38,6 +38,23 @@ Every task follows this SDD structure:
 
 ---
 
+## Commit Rules
+
+**One task = one commit.** Format:
+
+```
+<type>(<scope>): <TASK-ID> <imperative summary>
+
+- <what changed>
+Validate: <command> ✓
+```
+
+Example: `chore(setup): P1-001 initialize next.js with app router`
+
+See [docs/COMMITS.md](../docs/COMMITS.md) for full guide.
+
+---
+
 ## Phase Files
 
 | File | Phase | Spec focus | Weeks |

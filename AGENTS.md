@@ -143,7 +143,34 @@ After completing tasks, update `PROGRESS.md`:
 3. Recalculate progress bar
 4. Add row to **Progress Update Log**
 
-Format: `2026-07-12 | P1 | 5 | 134 | 4% | Completed P1-001–P1-005`
+## Commit Convention
+
+**One task = one commit.** Each `P1-001` style ID gets exactly one commit.
+
+### Format
+
+```
+<type>(<scope>): <TASK-ID> <imperative summary>
+
+- <bullet: what changed>
+Validate: <command> ✓
+```
+
+### Quick examples
+
+| Task | Commit subject |
+|------|----------------|
+| P1-001 | `chore(setup): P1-001 initialize next.js with app router` |
+| P1-032 | `feat(ui): P1-032 add button base component` |
+| P1-064 | `feat(hero): P1-064 add anhloom hero headline and subtext` |
+| P1-141 | `ci(docker): P1-141 add docker-compose dev frontend service` |
+| P4-020 | `feat(api): P4-020 add fastapi chat endpoint with sse` |
+
+### Types
+
+`chore` setup · `feat` component/page/API · `fix` bug · `style` tokens/CSS · `docs` docs-only · `ci` pipeline/Docker
+
+Full rules: [docs/COMMITS.md](./docs/COMMITS.md) · `.cursor/rules/commit-convention.mdc`
 
 ---
 

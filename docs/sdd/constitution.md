@@ -124,10 +124,41 @@ When implementing as an AI agent:
 
 ## 9. Git & Commit Rules
 
-- Conventional commits: `feat:`, `fix:`, `chore:`, `docs:`
-- One logical change per commit
-- Reference task ID in commit body: `P1-032: add Button primary variant`
+### One task = one commit
+
+Each task ID (`P1-001`, `P2-015`, …) maps to **exactly one commit**. No bundling, no splitting.
+
+### Commit message format
+
+```
+<type>(<scope>): <TASK-ID> <imperative summary>
+
+- <what changed>
+Validate: <command> ✓
+```
+
+| Part | Example |
+|------|---------|
+| Type | `chore`, `feat`, `fix`, `docs`, `style`, `ci` |
+| Scope | `setup`, `tokens`, `ui`, `hero`, `cms`, `docker` |
+| Task ID | `P1-001` (required in subject) |
+| Summary | `initialize next.js with app router` |
+
+**Example:**
+
+```
+chore(setup): P1-001 initialize next.js with app router
+
+- create-next-app with TypeScript and App Router
+Validate: npm run dev ✓
+```
+
+### Other rules
+
+- Conventional commits only
 - No commit unless user requests or task AC includes it
+- No secrets in commits (`.env`, API keys)
+- Full guide: `.cursor/rules/commit-convention.mdc`
 
 ---
 
