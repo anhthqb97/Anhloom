@@ -1,0 +1,8 @@
+/* Breakpoints — see docs/sdd/plan.md §2.6 */
+
+@theme {
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+  --breakpoint-ultra: 96rem;
+}
