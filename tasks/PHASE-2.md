@@ -13,22 +13,22 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `░░░░░░░░░░` **0%** (0 / 98)
+**Progress:** `██░░░░░░░░` **10%** (10 / 98)
 
 ---
 
-### 2.1 Services — Template `0/10`
+### 2.1 Services — Template `10/10`
 
-- [ ] **P2-001** Services listing page route `/services`
-- [ ] **P2-002** Services listing hero + grid of cards
-- [ ] **P2-003** Service detail route `/services/[slug]`
-- [ ] **P2-004** Service detail — hero (title + CTA)
-- [ ] **P2-005** Service detail — overview 2-column section
-- [ ] **P2-006** Service detail — benefits 3-column icon cards
-- [ ] **P2-007** Service detail — features alternating rows
-- [ ] **P2-008** Service detail — technologies logo cloud
-- [ ] **P2-009** Service detail — workflow numbered steps
-- [ ] **P2-010** Service detail — FAQ accordion + CTA banner
+- [x] **P2-001** Services listing page route `/services`
+- [x] **P2-002** Services listing hero + grid of cards
+- [x] **P2-003** Service detail route `/services/[slug]`
+- [x] **P2-004** Service detail — hero (title + CTA)
+- [x] **P2-005** Service detail — overview 2-column section
+- [x] **P2-006** Service detail — benefits 3-column icon cards
+- [x] **P2-007** Service detail — features alternating rows
+- [x] **P2-008** Service detail — technologies logo cloud
+- [x] **P2-009** Service detail — workflow numbered steps
+- [x] **P2-010** Service detail — FAQ accordion + CTA banner
 
 ### 2.2 Services — CMS Content `0/6`
 
