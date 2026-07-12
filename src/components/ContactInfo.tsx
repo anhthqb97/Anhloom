@@ -52,6 +52,14 @@ export function ContactInfo({ className }: { className?: string }) {
             </dd>
           </div>
         </dl>
+
+        <div
+          className="mt-6 flex aspect-video w-full items-center justify-center rounded-md border border-dashed border-border bg-bg-muted text-body-sm text-text-muted"
+          role="img"
+          aria-label="Google Maps embed placeholder"
+        >
+          Google Maps embed
+        </div>
       </div>
     </Card>
   );
