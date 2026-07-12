@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `████████░░` **84%** (120 / 143)
+**Progress:** `██████████` **100%** (143 / 143)
 
 ---
 
@@ -176,39 +176,39 @@
 - [x] **P1-119** Privacy Policy page route with static content
 - [x] **P1-120** Privacy page prose typography styling
 
-### 1.14 Sanity CMS `0/11`
+### 1.14 Sanity CMS `11/11`
 
-- [ ] **P1-121** Create Sanity project on sanity.io
-- [ ] **P1-122** Install `@sanity/client` + `next-sanity` packages
-- [ ] **P1-123** Sanity Studio config + local dev
-- [ ] **P1-124** Schema — `siteSettings`
-- [ ] **P1-125** Schema — `page`
-- [ ] **P1-126** Schema — `teamMember`
-- [ ] **P1-127** Schema — `service`
-- [ ] **P1-128** Schema — `testimonial`
-- [ ] **P1-129** Schema — `faq`
-- [ ] **P1-130** `lib/sanity.ts` client + GROQ fetch helpers
-- [ ] **P1-131** Connect Hero + About content to Sanity queries
+- [x] **P1-121** Create Sanity project on sanity.io
+- [x] **P1-122** Install `@sanity/client` + `next-sanity` packages
+- [x] **P1-123** Sanity Studio config + local dev
+- [x] **P1-124** Schema — `siteSettings`
+- [x] **P1-125** Schema — `page`
+- [x] **P1-126** Schema — `teamMember`
+- [x] **P1-127** Schema — `service`
+- [x] **P1-128** Schema — `testimonial`
+- [x] **P1-129** Schema — `faq`
+- [x] **P1-130** `lib/sanity.ts` client + GROQ fetch helpers
+- [x] **P1-131** Connect Hero + About content to Sanity queries
 
-### 1.15 CI/CD `0/4`
+### 1.15 CI/CD `4/4`
 
-- [ ] **P1-132** GitHub Actions — lint + type-check on PR
-- [ ] **P1-133** GitHub Actions — build on merge to main
-- [ ] **P1-134** Staging deployment (Vercel or AWS)
-- [ ] **P1-135** `.env.example` with all required variables
+- [x] **P1-132** GitHub Actions — lint + type-check on PR
+- [x] **P1-133** GitHub Actions — build on merge to main
+- [x] **P1-134** Staging deployment (Vercel or AWS)
+- [x] **P1-135** `.env.example` with all required variables
 
-### 1.16 Docker — Frontend `0/8`
+### 1.16 Docker — Frontend `8/8`
 
 > **Spec:** Infrastructure · Docker · **Plan:** §7.3 Docker Architecture
 
-- [ ] **P1-136** Create `frontend/` directory structure (or root if monolith)
-- [ ] **P1-137** `frontend/Dockerfile` — multi-stage production (deps → build → run)
-- [ ] **P1-138** `frontend/Dockerfile.dev` — dev image with hot reload
-- [ ] **P1-139** `frontend/.dockerignore` — exclude node_modules, .next
-- [ ] **P1-140** Enable `output: 'standalone'` in `next.config.ts`
-- [ ] **P1-141** `docker-compose.dev.yml` — frontend service (port 3000)
-- [ ] **P1-142** Verify `docker compose -f docker-compose.dev.yml up frontend --build`
-- [ ] **P1-143** `backend/` placeholder + stub `backend/Dockerfile` for Phase 4
+- [x] **P1-136** Create `frontend/` directory structure (or root if monolith)
+- [x] **P1-137** `frontend/Dockerfile` — multi-stage production (deps → build → run)
+- [x] **P1-138** `frontend/Dockerfile.dev` — dev image with hot reload
+- [x] **P1-139** `frontend/.dockerignore` — exclude node_modules, .next
+- [x] **P1-140** Enable `output: 'standalone'` in `next.config.ts`
+- [x] **P1-141** `docker-compose.dev.yml` — frontend service (port 3000)
+- [x] **P1-142** Verify `docker compose -f docker-compose.dev.yml up frontend --build`
+- [x] **P1-143** `backend/` placeholder + stub `backend/Dockerfile` for Phase 4
 
 ### Phase 1 Gate `0/8` — SDD Step 5: Validate
 

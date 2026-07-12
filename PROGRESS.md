@@ -23,17 +23,17 @@
 
 | Phase | SDD Tasks | Weeks | Tasks | Done | Progress | Gate |
 |-------|-----------|-------|-------|------|----------|------|
-| **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 120 | `████████░░` 84% | M1 ⬜ |
+| **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 143 | `██████████` 100% | M1 ⬜ |
 | **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 0 | `░░░░░░░░░░` 0% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 0 | `░░░░░░░░░░` 0% | M3 ⬜ |
 | **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **120** | **`████░░░░░░` 35%** | Launch ⬜ |
+| | **Total** | **14 wks** | **346** | **143** | **`████░░░░░░` 41%** | Launch ⬜ |
 
 ---
 
 ## Phase Summary
 
-### Phase 1 — Foundation `120/143` → Gate M1
+### Phase 1 — Foundation `143/143` → Gate M1
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
@@ -50,9 +50,9 @@
 | 1.11 About Page | About Page | §4.2 | 8 | 8 |
 | 1.12 Contact Page | Contact | §4.8 | 7 | 7 |
 | 1.13 Privacy Page | Privacy Policy | — | 2 | 2 |
-| 1.14 Sanity CMS | CMS Requirements | §7.2 | 11 | 0 |
-| 1.15 CI/CD | Deliverables | §7 | 4 | 0 |
-| 1.16 Docker FE | Infrastructure | §7.3 | 8 | 0 |
+| 1.14 Sanity CMS | CMS Requirements | §7.2 | 11 | 11 |
+| 1.15 CI/CD | Deliverables | §7 | 4 | 4 |
+| 1.16 Docker FE | Infrastructure | §7.3 | 8 | 8 |
 | Gate | Deliverables | — | 8 | 0 |
 
 ---
