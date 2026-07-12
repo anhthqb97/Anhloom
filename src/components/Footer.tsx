@@ -48,6 +48,16 @@ export function Footer() {
         </div>
         <FooterSocial className="mt-10" />
       </Container>
+      <div className="border-t border-border">
+        <Container className="flex flex-col gap-4 py-6 tablet:flex-row tablet:items-center tablet:justify-between">
+          <p className="text-body-sm text-text-muted">
+            © {new Date().getFullYear()} Anhloom. All rights reserved.
+          </p>
+          <p className="text-body-sm text-text-muted">
+            Where ideas bloom into products.
+          </p>
+        </Container>
+      </div>
     </footer>
   );
 }
