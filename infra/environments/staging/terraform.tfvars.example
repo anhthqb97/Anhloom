@@ -1,0 +1,21 @@
+aws_region      = "ap-southeast-1"
+project_name    = "company-web"
+environment     = "staging"
+github_org      = "anhthqb97"
+github_repo     = "Anhloom"
+site_url        = "http://REPLACE_WITH_ALB_DNS"
+
+# Set to 1 after first image push via GitHub Actions
+service_desired_count = 0
+
+# Set false if account already has GitHub OIDC provider
+create_github_oidc_provider = true
+
+sanity_project_id = ""
+sanity_dataset    = "production"
+
+# Secrets — pass via CLI or TF_VAR_* env vars, never commit real values:
+# internal_api_key  = "..."
+# openai_api_key    = "..."
+# anthropic_api_key = "..."
+# sanity_read_token = "..."

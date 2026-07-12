@@ -30,7 +30,7 @@ Environment: `docker compose -f docker-compose.dev.yml up --build`
 
 ## Not validated (requires infra)
 
-- [ ] API deployed on AWS with Docker
+- [ ] API deployed on AWS with Docker — see [aws-staging.md](./aws-staging.md)
 
 ## Commands
 
