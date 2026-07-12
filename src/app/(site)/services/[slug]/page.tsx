@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { PageBreadcrumb } from "@/components/PageBreadcrumb";
+import { RequirementAssistant } from "@/components/requirements/RequirementAssistant";
 import { ServiceBenefits } from "@/components/sections/services/ServiceBenefits";
 import { ServiceDetailHero } from "@/components/sections/services/ServiceDetailHero";
 import { ServiceFAQ } from "@/components/sections/services/ServiceFAQ";
@@ -67,6 +68,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
       <ServiceTechnologies service={service} />
       <ServiceWorkflow service={service} />
       <ServiceFAQ service={service} />
+      <RequirementAssistant serviceTitle={service.title} />
     </>
   );
 }
