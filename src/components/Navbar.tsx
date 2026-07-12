@@ -10,7 +10,7 @@ import {
   MegaMenuLink,
 } from "@/components/MegaMenu";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
-import { serviceNavLinks } from "@/lib/nav";
+import { serviceNavLinks, solutionNavLinks } from "@/lib/nav";
 import { cn } from "@/lib/cn";
 
 const desktopNavLinks = [
@@ -35,6 +35,20 @@ function ServicesMegaMenu() {
   );
 }
 
+function SolutionsMegaMenu() {
+  return (
+    <MegaMenu label="Solutions" href="/solutions">
+      <MegaMenuColumn title="Solutions" className="col-span-2">
+        {solutionNavLinks.map((link) => (
+          <MegaMenuLink key={link.href} href={link.href}>
+            {link.label}
+          </MegaMenuLink>
+        ))}
+      </MegaMenuColumn>
+    </MegaMenu>
+  );
+}
+
 function NavbarDesktopLinks({ className }: { className?: string }) {
   return (
     <nav
@@ -42,7 +56,8 @@ function NavbarDesktopLinks({ className }: { className?: string }) {
       aria-label="Main navigation"
     >
       <ServicesMegaMenu />
-      {desktopNavLinks.slice(1).map((link) => (
+      <SolutionsMegaMenu />
+      {desktopNavLinks.slice(2).map((link) => (
         <Link
           key={link.href}
           href={link.href}
