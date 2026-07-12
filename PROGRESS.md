@@ -24,10 +24,10 @@
 | Phase | SDD Tasks | Weeks | Tasks | Done | Progress | Gate |
 |-------|-----------|-------|-------|------|----------|------|
 | **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 143 | `██████████` 100% | M1 ⬜ |
-| **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 62 | `██████░░░░` 63% | M2 ⬜ |
+| **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 74 | `████████░░` 76% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 0 | `░░░░░░░░░░` 0% | M3 ⬜ |
 | **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **205** | **`██████░░░░` 59%** | Launch ⬜ |
+| | **Total** | **14 wks** | **346** | **217** | **`██████░░░░` 63%** | Launch ⬜ |
 
 ---
 
@@ -57,7 +57,7 @@
 
 ---
 
-### Phase 2 — Content Pages `62/98` → Gate M2
+### Phase 2 — Content Pages `74/98` → Gate M2
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
@@ -68,6 +68,7 @@
 | 2.5 Portfolio | Portfolio | §4.5 | 10 | 10 |
 | 2.6 Case Studies | Case Studies | §4.5 | 8 | 8 |
 | 2.7 Blog | Blog | §4.6 | 12 | 12 |
+| 2.8 Additional Pages | Technologies, Careers | §4.7–4.8 | 12 | 12 |
 | 2.4 Solutions CMS | Solutions | §7.2 | 7 | 0 |
 | 2.5 Portfolio | Portfolio | §4.5 | 10 | 0 |
 | 2.6 Case Studies | Case Studies | §4.5 | 8 | 0 |

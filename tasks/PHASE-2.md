@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `██████░░░░` **63%** (62 / 98)
+**Progress:** `████████░░` **76%** (74 / 98)
 
 ---
 
@@ -100,20 +100,20 @@
 - [x] **P2-061** Article — share buttons + related articles
 - [x] **P2-062** Seed 3 blog articles in CMS
 
-### 2.8 Additional Pages `0/12`
+### 2.8 Additional Pages `12/12`
 
-- [ ] **P2-063** Technologies page route `/technologies`
-- [ ] **P2-064** Technologies — categorized logo grid (8 categories)
-- [ ] **P2-065** CMS schema — `technology`
-- [ ] **P2-066** Pricing page route `/pricing`
-- [ ] **P2-067** Pricing — 3 tier cards with feature lists
-- [ ] **P2-068** Pricing — highlighted "popular" tier styling
-- [ ] **P2-069** Careers page route `/careers`
-- [ ] **P2-070** Careers — culture photo grid section
-- [ ] **P2-071** Careers — benefits icon list
-- [ ] **P2-072** CMS schema — `career`
-- [ ] **P2-073** Careers — open positions list with filters
-- [ ] **P2-074** Careers — online application form
+- [x] **P2-063** Technologies page route `/technologies`
+- [x] **P2-064** Technologies — categorized logo grid (8 categories)
+- [x] **P2-065** CMS schema — `technology`
+- [x] **P2-066** Pricing page route `/pricing`
+- [x] **P2-067** Pricing — 3 tier cards with feature lists
+- [x] **P2-068** Pricing — highlighted "popular" tier styling
+- [x] **P2-069** Careers page route `/careers`
+- [x] **P2-070** Careers — culture photo grid section
+- [x] **P2-071** Careers — benefits icon list
+- [x] **P2-072** CMS schema — `career`
+- [x] **P2-073** Careers — open positions list with filters
+- [x] **P2-074** Careers — online application form
 
 ### 2.9 Shared Components `0/6`
 
