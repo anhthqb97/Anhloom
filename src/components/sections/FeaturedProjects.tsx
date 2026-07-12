@@ -16,7 +16,9 @@ export function FeaturedProjects() {
         <ProjectFilterTabs
           activeCategory={activeCategory}
           onCategoryChange={() => undefined}
+          className="mb-10"
         />
+        <div className="grid gap-6 laptop:grid-cols-3" />
       </Container>
     </Section>
   );
