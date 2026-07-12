@@ -205,6 +205,32 @@ export const serviceDetails: ServiceDetail[] = [
     faq: defaultFaq,
   },
   {
+    slug: "devops",
+    title: "DevOps",
+    tagline: "CI/CD pipelines, release automation, and platform engineering for fast teams.",
+    overviewHeading: "Ship faster with reliable delivery pipelines",
+    overviewBody:
+      "We build and optimize CI/CD workflows, deployment strategies, and developer platforms so your team releases with confidence and minimal toil.",
+    benefits: defaultBenefits,
+    features: [
+      {
+        title: "Pipeline automation",
+        description:
+          "GitHub Actions, GitLab CI, and Jenkins pipelines tuned for your stack.",
+        imageSide: "left",
+      },
+      {
+        title: "Release management",
+        description:
+          "Blue-green, canary, and feature-flag strategies for safe production rollouts.",
+        imageSide: "right",
+      },
+    ],
+    technologies: ["GitHub Actions", "ArgoCD", "Docker", "Helm", "Prometheus"],
+    workflow: defaultWorkflow,
+    faq: defaultFaq,
+  },
+  {
     slug: "dedicated-team",
     title: "Dedicated Team",
     tagline: "Embedded engineers who ship features alongside your product squad.",
