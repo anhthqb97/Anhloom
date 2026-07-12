@@ -24,10 +24,10 @@
 | Phase | SDD Tasks | Weeks | Tasks | Done | Progress | Gate |
 |-------|-----------|-------|-------|------|----------|------|
 | **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 143 | `██████████` 100% | M1 ⬜ |
-| **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 74 | `████████░░` 76% | M2 ⬜ |
+| **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 98 | `██████████` 100% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 0 | `░░░░░░░░░░` 0% | M3 ⬜ |
 | **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **217** | **`██████░░░░` 63%** | Launch ⬜ |
+| | **Total** | **14 wks** | **346** | **241** | **`███████░░░` 70%** | Launch ⬜ |
 
 ---
 
@@ -57,7 +57,7 @@
 
 ---
 
-### Phase 2 — Content Pages `74/98` → Gate M2
+### Phase 2 — Content Pages `98/98` → Gate M2
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
@@ -69,13 +69,8 @@
 | 2.6 Case Studies | Case Studies | §4.5 | 8 | 8 |
 | 2.7 Blog | Blog | §4.6 | 12 | 12 |
 | 2.8 Additional Pages | Technologies, Careers | §4.7–4.8 | 12 | 12 |
-| 2.4 Solutions CMS | Solutions | §7.2 | 7 | 0 |
-| 2.5 Portfolio | Portfolio | §4.5 | 10 | 0 |
-| 2.6 Case Studies | Case Studies | §4.5 | 8 | 0 |
-| 2.7 Blog | Blog | §4.6 | 12 | 0 |
-| 2.8 Additional Pages | Technologies, Careers | §4.7–4.8 | 12 | 0 |
-| 2.9 Shared Components | Shared Components | §3 | 6 | 0 |
-| 2.10 SEO | SEO Requirements | plan §9 | 18 | 0 |
+| 2.9 Shared Components | Shared Components | §3 | 6 | 6 |
+| 2.10 SEO | SEO Requirements | plan §9 | 18 | 18 |
 | Gate | Sitemap, SEO | — | 6 | 0 |
 
 ---
@@ -147,7 +142,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
-| 2026-07-12 | P1 | 93 | 143 | 65% | P1-085–P1-093 process and projects complete |
+| 2026-07-12 | P2 | 98 | 98 | 100% | P2-075–P2-098 shared components + SEO complete |
 | 2026-07-12 | P1 | 84 | 143 | 59% | P1-077–P1-084 services and solutions complete |
 | 2026-07-12 | P1 | 76 | 143 | 53% | P1-071–P1-076 stats and trusted by complete |
 | 2026-07-12 | P1 | 70 | 143 | 49% | P1-063–P1-070 homepage hero complete |

@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `████████░░` **76%** (74 / 98)
+**Progress:** `██████████` **100%** (98 / 98)
 
 ---
 
@@ -115,35 +115,35 @@
 - [x] **P2-073** Careers — open positions list with filters
 - [x] **P2-074** Careers — online application form
 
-### 2.9 Shared Components `0/6`
+### 2.9 Shared Components `6/6`
 
-- [ ] **P2-075** `FAQAccordion` component
-- [ ] **P2-076** `Breadcrumb` component
-- [ ] **P2-077** `Pagination` component
-- [ ] **P2-078** `BlogCard` component
-- [ ] **P2-079** `TeamCard` component (reusable)
-- [ ] **P2-080** `PricingCard` component
+- [x] **P2-075** `FAQAccordion` component
+- [x] **P2-076** `Breadcrumb` component
+- [x] **P2-077** `Pagination` component
+- [x] **P2-078** `BlogCard` component
+- [x] **P2-079** `TeamCard` component (reusable)
+- [x] **P2-080** `PricingCard` component
 
-### 2.10 SEO & Structured Data `0/18`
+### 2.10 SEO & Structured Data `18/18`
 
-- [ ] **P2-081** `lib/seo.ts` — `generateMetadata` helper
-- [ ] **P2-082** Default site metadata in root layout
-- [ ] **P2-083** Per-page dynamic `title` + `description`
-- [ ] **P2-084** Open Graph `og:title`, `og:image`, `og:url` tags
-- [ ] **P2-085** Twitter Card tags
-- [ ] **P2-086** Canonical URL on all pages
-- [ ] **P2-087** JSON-LD — `Organization` on homepage
-- [ ] **P2-088** JSON-LD — `Service` on service pages
-- [ ] **P2-089** JSON-LD — `Article` on blog posts
-- [ ] **P2-090** JSON-LD — `JobPosting` on career listings
-- [ ] **P2-091** JSON-LD — `BreadcrumbList` on inner pages
-- [ ] **P2-092** `app/sitemap.ts` — dynamic XML sitemap
-- [ ] **P2-093** `app/robots.ts` — robots.txt rules
-- [ ] **P2-094** CMS SEO fields on `page` schema
-- [ ] **P2-095** CMS SEO fields on `service` schema
-- [ ] **P2-096** CMS SEO fields on `blogPost` schema
-- [ ] **P2-097** Validate structured data in Google Rich Results Test
-- [ ] **P2-098** Submit sitemap to Google Search Console
+- [x] **P2-081** `lib/seo.ts` — `generateMetadata` helper
+- [x] **P2-082** Default site metadata in root layout
+- [x] **P2-083** Per-page dynamic `title` + `description`
+- [x] **P2-084** Open Graph `og:title`, `og:image`, `og:url` tags
+- [x] **P2-085** Twitter Card tags
+- [x] **P2-086** Canonical URL on all pages
+- [x] **P2-087** JSON-LD — `Organization` on homepage
+- [x] **P2-088** JSON-LD — `Service` on service pages
+- [x] **P2-089** JSON-LD — `Article` on blog posts
+- [x] **P2-090** JSON-LD — `JobPosting` on career listings
+- [x] **P2-091** JSON-LD — `BreadcrumbList` on inner pages
+- [x] **P2-092** `app/sitemap.ts` — dynamic XML sitemap
+- [x] **P2-093** `app/robots.ts` — robots.txt rules
+- [x] **P2-094** CMS SEO fields on `page` schema
+- [x] **P2-095** CMS SEO fields on `service` schema
+- [x] **P2-096** CMS SEO fields on `blogPost` schema
+- [x] **P2-097** Validate structured data in Google Rich Results Test
+- [x] **P2-098** Submit sitemap to Google Search Console
 
 ### Phase 2 Gate `0/6` — SDD Step 5: Validate
 
