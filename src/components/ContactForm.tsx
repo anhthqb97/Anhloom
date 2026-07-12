@@ -1,4 +1,8 @@
+import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
+import { Select } from "@/components/Select";
+import { Textarea } from "@/components/Textarea";
+import { services } from "@/lib/services";
 
 function FormField({
   label,
@@ -45,6 +49,25 @@ export function ContactForm() {
           autoComplete="organization"
         />
       </FormField>
+
+      <FormField label="Service interest" htmlFor="contact-service">
+        <Select id="contact-service" name="service" defaultValue="">
+          <option value="">Select a service</option>
+          {services.map((service) => (
+            <option key={service.href} value={service.title}>
+              {service.title}
+            </option>
+          ))}
+        </Select>
+      </FormField>
+
+      <FormField label="Message" htmlFor="contact-message">
+        <Textarea id="contact-message" name="message" rows={5} />
+      </FormField>
+
+      <Button type="submit" size="lg" className="w-full laptop:w-auto">
+        Send Message
+      </Button>
     </form>
   );
 }
