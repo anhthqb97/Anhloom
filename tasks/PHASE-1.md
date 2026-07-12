@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `████░░░░░░` **40%** (57 / 143)
+**Progress:** `████░░░░░░` **43%** (62 / 143)
 
 ---
 
@@ -86,13 +86,13 @@
 - [x] **P1-056** Mobile `Drawer` overlay + slide-in panel
 - [x] **P1-057** Mobile drawer nav links + CTA buttons
 
-### 1.5 Layout — Footer `0/5`
+### 1.5 Layout — Footer `5/5`
 
-- [ ] **P1-058** Footer 4-column link groups (Company, Services, Resources, Legal)
-- [ ] **P1-059** Footer newsletter email input + submit
-- [ ] **P1-060** Footer social icon links
-- [ ] **P1-061** Footer copyright + bottom bar
-- [ ] **P1-062** Root `layout.tsx` — wrap pages with Navbar + Footer
+- [x] **P1-058** Footer 4-column link groups (Company, Services, Resources, Legal)
+- [x] **P1-059** Footer newsletter email input + submit
+- [x] **P1-060** Footer social icon links
+- [x] **P1-061** Footer copyright + bottom bar
+- [x] **P1-062** Root `layout.tsx` — wrap pages with Navbar + Footer
 
 ### 1.6 Homepage — Hero `0/8`
 
