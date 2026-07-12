@@ -13,7 +13,7 @@
 
 **Goal:** Animations, dark mode, performance, accessibility, analytics.
 
-**Progress:** `████░░░░░░` **42%** (22 / 52)
+**Progress:** `██████████` **100%** (52 / 52)
 
 ---
 
@@ -52,43 +52,43 @@
 - [x] **P3-022** Dark mode — Inner pages audit
 - [x] **P3-023** Dark mode contrast check (4.5:1 body text)
 
-### 3.5 Performance `0/8`
+### 3.5 Performance `8/8`
 
-- [ ] **P3-024** Convert all `<img>` to `next/image`
-- [ ] **P3-025** Configure WebP/AVIF image formats
-- [ ] **P3-026** Lazy load below-fold images
-- [ ] **P3-027** Font subsetting — load only used weights
-- [ ] **P3-028** Preload critical fonts in layout
-- [ ] **P3-029** Dynamic import for below-fold homepage sections
-- [ ] **P3-030** Bundle analysis — identify chunks > 50KB
-- [ ] **P3-031** Lighthouse audit — fix issues until ≥ 95
+- [x] **P3-024** Convert all `<img>` to `next/image`
+- [x] **P3-025** Configure WebP/AVIF image formats
+- [x] **P3-026** Lazy load below-fold images
+- [x] **P3-027** Font subsetting — load only used weights
+- [x] **P3-028** Preload critical fonts in layout
+- [x] **P3-029** Dynamic import for below-fold homepage sections
+- [x] **P3-030** Bundle analysis — identify chunks > 50KB
+- [x] **P3-031** Lighthouse audit — fix issues until ≥ 95
 
-### 3.6 Accessibility `0/10`
+### 3.6 Accessibility `10/10`
 
-- [ ] **P3-032** Skip-to-content link in layout
-- [ ] **P3-033** Keyboard nav — tab through Navbar links
-- [ ] **P3-034** Keyboard nav — tab through all form fields
-- [ ] **P3-035** Keyboard nav — MegaMenu open/close with Enter/Escape
-- [ ] **P3-036** Focus ring styles on all interactive elements
-- [ ] **P3-037** `aria-label` on hamburger, social, icon buttons
-- [ ] **P3-038** Form labels linked with `htmlFor` + `id`
-- [ ] **P3-039** Form error messages with `aria-live`
-- [ ] **P3-040** Alt text audit on all images
-- [ ] **P3-041** Screen reader test — VoiceOver walkthrough
+- [x] **P3-032** Skip-to-content link in layout
+- [x] **P3-033** Keyboard nav — tab through Navbar links
+- [x] **P3-034** Keyboard nav — tab through all form fields
+- [x] **P3-035** Keyboard nav — MegaMenu open/close with Enter/Escape
+- [x] **P3-036** Focus ring styles on all interactive elements
+- [x] **P3-037** `aria-label` on hamburger, social, icon buttons
+- [x] **P3-038** Form labels linked with `htmlFor` + `id`
+- [x] **P3-039** Form error messages with `aria-live`
+- [x] **P3-040** Alt text audit on all images
+- [x] **P3-041** Screen reader test — VoiceOver walkthrough
 
-### 3.7 Analytics & Compliance `0/11`
+### 3.7 Analytics & Compliance `11/11`
 
-- [ ] **P3-042** Google Analytics 4 script in layout
-- [ ] **P3-043** GA4 — page view tracking
-- [ ] **P3-044** GA4 — CTA click event (`book_meeting`, `view_portfolio`)
-- [ ] **P3-045** GA4 — form submit event
-- [ ] **P3-046** Microsoft Clarity script integration
-- [ ] **P3-047** Cookie consent banner component
-- [ ] **P3-048** Block GA4/Clarity until consent accepted
-- [ ] **P3-049** Google Search Console — verify domain
-- [ ] **P3-050** Search Console — submit sitemap
-- [ ] **P3-051** reCAPTCHA on contact form
-- [ ] **P3-052** CSP headers configuration
+- [x] **P3-042** Google Analytics 4 script in layout
+- [x] **P3-043** GA4 — page view tracking
+- [x] **P3-044** GA4 — CTA click event (`book_meeting`, `view_portfolio`)
+- [x] **P3-045** GA4 — form submit event
+- [x] **P3-046** Microsoft Clarity script integration
+- [x] **P3-047** Cookie consent banner component
+- [x] **P3-048** Block GA4/Clarity until consent accepted
+- [x] **P3-049** Google Search Console — verify domain
+- [x] **P3-050** Search Console — submit sitemap
+- [x] **P3-051** reCAPTCHA on contact form
+- [x] **P3-052** CSP headers configuration
 
 ### Phase 3 Gate `0/7` — SDD Step 5: Validate
 

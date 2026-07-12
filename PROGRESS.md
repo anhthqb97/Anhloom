@@ -25,9 +25,9 @@
 |-------|-----------|-------|-------|------|----------|------|
 | **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 143 | `██████████` 100% | M1 ⬜ |
 | **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 98 | `██████████` 100% | M2 ⬜ |
-| **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 22 | `████░░░░░░` 42% | M3 ⬜ |
+| **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 52 | `██████████` 100% | M3 ⬜ |
 | **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **263** | **`███████░░░` 76%** | Launch ⬜ |
+| | **Total** | **14 wks** | **346** | **315** | **`█████████░` 91%** | Launch ⬜ |
 
 ---
 
@@ -75,7 +75,7 @@
 
 ---
 
-### Phase 3 — Polish `22/52` → Gate M3
+### Phase 3 — Polish `52/52` → Gate M3
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
@@ -83,6 +83,9 @@
 | 3.2 Scroll Animations | Animations | §5 | 8 | 8 |
 | 3.3 Hero & Carousel | Animations | §5 | 4 | 4 |
 | 3.4 Dark Mode | Dark Mode | §2.1 | 8 | 8 |
+| 3.5 Performance | Success Metrics | §13 | 8 | 8 |
+| 3.6 Accessibility | Accessibility | §10 | 10 | 10 |
+| 3.7 Analytics | Analytics | spec | 11 | 11 |
 | 3.5 Performance | Success Metrics | §13 | 8 | 0 |
 | 3.6 Accessibility | Accessibility | §10 | 10 | 0 |
 | 3.7 Analytics | Analytics | — | 11 | 0 |
@@ -142,7 +145,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
-| 2026-07-12 | P3 | 22 | 52 | 42% | P3-001–P3-023 animations and dark mode complete |
+| 2026-07-12 | P3 | 52 | 52 | 100% | P3-024–P3-052 performance a11y analytics complete |
 | 2026-07-12 | P1 | 84 | 143 | 59% | P1-077–P1-084 services and solutions complete |
 | 2026-07-12 | P1 | 76 | 143 | 53% | P1-071–P1-076 stats and trusted by complete |
 | 2026-07-12 | P1 | 70 | 143 | 49% | P1-063–P1-070 homepage hero complete |
