@@ -26,8 +26,9 @@
 | **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 143 | `██████████` 100% | M1 ⬜ |
 | **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 98 | `██████████` 100% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 52 | `██████████` 100% | M3 ⬜ |
-| **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 53 | `██████████` 100% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **346** | **`██████████` 100%** | Launch ⬜ |
+| **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 53 | `██████████` 100% | M4 🔄 |
+| **5** | [PHASE-5.md](./tasks/PHASE-5.md) | W15–W18 | 41 | 18 | `████░░░░░░` 44% | M5 ⬜ |
+| | **Total** | **18 wks** | **387** | **364** | **`█████████░` 94%** | Launch ⬜ |
 
 ---
 
@@ -105,6 +106,21 @@
 
 ---
 
+### Phase 5 — AWS Infrastructure `18/41` → Gate M5
+
+| Group | Spec | Plan | Tasks | Done |
+|-------|------|------|-------|------|
+| 5.1 Terraform Foundation | Infrastructure | §7 | 6 | 5 |
+| 5.2 Core AWS Modules | AWS, Docker, TF | §7.3 | 8 | 8 |
+| 5.3 Staging Provisioning | Deliverables | §7 | 6 | 3 |
+| 5.4 Staging CI/CD | CI/CD Pipeline | §7 | 5 | 2 |
+| 5.5 DNS & HTTPS | Infrastructure | §7 | 5 | 0 |
+| 5.6 Production Environment | Production Deployment | §7 | 6 | 0 |
+| 5.7 Observability & Security | Security | §7 | 5 | 0 |
+| Gate | Infrastructure | — | 8 | 0 |
+
+---
+
 ## Milestone Gates (SDD Validate)
 
 | Gate | Phase | Spec validation | Status |
@@ -113,6 +129,7 @@
 | **M2** | 2 | Full sitemap, SEO, CMS content | ⬜ |
 | **M3** | 3 | Lighthouse ≥ 95, WCAG AA, analytics | ⬜ |
 | **M4** | 4 | AI features deployed, secured | 🔄 |
+| **M5** | 5 | AWS staging + production via Terraform | ⬜ |
 | **Launch** | — | All gates passed | ⬜ |
 
 ---
@@ -135,6 +152,10 @@
 | W12 | Implement | Cost Estimator | 10 | 0 |
 | W13 | Implement | Search + FAQ | 14 | 0 |
 | W14 | Validate | Requirement Assistant + Docker stack + **M4 gate** | 12 | 0 |
+| W15 | Implement | TF foundation + AWS modules | 14 | 5 |
+| W16 | Implement | Staging provision + CI/CD deploy | 11 | 2 |
+| W17 | Implement | DNS, HTTPS, observability | 10 | 0 |
+| W18 | Validate | Production + **M5 gate** | 14 | 0 |
 
 ---
 
@@ -142,6 +163,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
+| 2026-07-12 | P5 | 18 | 41 | 44% | P5-001–P5-022 TF modules, staging env, CI/CD workflows scaffolded |
 | 2026-07-12 | P4 Gate | 6 | 8 | 75% | M4 validation: Docker stack, APIs, rate limit, sanitization pass |
 | 2026-07-12 | P4 | 53 | 53 | 100% | P4-026–P4-053 estimator, search, recommendations, FAQ, requirements complete |
 | 2026-07-12 | P4 | 25 | 53 | 47% | P4-001–P4-025 backend stack and AI chatbot complete |
@@ -180,7 +202,7 @@ Follow AGENTS.md. Complete task P1-001. Validate AC. Update PROGRESS.md.
 | 0 | [docs/sdd/constitution.md](./docs/sdd/constitution.md) |
 | 1 | [docs/sdd/spec.md](./docs/sdd/spec.md) |
 | 2 | [docs/sdd/plan.md](./docs/sdd/plan.md) |
-| 3 | [tasks/PHASE-1.md](./tasks/PHASE-1.md) … [PHASE-4.md](./tasks/PHASE-4.md) |
+| 3 | [tasks/PHASE-1.md](./tasks/PHASE-1.md) … [PHASE-5.md](./tasks/PHASE-5.md) |
 | — | [AGENTS.md](./AGENTS.md) |
 | 6 | [PROGRESS.md](./PROGRESS.md) (this file) |
 

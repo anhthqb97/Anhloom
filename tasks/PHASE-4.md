@@ -105,7 +105,7 @@
 - [x] FAQ assistant answers service-specific questions
 - [x] All endpoints rate-limited + input-sanitized
 - [x] Full stack runs via `docker compose -f docker-compose.dev.yml up --build`
-- [ ] API deployed on AWS with Docker
+- [ ] API deployed on AWS with Docker — tracked in [PHASE-5.md](./PHASE-5.md) (M5 gate)
 
 ---
 

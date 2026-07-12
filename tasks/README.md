@@ -63,6 +63,7 @@ See [docs/COMMITS.md](../docs/COMMITS.md) for full guide.
 | [PHASE-2.md](./PHASE-2.md) | Content Pages | Services, Portfolio, Blog, SEO | W5–W8 |
 | [PHASE-3.md](./PHASE-3.md) | Polish | Animations, A11y, Performance | W9–W10 |
 | [PHASE-4.md](./PHASE-4.md) | AI Features | Chatbot, Estimator, **Docker BE** | W11–W14 |
+| [PHASE-5.md](./PHASE-5.md) | AWS Infrastructure | Terraform, ECS, staging + prod | W15–W18 |
 
 ---
 
@@ -80,12 +81,15 @@ See [docs/COMMITS.md](../docs/COMMITS.md) for full guide.
 | 1.14 CMS | CMS Requirements | §7.2 CMS Models |
 | 1.16 Docker FE | Infrastructure | §7.3 Docker Architecture |
 | 4.1 Backend & Docker | Infrastructure | §7.3 Docker Architecture |
+| 4.x AI | AI Features | §8 AI Features UX |
+| 5.1–5.2 TF Modules | Infrastructure | §7 Architecture, §7.3 |
+| 5.3–5.6 Deploy | Production Deployment | §7 |
+| 5.7 Observability | Security | §7 |
 | 2.1–2.4 Services/Solutions | Services, Solutions | §4.3–4.4 |
 | 2.5–2.6 Portfolio | Portfolio, Case Studies | §4.5 |
 | 2.7 Blog | Blog | §4.6 Blog |
 | 2.10 SEO | SEO Requirements | §9 (plan) |
 | 3.x Polish | Animations, Accessibility | §5, §10 |
-| 4.x AI | AI Features | §8 AI Features UX |
 
 ---
 

@@ -69,6 +69,7 @@ Every task references spec and plan sections:
 | P2-* | Services, Solutions, Portfolio, Blog | §4 Page Designs, §7.2 CMS Models | W5–W8 |
 | P3-* | Animations, SEO, Accessibility | §5 Animations, §9–10 SEO/A11y | W9–W10 |
 | P4-* | AI Features | §8 AI Features UX, §7 Architecture | W11–W14 |
+| P5-* | Infrastructure, AWS | §7 Architecture, §7.3 Docker | W15–W18 |
 
 ---
 
@@ -98,7 +99,8 @@ tasks/
 ├── PHASE-1.md         ← Implementation tasks (step 3)
 ├── PHASE-2.md
 ├── PHASE-3.md
-└── PHASE-4.md
+├── PHASE-4.md
+└── PHASE-5.md
 
 AGENTS.md              ← AI agent playbook
 PROGRESS.md            ← Progress dashboard (step 6)

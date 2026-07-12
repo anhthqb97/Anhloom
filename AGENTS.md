@@ -62,6 +62,7 @@ Do **not** skip to code without reading the spec chain.
 | 2 | `tasks/PHASE-2.md` | M2: full sitemap + SEO |
 | 3 | `tasks/PHASE-3.md` | M3: Lighthouse ≥ 95 + WCAG |
 | 4 | `tasks/PHASE-4.md` | M4: AI features on AWS |
+| 5 | `tasks/PHASE-5.md` | M5: Terraform staging + production on AWS |
 
 **Stop and report** if a phase gate fails — do not proceed to next phase.
 
@@ -103,6 +104,7 @@ Do **not** skip to code without reading the spec chain.
 | CMS | CMS Requirements | §7.2 |
 | SEO | SEO Requirements | §9 |
 | AI features | AI Features | §8 |
+| AWS / Terraform | Infrastructure | §7 |
 | Animations | Animations | §5 |
 
 ---
@@ -120,6 +122,13 @@ docker compose -f docker-compose.dev.yml up frontend --build
 
 # Docker — full stack (Phase 4)
 docker compose -f docker-compose.dev.yml up --build
+
+# Terraform — staging (Phase 5)
+cd infra/environments/staging && terraform init && terraform validate
+cd infra/environments/staging && terraform plan
+
+# AWS staging smoke test (Phase 5)
+curl https://<staging-url>/api/search -X POST -H "Content-Type: application/json" -d '{"query":"rag"}'
 
 # Health check
 curl http://localhost:3000        # frontend
