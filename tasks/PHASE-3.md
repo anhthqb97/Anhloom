@@ -13,44 +13,44 @@
 
 **Goal:** Animations, dark mode, performance, accessibility, analytics.
 
-**Progress:** `░░░░░░░░░░` **0%** (0 / 52)
+**Progress:** `████░░░░░░` **42%** (22 / 52)
 
 ---
 
-### 3.1 Framer Motion Setup `0/3`
+### 3.1 Framer Motion Setup `3/3`
 
-- [ ] **P3-001** Install `framer-motion` package
-- [ ] **P3-002** Create `FadeIn` wrapper component
-- [ ] **P3-003** Create `SlideUp` wrapper component
+- [x] **P3-001** Install `framer-motion` package
+- [x] **P3-002** Create `FadeIn` wrapper component
+- [x] **P3-003** Create `SlideUp` wrapper component
 
-### 3.2 Scroll Animations `0/8`
+### 3.2 Scroll Animations `8/8`
 
-- [ ] **P3-004** Scroll reveal on homepage Hero
-- [ ] **P3-005** Scroll reveal on Services section
-- [ ] **P3-006** Scroll reveal on Projects section
-- [ ] **P3-007** Stagger animation on service card grid
-- [ ] **P3-008** Stagger animation on project card grid
-- [ ] **P3-009** Animated number counters on stats bar
-- [ ] **P3-010** Hover lift effect on all card components
-- [ ] **P3-011** `prefers-reduced-motion` — disable animations
+- [x] **P3-004** Scroll reveal on homepage Hero
+- [x] **P3-005** Scroll reveal on Services section
+- [x] **P3-006** Scroll reveal on Projects section
+- [x] **P3-007** Stagger animation on service card grid
+- [x] **P3-008** Stagger animation on project card grid
+- [x] **P3-009** Animated number counters on stats bar
+- [x] **P3-010** Hover lift effect on all card components
+- [x] **P3-011** `prefers-reduced-motion` — disable animations
 
-### 3.3 Hero & Carousel Animations `0/4`
+### 3.3 Hero & Carousel Animations `4/4`
 
-- [ ] **P3-012** Hero gradient background animation
-- [ ] **P3-013** Hero floating card elements
-- [ ] **P3-014** Logo carousel smooth infinite scroll
-- [ ] **P3-015** Testimonials carousel slide transition
+- [x] **P3-012** Hero gradient background animation
+- [x] **P3-013** Hero floating card elements
+- [x] **P3-014** Logo carousel smooth infinite scroll
+- [x] **P3-015** Testimonials carousel slide transition
 
-### 3.4 Dark Mode `0/8`
+### 3.4 Dark Mode `8/8`
 
-- [ ] **P3-016** Dark mode Tailwind `dark:` variants for colors
-- [ ] **P3-017** `ThemeProvider` context + hook
-- [ ] **P3-018** Theme toggle button in Navbar
-- [ ] **P3-019** Persist theme in `localStorage`
-- [ ] **P3-020** Dark mode — Navbar + Footer audit
-- [ ] **P3-021** Dark mode — Homepage sections audit
-- [ ] **P3-022** Dark mode — Inner pages audit
-- [ ] **P3-023** Dark mode contrast check (4.5:1 body text)
+- [x] **P3-016** Dark mode Tailwind `dark:` variants for colors
+- [x] **P3-017** `ThemeProvider` context + hook
+- [x] **P3-018** Theme toggle button in Navbar
+- [x] **P3-019** Persist theme in `localStorage`
+- [x] **P3-020** Dark mode — Navbar + Footer audit
+- [x] **P3-021** Dark mode — Homepage sections audit
+- [x] **P3-022** Dark mode — Inner pages audit
+- [x] **P3-023** Dark mode contrast check (4.5:1 body text)
 
 ### 3.5 Performance `0/8`
 
