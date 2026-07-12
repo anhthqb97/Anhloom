@@ -15,3 +15,14 @@ export function Card({ className, ...props }: CardProps) {
     />
   );
 }
+
+type CardHeaderProps = ComponentProps<"div">;
+
+export function CardHeader({ className, ...props }: CardHeaderProps) {
+  return (
+    <div
+      className={cn("flex flex-col gap-1.5 p-6 pb-0", className)}
+      {...props}
+    />
+  );
+}
