@@ -1,0 +1,9 @@
+/* Shadow tokens — see docs/sdd/plan.md §2.5 */
+
+@theme {
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 8px 24px rgb(0 0 0 / 0.12);
+  --shadow-xl: 0 16px 48px rgb(0 0 0 / 0.16);
+  --shadow-glow: 0 0 40px rgb(99 102 241 / 0.2);
+}
