@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `████░░░░░░` **43%** (62 / 143)
+**Progress:** `█████░░░░░` **49%** (70 / 143)
 
 ---
 
@@ -94,16 +94,16 @@
 - [x] **P1-061** Footer copyright + bottom bar
 - [x] **P1-062** Root `layout.tsx` — wrap pages with Navbar + Footer
 
-### 1.6 Homepage — Hero `0/8`
+### 1.6 Homepage — Hero `8/8`
 
-- [ ] **P1-063** Hero 2-column layout (text left, visual right)
-- [ ] **P1-064** Hero headline — *We Help Products Bloom — From MVP to Scale*
-- [ ] **P1-065** Hero subtext — Anhloom growth + services copy
-- [ ] **P1-066** Hero primary CTA — "Book a Meeting"
-- [ ] **P1-067** Hero secondary CTA — "View Portfolio"
-- [ ] **P1-068** Hero animated gradient background
-- [ ] **P1-069** Hero dashboard mockup image/placeholder
-- [ ] **P1-070** Hero responsive layout (stack on mobile)
+- [x] **P1-063** Hero 2-column layout (text left, visual right)
+- [x] **P1-064** Hero headline — *We Help Products Bloom — From MVP to Scale*
+- [x] **P1-065** Hero subtext — Anhloom growth + services copy
+- [x] **P1-066** Hero primary CTA — "Book a Meeting"
+- [x] **P1-067** Hero secondary CTA — "View Portfolio"
+- [x] **P1-068** Hero animated gradient background
+- [x] **P1-069** Hero dashboard mockup image/placeholder
+- [x] **P1-070** Hero responsive layout (stack on mobile)
 
 ### 1.7 Homepage — Stats & Trusted By `0/6`
 
