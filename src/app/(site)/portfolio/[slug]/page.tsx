@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 
 import { ProjectDetailHero } from "@/components/sections/portfolio/ProjectDetailHero";
+import {
+  ProjectOverview,
+  ProjectSolution,
+} from "@/components/sections/portfolio/ProjectOverview";
 import { getAllProjectSlugs, getProjectBySlug } from "@/lib/project-details";
 
 type ProjectDetailPageProps = {
@@ -35,5 +39,11 @@ export default async function ProjectDetailPage({
     notFound();
   }
 
-  return <ProjectDetailHero project={project} />;
+  return (
+    <>
+      <ProjectDetailHero project={project} />
+      <ProjectOverview project={project} />
+      <ProjectSolution project={project} />
+    </>
+  );
 }
