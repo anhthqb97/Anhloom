@@ -9,6 +9,10 @@ import {
   ProjectOverview,
   ProjectSolution,
 } from "@/components/sections/portfolio/ProjectOverview";
+import {
+  ProjectGallery,
+  ProjectResults,
+} from "@/components/sections/portfolio/ProjectResults";
 import { getAllProjectSlugs, getProjectBySlug } from "@/lib/project-details";
 
 type ProjectDetailPageProps = {
@@ -50,6 +54,8 @@ export default async function ProjectDetailPage({
       <ProjectSolution project={project} />
       <ProjectArchitecture project={project} />
       <ProjectTechnologies project={project} />
+      <ProjectResults project={project} />
+      <ProjectGallery project={project} />
     </>
   );
 }
