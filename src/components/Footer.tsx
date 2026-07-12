@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { Container } from "@/components/Container";
 import { FooterNewsletter } from "@/components/FooterNewsletter";
+import { FooterSocial } from "@/components/FooterSocial";
 import { footerLinkGroups } from "@/lib/nav";
 
 type FooterLinkGroupProps = {
@@ -45,6 +46,7 @@ export function Footer() {
           <FooterLinkGroup title="Legal" links={footerLinkGroups.legal} />
           <FooterNewsletter />
         </div>
+        <FooterSocial className="mt-10" />
       </Container>
     </footer>
   );

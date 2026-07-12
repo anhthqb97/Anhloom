@@ -44,3 +44,18 @@ export const footerLinkGroups = {
   ],
   legal: [{ label: "Privacy Policy", href: "/privacy" }],
 } as const;
+
+export const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/company/anhloom",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/anhthqb97",
+  },
+  {
+    label: "X",
+    href: "https://x.com/anhloom",
+  },
+] as const;
