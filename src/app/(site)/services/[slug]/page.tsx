@@ -7,7 +7,7 @@ import { ServiceFeatures } from "@/components/sections/services/ServiceFeatures"
 import { ServiceOverview } from "@/components/sections/services/ServiceOverview";
 import { ServiceTechnologies } from "@/components/sections/services/ServiceTechnologies";
 import { ServiceWorkflow } from "@/components/sections/services/ServiceWorkflow";
-import { getAllServiceSlugs, getServiceBySlug } from "@/lib/service-details";
+import { getAllServiceSlugs, getServiceBySlug } from "@/lib/resolve-service";
 
 type ServiceDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -19,7 +19,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: ServiceDetailPageProps) {
   const { slug } = await params;
-  const service = getServiceBySlug(slug);
+  const service = await getServiceBySlug(slug);
 
   if (!service) {
     return { title: "Service Not Found — Anhloom" };
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: ServiceDetailPageProps) {
 
 export default async function ServiceDetailPage({ params }: ServiceDetailPageProps) {
   const { slug } = await params;
-  const service = getServiceBySlug(slug);
+  const service = await getServiceBySlug(slug);
 
   if (!service) {
     notFound();

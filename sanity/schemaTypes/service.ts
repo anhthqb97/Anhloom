@@ -19,8 +19,18 @@ export const service = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: "tagline",
+      title: "Tagline",
+      type: "string",
+    }),
+    defineField({
+      name: "overviewHeading",
+      title: "Overview Heading",
+      type: "string",
+    }),
+    defineField({
       name: "overview",
-      title: "Overview",
+      title: "Overview Body",
       type: "text",
       rows: 4,
     }),
@@ -38,6 +48,7 @@ export const service = defineType({
               type: "text",
               title: "Description",
             }),
+            defineField({ name: "icon", type: "string", title: "Icon Label" }),
           ],
         }),
       ],
@@ -45,6 +56,36 @@ export const service = defineType({
     defineField({
       name: "features",
       title: "Features",
+      type: "array",
+      of: [
+        defineArrayMember({
+          type: "object",
+          fields: [
+            defineField({ name: "title", type: "string", title: "Title" }),
+            defineField({
+              name: "description",
+              type: "text",
+              title: "Description",
+            }),
+            defineField({
+              name: "imageSide",
+              type: "string",
+              title: "Image Side",
+              options: { list: ["left", "right"] },
+            }),
+          ],
+        }),
+      ],
+    }),
+    defineField({
+      name: "technologies",
+      title: "Technologies",
+      type: "array",
+      of: [defineArrayMember({ type: "string" })],
+    }),
+    defineField({
+      name: "workflow",
+      title: "Workflow Steps",
       type: "array",
       of: [defineArrayMember({ type: "string" })],
     }),

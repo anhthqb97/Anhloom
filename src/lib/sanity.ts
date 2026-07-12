@@ -67,6 +67,61 @@ export type SiteSettings = {
   address?: string;
 };
 
+import type { ServiceDetail } from "@/lib/service-details";
+
+export type CmsService = {
+  title: string;
+  slug: string;
+  tagline?: string;
+  overviewHeading?: string;
+  overview?: string;
+  benefits?: ServiceDetail["benefits"];
+  features?: ServiceDetail["features"];
+  technologies?: string[];
+  workflow?: string[];
+  faq?: ServiceDetail["faq"];
+};
+
+export function mapCmsServiceToDetail(cms: CmsService): ServiceDetail {
+  return {
+    slug: cms.slug,
+    title: cms.title,
+    tagline: cms.tagline ?? "",
+    overviewHeading: cms.overviewHeading ?? cms.title,
+    overviewBody: cms.overview ?? "",
+    benefits: cms.benefits ?? [],
+    features: cms.features ?? [],
+    technologies: cms.technologies ?? [],
+    workflow: cms.workflow ?? [],
+    faq: cms.faq ?? [],
+  };
+}
+
+export async function getCmsServiceBySlug(
+  slug: string,
+): Promise<CmsService | null> {
+  const client = getSanityClient();
+  if (!client) {
+    return null;
+  }
+
+  return client.fetch<CmsService | null>(
+    `*[_type == "service" && slug.current == $slug][0]{
+      title,
+      "slug": slug.current,
+      tagline,
+      overviewHeading,
+      overview,
+      benefits,
+      features,
+      technologies,
+      workflow,
+      faq
+    }`,
+    { slug },
+  );
+}
+
 export async function getPageBySlug(slug: string): Promise<CmsPage | null> {
   const client = getSanityClient();
   if (!client) {
