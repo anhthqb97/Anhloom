@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `█░░░░░░░░░` **10%** (15 / 143)
+**Progress:** `██░░░░░░░░` **22%** (31 / 143)
 
 ---
 
@@ -32,27 +32,27 @@
 - [x] **P1-011** Configure `next/font` — Geist Mono + Inter fallback
 - [x] **P1-012** Create folder structure (`app`, `components`, `lib`, `hooks`, `types`, `styles`)
 
-### 1.2 Design Tokens `3/19`
+### 1.2 Design Tokens `19/19`
 
 - [x] **P1-013** Add primary Indigo color scale (50–900) to Tailwind
 - [x] **P1-014** Add secondary Cyan tokens
 - [x] **P1-015** Add accent Purple tokens
-- [ ] **P1-016** Add neutral gray scale
-- [ ] **P1-017** Add semantic colors (success, warning, error, info)
-- [ ] **P1-018** Add light mode bg/surface/text CSS variables
-- [ ] **P1-019** Add dark mode bg/surface/text CSS variables
-- [ ] **P1-020** Add display font sizes (xl, lg, md)
-- [ ] **P1-021** Add heading font sizes (xl, lg, md)
-- [ ] **P1-022** Add body font sizes (lg, md, sm) + label
-- [ ] **P1-023** Add spacing scale (4px base unit)
-- [ ] **P1-024** Add border radius tokens (sm → 2xl, full)
-- [ ] **P1-025** Add shadow tokens (sm, md, lg, xl, glow)
-- [ ] **P1-026** Add gradient CSS variables (hero, subtle, glow)
-- [ ] **P1-027** Define 5 breakpoints (mobile → ultra)
-- [ ] **P1-028** Write `globals.css` base styles + CSS vars
-- [ ] **P1-029** Build `Container` component (max-width per breakpoint)
-- [ ] **P1-030** Build `Section` component (padding variants)
-- [ ] **P1-031** Add `cn()` utility (clsx + tailwind-merge)
+- [x] **P1-016** Add neutral gray scale
+- [x] **P1-017** Add semantic colors (success, warning, error, info)
+- [x] **P1-018** Add light mode bg/surface/text CSS variables
+- [x] **P1-019** Add dark mode bg/surface/text CSS variables
+- [x] **P1-020** Add display font sizes (xl, lg, md)
+- [x] **P1-021** Add heading font sizes (xl, lg, md)
+- [x] **P1-022** Add body font sizes (lg, md, sm) + label
+- [x] **P1-023** Add spacing scale (4px base unit)
+- [x] **P1-024** Add border radius tokens (sm → 2xl, full)
+- [x] **P1-025** Add shadow tokens (sm, md, lg, xl, glow)
+- [x] **P1-026** Add gradient CSS variables (hero, subtle, glow)
+- [x] **P1-027** Define 5 breakpoints (mobile → ultra)
+- [x] **P1-028** Write `globals.css` base styles + CSS vars
+- [x] **P1-029** Build `Container` component (max-width per breakpoint)
+- [x] **P1-030** Build `Section` component (padding variants)
+- [x] **P1-031** Add `cn()` utility (clsx + tailwind-merge)
 
 ### 1.3 UI Primitives `0/16`
 
