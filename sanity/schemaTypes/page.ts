@@ -56,6 +56,11 @@ export const page = defineType({
           title: "Meta Description",
           rows: 3,
         }),
+        defineField({
+          name: "ogImage",
+          type: "url",
+          title: "Open Graph Image URL",
+        }),
       ],
     }),
   ],
