@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-
+import { TrackedLink } from "@/components/TrackedLink";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SlideUp } from "@/components/motion/SlideUp";
 import { HeroMockup } from "@/components/sections/HeroMockup";
@@ -22,18 +21,20 @@ export function HeroContent({ headline, subtext }: HeroContentProps) {
           {subtext}
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4 laptop:justify-start">
-          <Link
+          <TrackedLink
             href="/contact?intent=meeting"
+            eventName="book_meeting"
             className="inline-flex h-10 items-center justify-center rounded-sm bg-primary-600 px-4 text-body-md font-medium text-white transition-all hover:brightness-[1.04] hover:shadow-md active:scale-[0.98]"
           >
             Book a Meeting
-          </Link>
-          <Link
+          </TrackedLink>
+          <TrackedLink
             href="/portfolio"
+            eventName="view_portfolio"
             className="inline-flex h-10 items-center justify-center rounded-sm border border-primary-600 bg-transparent px-4 text-body-md font-medium text-primary-600 transition-all hover:brightness-[1.04] hover:shadow-md active:scale-[0.98]"
           >
             View Portfolio
-          </Link>
+          </TrackedLink>
         </div>
       </SlideUp>
       <FadeIn
