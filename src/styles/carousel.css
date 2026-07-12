@@ -12,8 +12,16 @@
 
 .logo-carousel-track {
   animation: logo-scroll 30s linear infinite;
+  will-change: transform;
 }
 
 .logo-carousel-track:hover {
   animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-carousel-track {
+    animation: none;
+    transform: none;
+  }
 }
