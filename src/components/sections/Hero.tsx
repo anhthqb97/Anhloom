@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 
@@ -14,13 +16,19 @@ export function Hero() {
               Anhloom engineers custom software, cloud infrastructure, and
               AI-powered systems for startups and global brands ready to grow.
             </p>
-            <div className="mt-8">
-              <a
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
                 href="/contact?intent=meeting"
                 className="inline-flex h-10 items-center justify-center rounded-sm bg-primary-600 px-4 text-body-md font-medium text-white transition-all hover:brightness-[1.04] hover:shadow-md active:scale-[0.98]"
               >
                 Book a Meeting
-              </a>
+              </Link>
+              <Link
+                href="/portfolio"
+                className="inline-flex h-10 items-center justify-center rounded-sm border border-primary-600 bg-transparent px-4 text-body-md font-medium text-primary-600 transition-all hover:brightness-[1.04] hover:shadow-md active:scale-[0.98]"
+              >
+                View Portfolio
+              </Link>
             </div>
           </div>
           <div className="relative flex items-center justify-center" />
