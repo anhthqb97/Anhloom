@@ -1,5 +1,7 @@
 "use client";
 
+import { useMemo, useState } from "react";
+
 import { Container } from "@/components/Container";
 import { ProjectCard } from "@/components/ProjectCard";
 import {
@@ -10,18 +12,27 @@ import { Section } from "@/components/Section";
 import { projects } from "@/lib/projects";
 
 export function FeaturedProjects() {
-  const activeCategory: ProjectFilterCategory = "All";
+  const [activeCategory, setActiveCategory] =
+    useState<ProjectFilterCategory>("All");
+
+  const filteredProjects = useMemo(() => {
+    if (activeCategory === "All") {
+      return projects;
+    }
+
+    return projects.filter((project) => project.category === activeCategory);
+  }, [activeCategory]);
 
   return (
     <Section className="bg-bg-subtle">
       <Container>
         <ProjectFilterTabs
           activeCategory={activeCategory}
-          onCategoryChange={() => undefined}
+          onCategoryChange={setActiveCategory}
           className="mb-10"
         />
         <div className="grid gap-6 laptop:grid-cols-3">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <ProjectCard
               key={project.slug}
               title={project.title}
