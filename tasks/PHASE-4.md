@@ -13,42 +13,42 @@
 
 **Goal:** AI chatbot, cost estimator, search, recommendations in production.
 
-**Progress:** `░░░░░░░░░░` **0%** (0 / 53)
+**Progress:** `████░░░░░░` **47%** (25 / 53)
 
 ---
 
-### 4.1 FastAPI Backend & Docker `0/15`
+### 4.1 FastAPI Backend & Docker `15/15`
 
 > **Spec:** Infrastructure · Docker · **Plan:** §7.3 Docker Architecture
 
-- [ ] **P4-001** Initialize FastAPI project in `backend/`
-- [ ] **P4-002** `backend/Dockerfile` — production multi-stage
-- [ ] **P4-003** `backend/Dockerfile.dev` — dev with hot reload + volume mount
-- [ ] **P4-004** `backend/.dockerignore`
-- [ ] **P4-005** Update `docker-compose.dev.yml` — add backend + postgres + redis
-- [ ] **P4-006** `docker-compose.yml` — production stack (FE + BE + PG + Redis)
-- [ ] **P4-007** `.env.docker.example` — all compose environment variables
-- [ ] **P4-008** Health checks for all services in compose
-- [ ] **P4-009** PostgreSQL connection + base models
-- [ ] **P4-010** Redis connection for caching
-- [ ] **P4-011** OpenAI API client wrapper
-- [ ] **P4-012** Claude API client wrapper (fallback)
-- [ ] **P4-013** Rate limiting middleware (per IP)
-- [ ] **P4-014** API key authentication for frontend
-- [ ] **P4-015** Input sanitization + validation middleware
+- [x] **P4-001** Initialize FastAPI project in `backend/`
+- [x] **P4-002** `backend/Dockerfile` — production multi-stage
+- [x] **P4-003** `backend/Dockerfile.dev` — dev with hot reload + volume mount
+- [x] **P4-004** `backend/.dockerignore`
+- [x] **P4-005** Update `docker-compose.dev.yml` — add backend + postgres + redis
+- [x] **P4-006** `docker-compose.yml` — production stack (FE + BE + PG + Redis)
+- [x] **P4-007** `.env.docker.example` — all compose environment variables
+- [x] **P4-008** Health checks for all services in compose
+- [x] **P4-009** PostgreSQL connection + base models
+- [x] **P4-010** Redis connection for caching
+- [x] **P4-011** OpenAI API client wrapper
+- [x] **P4-012** Claude API client wrapper (fallback)
+- [x] **P4-013** Rate limiting middleware (per IP)
+- [x] **P4-014** API key authentication for frontend
+- [x] **P4-015** Input sanitization + validation middleware
 
-### 4.2 AI Chatbot `0/10`
+### 4.2 AI Chatbot `10/10`
 
-- [ ] **P4-016** Chatbot floating button (bottom-right, purple)
-- [ ] **P4-017** Chat panel slide-up UI
-- [ ] **P4-018** Message bubble components (user + assistant)
-- [ ] **P4-019** Chat input + send button
-- [ ] **P4-020** FastAPI `/chat` endpoint with streaming SSE
-- [ ] **P4-021** System prompt with company services + FAQ context
-- [ ] **P4-022** Frontend SSE consumer — render streaming text
-- [ ] **P4-023** Chat session ID + history in PostgreSQL
-- [ ] **P4-024** Load previous messages on panel reopen
-- [ ] **P4-025** Chatbot responsive layout (full-screen on mobile)
+- [x] **P4-016** Chatbot floating button (bottom-right, purple)
+- [x] **P4-017** Chat panel slide-up UI
+- [x] **P4-018** Message bubble components (user + assistant)
+- [x] **P4-019** Chat input + send button
+- [x] **P4-020** FastAPI `/chat` endpoint with streaming SSE
+- [x] **P4-021** System prompt with company services + FAQ context
+- [x] **P4-022** Frontend SSE consumer — render streaming text
+- [x] **P4-023** Chat session ID + history in PostgreSQL
+- [x] **P4-024** Load previous messages on panel reopen
+- [x] **P4-025** Chatbot responsive layout (full-screen on mobile)
 
 ### 4.3 AI Cost Estimator `0/10`
 

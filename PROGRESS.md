@@ -26,8 +26,8 @@
 | **1** | [PHASE-1.md](./tasks/PHASE-1.md) | W1–W4 | 143 | 143 | `██████████` 100% | M1 ⬜ |
 | **2** | [PHASE-2.md](./tasks/PHASE-2.md) | W5–W8 | 98 | 98 | `██████████` 100% | M2 ⬜ |
 | **3** | [PHASE-3.md](./tasks/PHASE-3.md) | W9–W10 | 52 | 52 | `██████████` 100% | M3 ⬜ |
-| **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 0 | `░░░░░░░░░░` 0% | M4 ⬜ |
-| | **Total** | **14 wks** | **346** | **315** | **`█████████░` 91%** | Launch ⬜ |
+| **4** | [PHASE-4.md](./tasks/PHASE-4.md) | W11–W14 | 53 | 25 | `████░░░░░░` 47% | M4 ⬜ |
+| | **Total** | **14 wks** | **346** | **340** | **`█████████░` 98%** | Launch ⬜ |
 
 ---
 
@@ -90,12 +90,12 @@
 
 ---
 
-### Phase 4 — AI Features `0/53` → Gate M4
+### Phase 4 — AI Features `25/53` → Gate M4
 
 | Group | Spec | Plan | Tasks | Done |
 |-------|------|------|-------|------|
-| 4.1 Backend & Docker | Infrastructure | §7.3 | 15 | 0 |
-| 4.2 AI Chatbot | AI Features | §8 | 10 | 0 |
+| 4.1 Backend & Docker | Infrastructure | §7.3 | 15 | 15 |
+| 4.2 AI Chatbot | AI Features | §8 | 10 | 10 |
 | 4.3 Cost Estimator | AI Features | §8 | 10 | 0 |
 | 4.4 AI Search | AI Features | §8 | 6 | 0 |
 | 4.5 Blog Recommendations | AI Features | §8 | 4 | 0 |
@@ -142,7 +142,7 @@
 
 | Date | Phase | Done | Total | % | Notes |
 |------|-------|------|-------|---|-------|
-| 2026-07-12 | P3 | 52 | 52 | 100% | P3-024–P3-052 performance a11y analytics complete |
+| 2026-07-12 | P4 | 25 | 53 | 47% | P4-001–P4-025 backend stack and AI chatbot complete |
 | 2026-07-12 | P1 | 84 | 143 | 59% | P1-077–P1-084 services and solutions complete |
 | 2026-07-12 | P1 | 76 | 143 | 53% | P1-071–P1-076 stats and trusted by complete |
 | 2026-07-12 | P1 | 70 | 143 | 49% | P1-063–P1-070 homepage hero complete |
