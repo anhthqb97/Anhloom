@@ -7,6 +7,7 @@ import { type ReactNode, useState } from "react";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Drawer } from "@/components/Drawer";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   MegaMenu,
   MegaMenuColumn,
@@ -144,6 +145,7 @@ function NavbarMobileMenu({ onNavigate }: { onNavigate: () => void }) {
         </ul>
       </nav>
       <div className="mt-auto flex flex-col gap-3 border-t border-border pt-6">
+        <ThemeToggle className="w-full laptop:hidden" />
         <Button
           variant="secondary"
           size="md"
@@ -178,7 +180,7 @@ export function Navbar({ logo, children }: NavbarProps) {
       className={cn(
         "sticky top-0 z-50 h-14 transition-colors duration-200 laptop:h-16",
         scrolled
-          ? "border-b border-border bg-surface/80 backdrop-blur-[12px]"
+          ? "border-b border-border bg-surface/90 backdrop-blur-[12px] dark:bg-surface/80"
           : "bg-transparent",
       )}
     >
@@ -195,6 +197,7 @@ export function Navbar({ logo, children }: NavbarProps) {
         </div>
         <div className="flex flex-1 items-center justify-end gap-4">
           <NavbarDesktopLinks />
+          <ThemeToggle className="hidden laptop:inline-flex" />
           {children}
           <button
             type="button"
