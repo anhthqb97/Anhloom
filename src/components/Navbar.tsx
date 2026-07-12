@@ -4,6 +4,7 @@ import Link from "next/link";
 import { type ReactNode, useState } from "react";
 
 import { Container } from "@/components/Container";
+import { Drawer } from "@/components/Drawer";
 import {
   MegaMenu,
   MegaMenuColumn,
@@ -131,6 +132,9 @@ export function Navbar({ logo, children }: NavbarProps) {
           </button>
         </div>
       </Container>
+      <Drawer open={mobileOpen} onClose={() => setMobileOpen(false)}>
+        <div />
+      </Drawer>
     </header>
   );
 }
