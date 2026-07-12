@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 
 import { Container } from "@/components/Container";
+import { StaggerChildren, StaggerItem } from "@/components/motion/Stagger";
+import { SlideUp } from "@/components/motion/SlideUp";
 import { ProjectCard } from "@/components/ProjectCard";
 import {
   ProjectFilterTabs,
@@ -26,7 +28,7 @@ export function FeaturedProjects() {
   return (
     <Section className="bg-bg-subtle">
       <Container>
-        <div className="mx-auto mb-12 max-w-2xl text-center">
+        <SlideUp className="mx-auto mb-12 max-w-2xl text-center">
           <p className="text-label font-semibold uppercase tracking-wide text-primary-600">
             Featured Projects
           </p>
@@ -37,25 +39,26 @@ export function FeaturedProjects() {
             Explore recent work across AI, SaaS, and industry platforms — with
             measurable outcomes for every engagement.
           </p>
-        </div>
+        </SlideUp>
         <ProjectFilterTabs
           activeCategory={activeCategory}
           onCategoryChange={setActiveCategory}
           className="mb-10"
         />
-        <div className="grid gap-6 laptop:grid-cols-3">
+        <StaggerChildren className="grid gap-6 laptop:grid-cols-3">
           {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.slug}
-              title={project.title}
-              category={project.category}
-              technologies={project.technologies}
-              result={project.result}
-              summary={project.summary}
-              href={`/portfolio/${project.slug}`}
-            />
+            <StaggerItem key={project.slug}>
+              <ProjectCard
+                title={project.title}
+                category={project.category}
+                technologies={project.technologies}
+                result={project.result}
+                summary={project.summary}
+                href={`/portfolio/${project.slug}`}
+              />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerChildren>
       </Container>
     </Section>
   );
