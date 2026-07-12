@@ -1,9 +1,5 @@
 import imageUrlBuilder from "@sanity/image-url";
-import { createClient } from "next-sanity";
-
-type SanityImageSource = Parameters<
-  ReturnType<typeof imageUrlBuilder>["image"]
->[0];
+import { createClient, type SanityClient } from "next-sanity";
 
 export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "";
 export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
@@ -11,18 +7,31 @@ export const apiVersion = "2024-01-01";
 
 export const isSanityConfigured = Boolean(projectId);
 
-export const sanityClient = createClient({
-  projectId,
-  dataset,
-  apiVersion,
-  useCdn: true,
-  token: process.env.SANITY_API_READ_TOKEN,
-});
+function getSanityClient(): SanityClient | null {
+  if (!isSanityConfigured) {
+    return null;
+  }
 
-const imageBuilder = imageUrlBuilder(sanityClient);
+  return createClient({
+    projectId,
+    dataset,
+    apiVersion,
+    useCdn: true,
+    token: process.env.SANITY_API_READ_TOKEN,
+  });
+}
+
+type SanityImageSource = Parameters<
+  ReturnType<typeof imageUrlBuilder>["image"]
+>[0];
 
 export function urlFor(source: SanityImageSource) {
-  return imageBuilder.image(source);
+  const client = getSanityClient();
+  if (!client) {
+    throw new Error("Sanity client is not configured.");
+  }
+
+  return imageUrlBuilder(client).image(source);
 }
 
 export type HeroSection = {
@@ -59,11 +68,12 @@ export type SiteSettings = {
 };
 
 export async function getPageBySlug(slug: string): Promise<CmsPage | null> {
-  if (!isSanityConfigured) {
+  const client = getSanityClient();
+  if (!client) {
     return null;
   }
 
-  return sanityClient.fetch<CmsPage | null>(
+  return client.fetch<CmsPage | null>(
     `*[_type == "page" && slug.current == $slug][0]{
       title,
       "slug": slug.current,
@@ -75,11 +85,12 @@ export async function getPageBySlug(slug: string): Promise<CmsPage | null> {
 }
 
 export async function getSiteSettings(): Promise<SiteSettings | null> {
-  if (!isSanityConfigured) {
+  const client = getSanityClient();
+  if (!client) {
     return null;
   }
 
-  return sanityClient.fetch<SiteSettings | null>(
+  return client.fetch<SiteSettings | null>(
     `*[_type == "siteSettings"][0]{
       title,
       tagline,

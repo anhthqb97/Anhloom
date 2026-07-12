@@ -3,8 +3,18 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { HeroMockup } from "@/components/sections/HeroMockup";
 import { Section } from "@/components/Section";
+import { getHeroSection, getPageBySlug } from "@/lib/sanity";
 
-export function Hero() {
+export async function Hero() {
+  const page = await getPageBySlug("home");
+  const hero = getHeroSection(page);
+
+  const headline =
+    hero?.headline ?? "We Help Products Bloom — From MVP to Scale";
+  const subtext =
+    hero?.subtext ??
+    "Anhloom engineers custom software, cloud infrastructure, and AI-powered systems for startups and global brands ready to grow.";
+
   return (
     <Section padding="lg" className="relative overflow-hidden">
       <div
@@ -18,11 +28,10 @@ export function Hero() {
         <div className="grid items-center gap-10 laptop:grid-cols-2 laptop:gap-16">
           <div className="flex flex-col text-center laptop:text-left">
             <h1 className="mx-auto max-w-2xl text-display-md font-bold tracking-tight text-text-primary laptop:mx-0 laptop:max-w-none laptop:text-display-lg ultra:text-display-xl">
-              We Help Products Bloom — From MVP to Scale
+              {headline}
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-body-lg text-text-secondary laptop:mx-0">
-              Anhloom engineers custom software, cloud infrastructure, and
-              AI-powered systems for startups and global brands ready to grow.
+              {subtext}
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4 laptop:justify-start">
               <Link
