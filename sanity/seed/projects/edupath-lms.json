@@ -1,0 +1,43 @@
+{
+  "_type": "project",
+  "_id": "project-edupath-lms",
+  "title": "EduPath LMS",
+  "slug": {
+    "_type": "slug",
+    "current": "edupath-lms"
+  },
+  "category": "Education",
+  "summary": "Learning platform with adaptive modules and instructor analytics.",
+  "technologies": "React · Laravel · Redis",
+  "result": "2x student engagement",
+  "overview": "EduPath helps training providers deliver adaptive learning paths with progress analytics for instructors.",
+  "industry": "Education",
+  "challenges": [
+    "Static course catalogs failed to adapt to learner pace.",
+    "Instructors lacked visibility into at-risk students early enough.",
+    "Content updates required engineering support every release."
+  ],
+  "solution": "Adaptive module sequencing, cohort dashboards, and content authoring tools designed for instructor-led programs.",
+  "architectureNote": "Laravel API with Redis-backed progress tracking and a React learning client optimized for low-bandwidth regions.",
+  "technologyList": [
+    "React",
+    "Laravel",
+    "MySQL",
+    "Redis",
+    "Docker"
+  ],
+  "results": [
+    {
+      "metric": "2x",
+      "label": "Student engagement"
+    },
+    {
+      "metric": "+45%",
+      "label": "Course completion"
+    },
+    {
+      "metric": "-60%",
+      "label": "Content update lead time"
+    }
+  ]
+}

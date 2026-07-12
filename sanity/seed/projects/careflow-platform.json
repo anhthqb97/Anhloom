@@ -1,0 +1,43 @@
+{
+  "_type": "project",
+  "_id": "project-careflow-platform",
+  "title": "CareFlow Platform",
+  "slug": {
+    "_type": "slug",
+    "current": "careflow-platform"
+  },
+  "category": "Healthcare",
+  "summary": "Patient operations dashboard for clinics managing intake and follow-ups.",
+  "technologies": "Next.js · Node · PostgreSQL",
+  "result": "-35% admin time",
+  "overview": "CareFlow centralizes patient intake, scheduling, and follow-up tasks for multi-location clinics.",
+  "industry": "Healthcare",
+  "challenges": [
+    "Front-desk teams juggled spreadsheets for intake and follow-ups.",
+    "No-shows increased due to inconsistent reminder workflows.",
+    "Clinic managers lacked real-time visibility across locations."
+  ],
+  "solution": "A HIPAA-aware operations hub with role-based workflows, automated reminders, and EHR-friendly exports.",
+  "architectureNote": "Modular Node services with encrypted storage, audit logging, and integration adapters for common EHR systems.",
+  "technologyList": [
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "Redis",
+    "AWS"
+  ],
+  "results": [
+    {
+      "metric": "-35%",
+      "label": "Admin time per visit"
+    },
+    {
+      "metric": "-28%",
+      "label": "No-show rate"
+    },
+    {
+      "metric": "2x",
+      "label": "Follow-up completion"
+    }
+  ]
+}

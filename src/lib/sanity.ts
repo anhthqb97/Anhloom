@@ -67,6 +67,7 @@ export type SiteSettings = {
   address?: string;
 };
 
+import type { ProjectDetail } from "@/lib/project-details";
 import type { ServiceDetail } from "@/lib/service-details";
 import type { SolutionDetail } from "@/lib/solution-details";
 
@@ -171,6 +172,68 @@ export async function getCmsSolutionBySlug(
       features,
       benefits,
       integrations
+    }`,
+    { slug },
+  );
+}
+
+export type CmsProject = {
+  title: string;
+  slug: string;
+  category?: ProjectDetail["category"];
+  summary?: string;
+  technologies?: string;
+  result?: string;
+  overview?: string;
+  industry?: string;
+  challenges?: string[];
+  solution?: string;
+  architectureNote?: string;
+  technologyList?: string[];
+  results?: ProjectDetail["results"];
+};
+
+export function mapCmsProjectToDetail(cms: CmsProject): ProjectDetail {
+  return {
+    slug: cms.slug,
+    title: cms.title,
+    category: cms.category ?? "SaaS",
+    technologies: cms.technologies ?? "",
+    result: cms.result ?? "",
+    summary: cms.summary ?? "",
+    overview: cms.overview ?? "",
+    industry: cms.industry ?? "",
+    challenges: cms.challenges ?? [],
+    solution: cms.solution ?? "",
+    architectureNote: cms.architectureNote ?? "",
+    technologyList: cms.technologyList ?? [],
+    results: cms.results ?? [],
+  };
+}
+
+export async function getCmsProjectBySlug(
+  slug: string,
+): Promise<CmsProject | null> {
+  const client = getSanityClient();
+  if (!client) {
+    return null;
+  }
+
+  return client.fetch<CmsProject | null>(
+    `*[_type == "project" && slug.current == $slug][0]{
+      title,
+      "slug": slug.current,
+      category,
+      summary,
+      technologies,
+      result,
+      overview,
+      industry,
+      challenges,
+      solution,
+      architectureNote,
+      technologyList,
+      results
     }`,
     { slug },
   );

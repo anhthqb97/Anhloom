@@ -1,0 +1,43 @@
+{
+  "_type": "project",
+  "_id": "project-logitrack",
+  "title": "LogiTrack",
+  "slug": {
+    "_type": "slug",
+    "current": "logitrack"
+  },
+  "category": "Logistics",
+  "summary": "Route optimization system for last-mile logistics teams.",
+  "technologies": "Vue · Python · GCP",
+  "result": "+28% delivery accuracy",
+  "overview": "LogiTrack optimizes last-mile routes and dispatch decisions with live traffic and capacity constraints.",
+  "industry": "Logistics",
+  "challenges": [
+    "Dispatchers manually planned routes with outdated spreadsheets.",
+    "Delivery SLAs were missed during peak seasonal volume.",
+    "Drivers received conflicting instructions across channels."
+  ],
+  "solution": "Dispatch console with route optimization, driver mobile updates, and SLA monitoring for regional carriers.",
+  "architectureNote": "Python optimization workers on GCP with real-time event streams and a Vue operations dashboard.",
+  "technologyList": [
+    "Vue",
+    "Python",
+    "GCP",
+    "Pub/Sub",
+    "BigQuery"
+  ],
+  "results": [
+    {
+      "metric": "+28%",
+      "label": "Delivery accuracy"
+    },
+    {
+      "metric": "-22%",
+      "label": "Fuel cost per route"
+    },
+    {
+      "metric": "+18%",
+      "label": "On-time deliveries"
+    }
+  ]
+}

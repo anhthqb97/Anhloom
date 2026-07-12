@@ -13,7 +13,7 @@ import {
   ProjectGallery,
   ProjectResults,
 } from "@/components/sections/portfolio/ProjectResults";
-import { getAllProjectSlugs, getProjectBySlug } from "@/lib/project-details";
+import { getAllProjectSlugs, getProjectBySlug } from "@/lib/resolve-project";
 
 type ProjectDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -25,7 +25,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: ProjectDetailPageProps) {
   const { slug } = await params;
-  const project = getProjectBySlug(slug);
+  const project = await getProjectBySlug(slug);
 
   if (!project) {
     return { title: "Project Not Found — Anhloom" };
@@ -41,7 +41,7 @@ export default async function ProjectDetailPage({
   params,
 }: ProjectDetailPageProps) {
   const { slug } = await params;
-  const project = getProjectBySlug(slug);
+  const project = await getProjectBySlug(slug);
 
   if (!project) {
     notFound();

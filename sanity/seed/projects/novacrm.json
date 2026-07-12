@@ -1,0 +1,43 @@
+{
+  "_type": "project",
+  "_id": "project-novacrm",
+  "title": "NovaCRM",
+  "slug": {
+    "_type": "slug",
+    "current": "novacrm"
+  },
+  "category": "AI",
+  "summary": "AI-assisted CRM that prioritizes leads and drafts follow-up actions.",
+  "technologies": "React · GraphQL · AWS",
+  "result": "+55% pipeline speed",
+  "overview": "NovaCRM helps revenue teams prioritize leads and automate follow-ups with AI-assisted workflows.",
+  "industry": "B2B SaaS",
+  "challenges": [
+    "Reps wasted time on low-intent leads without clear prioritization.",
+    "Follow-up quality varied widely across the sales team.",
+    "CRM data was stale because updates happened after calls, not during."
+  ],
+  "solution": "Lead scoring, next-best-action suggestions, and email draft assistance embedded in a customizable CRM workspace.",
+  "architectureNote": "GraphQL API with AI inference services, activity streams, and integration webhooks for sales tooling.",
+  "technologyList": [
+    "React",
+    "GraphQL",
+    "AWS",
+    "DynamoDB",
+    "OpenAI"
+  ],
+  "results": [
+    {
+      "metric": "+55%",
+      "label": "Pipeline velocity"
+    },
+    {
+      "metric": "+32%",
+      "label": "Meeting booking rate"
+    },
+    {
+      "metric": "-45%",
+      "label": "Manual CRM updates"
+    }
+  ]
+}

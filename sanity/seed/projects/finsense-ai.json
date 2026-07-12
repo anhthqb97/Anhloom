@@ -1,0 +1,43 @@
+{
+  "_type": "project",
+  "_id": "project-finsense-ai",
+  "title": "FinSense AI",
+  "slug": {
+    "_type": "slug",
+    "current": "finsense-ai"
+  },
+  "category": "FinTech",
+  "summary": "AI underwriting assistant that helps finance teams approve deals faster.",
+  "technologies": "React · FastAPI · AWS",
+  "result": "+40% conversion",
+  "overview": "FinSense AI streamlines loan underwriting with document intelligence, risk scoring, and analyst workflows in one workspace.",
+  "industry": "Financial Services",
+  "challenges": [
+    "Underwriters spent hours reconciling documents across legacy systems.",
+    "Risk models were opaque and hard to tune per product line.",
+    "Compliance reviews lacked a single source of truth."
+  ],
+  "solution": "We delivered a RAG-powered underwriting copilot with policy-aware scoring, audit trails, and CRM integrations for relationship managers.",
+  "architectureNote": "Microservices on AWS with document pipelines, model inference workers, and a secure API layer for bank integrations.",
+  "technologyList": [
+    "React",
+    "FastAPI",
+    "PostgreSQL",
+    "AWS Lambda",
+    "OpenSearch"
+  ],
+  "results": [
+    {
+      "metric": "+40%",
+      "label": "Conversion uplift"
+    },
+    {
+      "metric": "-50%",
+      "label": "Underwriting cycle time"
+    },
+    {
+      "metric": "3x",
+      "label": "Analyst throughput"
+    }
+  ]
+}

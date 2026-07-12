@@ -1,0 +1,43 @@
+{
+  "_type": "project",
+  "_id": "project-markethub",
+  "title": "MarketHub",
+  "slug": {
+    "_type": "slug",
+    "current": "markethub"
+  },
+  "category": "SaaS",
+  "summary": "Multi-vendor marketplace with payments, listings, and seller tools.",
+  "technologies": "Next.js · Stripe · Supabase",
+  "result": "3x GMV growth",
+  "overview": "MarketHub powers a multi-vendor marketplace with listings, escrow payments, and seller performance tooling.",
+  "industry": "E-commerce / SaaS",
+  "challenges": [
+    "Manual seller onboarding slowed marketplace launch velocity.",
+    "Payment reconciliation errors created payout delays.",
+    "Buyers lacked trust signals when evaluating new vendors."
+  ],
+  "solution": "Two-sided marketplace core with Stripe Connect payouts, dispute flows, and seller analytics dashboards.",
+  "architectureNote": "Next.js storefront with Supabase data layer, Stripe webhooks, and background jobs for settlement reconciliation.",
+  "technologyList": [
+    "Next.js",
+    "Stripe",
+    "Supabase",
+    "PostgreSQL",
+    "Vercel"
+  ],
+  "results": [
+    {
+      "metric": "3x",
+      "label": "GMV growth"
+    },
+    {
+      "metric": "+52%",
+      "label": "Seller activation rate"
+    },
+    {
+      "metric": "-40%",
+      "label": "Payout dispute volume"
+    }
+  ]
+}
