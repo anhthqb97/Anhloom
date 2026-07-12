@@ -4,7 +4,7 @@ import { Card } from "@/components/Card";
 import { cn } from "@/lib/cn";
 import type { PricingTier } from "@/lib/pricing";
 
-type PricingCardProps = {
+export type PricingCardProps = {
   tier: PricingTier;
   className?: string;
 };
