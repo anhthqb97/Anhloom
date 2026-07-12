@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [siteConfig.ogImagePath],
     creator: siteConfig.twitterHandle,
+    site: siteConfig.twitterHandle,
   },
 };
 
