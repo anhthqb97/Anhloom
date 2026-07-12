@@ -1,5 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Analytics } from "@/components/Analytics";
+import { Chatbot } from "@/components/chat/Chatbot";
 import { CookieConsent } from "@/components/CookieConsent";
 import { Navbar } from "@/components/Navbar";
 import { SkipToContent } from "@/components/SkipToContent";
@@ -17,6 +18,7 @@ export default function SiteLayout({
       <Footer />
       <CookieConsent />
       <Analytics />
+      <Chatbot />
     </>
   );
 }
