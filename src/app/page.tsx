@@ -1,3 +1,4 @@
+import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { Hero } from "@/components/sections/Hero";
 import { Process } from "@/components/sections/Process";
 import { Services } from "@/components/sections/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Solutions />
       <Process />
+      <FeaturedProjects />
     </>
   );
 }

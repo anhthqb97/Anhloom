@@ -26,6 +26,18 @@ export function FeaturedProjects() {
   return (
     <Section className="bg-bg-subtle">
       <Container>
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <p className="text-label font-semibold uppercase tracking-wide text-primary-600">
+            Featured Projects
+          </p>
+          <h2 className="mt-2 text-heading-xl font-semibold text-text-primary laptop:text-display-md">
+            Products we have helped bloom
+          </h2>
+          <p className="mt-4 text-body-lg text-text-secondary">
+            Explore recent work across AI, SaaS, and industry platforms — with
+            measurable outcomes for every engagement.
+          </p>
+        </div>
         <ProjectFilterTabs
           activeCategory={activeCategory}
           onCategoryChange={setActiveCategory}
