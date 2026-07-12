@@ -31,6 +31,8 @@ export function FAQAccordion({ items, className }: FAQAccordionProps) {
               type="button"
               className="flex w-full items-center justify-between gap-4 px-6 py-4 text-left"
               aria-expanded={isOpen}
+              aria-controls={`faq-panel-${index}`}
+              id={`faq-trigger-${index}`}
               onClick={() => setOpenIndex(isOpen ? null : index)}
             >
               <span className="text-body-md font-semibold text-text-primary">
@@ -44,7 +46,12 @@ export function FAQAccordion({ items, className }: FAQAccordionProps) {
               </span>
             </button>
             {isOpen ? (
-              <div className="border-t border-border px-6 pb-4 pt-2">
+              <div
+                id={`faq-panel-${index}`}
+                role="region"
+                aria-labelledby={`faq-trigger-${index}`}
+                className="border-t border-border px-6 pb-4 pt-2"
+              >
                 <p className="text-body-md text-text-secondary">{item.answer}</p>
               </div>
             ) : null}
