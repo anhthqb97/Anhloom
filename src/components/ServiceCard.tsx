@@ -20,12 +20,7 @@ export function ServiceCard({
   className,
 }: ServiceCardProps) {
   return (
-    <Card
-      className={cn(
-        "p-6 transition-all hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg",
-        className,
-      )}
-    >
+    <Card className={cn("p-6", className)}>
       <div className="flex size-10 items-center justify-center rounded-full bg-primary-100 text-primary-600">
         {icon}
       </div>

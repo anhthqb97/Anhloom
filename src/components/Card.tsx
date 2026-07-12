@@ -8,7 +8,7 @@ export function Card({ className, ...props }: CardProps) {
   return (
     <div
       className={cn(
-        "rounded-md border border-border bg-surface text-text-primary",
+        "card-hover-lift rounded-md border border-border bg-surface text-text-primary",
         className,
       )}
       {...props}

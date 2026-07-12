@@ -14,12 +14,7 @@ export type { BlogPostCardProps };
 
 export function BlogPostCard({ post, className }: BlogPostCardProps) {
   return (
-    <Card
-      className={cn(
-        "overflow-hidden transition-all hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg",
-        className,
-      )}
-    >
+    <Card className={cn("overflow-hidden", className)}>
       <div className="aspect-video w-full bg-gradient-to-br from-primary-100 via-accent-50 to-secondary-500/10" />
       <div className="p-6">
         <Pill tone="primary">{post.category}</Pill>

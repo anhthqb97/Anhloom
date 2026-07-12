@@ -24,7 +24,7 @@ export function SolutionCard({
   return (
     <Card
       className={cn(
-        "flex h-full min-w-[260px] flex-col p-6 transition-all hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg",
+        "flex h-full min-w-[260px] flex-col p-6",
         featured && "border-accent-200 bg-accent-50/30",
         className,
       )}
