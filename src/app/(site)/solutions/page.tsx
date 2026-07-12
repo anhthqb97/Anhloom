@@ -1,11 +1,13 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Solutions — Anhloom",
-  description:
-    "Explore Anhloom product solutions — AI chatbots, CRM, ERP, SaaS, marketplaces, and e-commerce platforms.",
-};
+import {
+  SolutionsListingGrid,
+  SolutionsListingHero,
+} from "@/components/sections/solutions/SolutionsListing";
 
 export default function SolutionsPage() {
-  return null;
+  return (
+    <>
+      <SolutionsListingHero />
+      <SolutionsListingGrid />
+    </>
+  );
 }
