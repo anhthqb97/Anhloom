@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { type ReactNode } from "react";
 
 import { Container } from "@/components/Container";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { cn } from "@/lib/cn";
 
 const desktopNavLinks = [
@@ -42,8 +45,17 @@ type NavbarProps = {
 };
 
 export function Navbar({ logo, children }: NavbarProps) {
+  const scrolled = useScrollPosition();
+
   return (
-    <header className="sticky top-0 z-50 h-14 laptop:h-16">
+    <header
+      className={cn(
+        "sticky top-0 z-50 h-14 transition-colors duration-200 laptop:h-16",
+        scrolled
+          ? "border-b border-border bg-surface/80 backdrop-blur-[12px]"
+          : "bg-transparent",
+      )}
+    >
       <Container className="flex h-full items-center justify-between gap-6">
         <div className="flex shrink-0 items-center">
           {logo ?? (
