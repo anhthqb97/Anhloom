@@ -13,7 +13,7 @@ export function CTABanner({ children, className }: CTABannerProps) {
   return (
     <Section padding="lg" className={cn("relative overflow-hidden", className)}>
       <div
-        className="hero-gradient-bg pointer-events-none absolute inset-0 opacity-30"
+        className="hero-gradient-bg pointer-events-none absolute inset-0 opacity-30 dark:opacity-20"
         aria-hidden="true"
       />
       <Container className="relative">{children}</Container>

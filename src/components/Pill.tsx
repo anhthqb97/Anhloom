@@ -3,10 +3,10 @@ import { type ComponentProps } from "react";
 import { cn } from "@/lib/cn";
 
 const toneClasses = {
-  primary: "bg-primary-100 text-primary-700",
-  secondary: "bg-secondary-500/10 text-secondary-700",
-  accent: "bg-accent-100 text-accent-700",
-  neutral: "bg-neutral-100 text-neutral-700",
+  primary: "bg-primary-100 text-primary-700 dark:text-primary-200",
+  secondary: "bg-secondary-500/10 text-secondary-700 dark:text-secondary-300",
+  accent: "bg-accent-100 text-accent-700 dark:text-accent-200",
+  neutral: "bg-neutral-100 text-neutral-700 dark:bg-bg-muted dark:text-text-secondary",
   success: "bg-success/10 text-success",
 } as const;
 
