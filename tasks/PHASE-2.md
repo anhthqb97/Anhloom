@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `█████░░░░░` **51%** (50 / 98)
+**Progress:** `██████░░░░` **63%** (62 / 98)
 
 ---
 
@@ -85,20 +85,20 @@
 - [x] **P2-049** Case study — development process timeline
 - [x] **P2-050** Case study — results metrics + lessons learned
 
-### 2.7 Blog `0/12`
+### 2.7 Blog `12/12`
 
-- [ ] **P2-051** CMS schema — `blogPost` with author + category
-- [ ] **P2-052** Blog listing route `/blog`
-- [ ] **P2-053** Blog featured post hero card
-- [ ] **P2-054** Blog category filter tabs
-- [ ] **P2-055** Blog search input (static filter first)
-- [ ] **P2-056** Blog 3-column card grid
-- [ ] **P2-057** Blog pagination component
-- [ ] **P2-058** Blog article route `/blog/[slug]`
-- [ ] **P2-059** Article — cover, author, date, reading time
-- [ ] **P2-060** Article — table of contents sidebar (desktop)
-- [ ] **P2-061** Article — share buttons + related articles
-- [ ] **P2-062** Seed 3 blog articles in CMS
+- [x] **P2-051** CMS schema — `blogPost` with author + category
+- [x] **P2-052** Blog listing route `/blog`
+- [x] **P2-053** Blog featured post hero card
+- [x] **P2-054** Blog category filter tabs
+- [x] **P2-055** Blog search input (static filter first)
+- [x] **P2-056** Blog 3-column card grid
+- [x] **P2-057** Blog pagination component
+- [x] **P2-058** Blog article route `/blog/[slug]`
+- [x] **P2-059** Article — cover, author, date, reading time
+- [x] **P2-060** Article — table of contents sidebar (desktop)
+- [x] **P2-061** Article — share buttons + related articles
+- [x] **P2-062** Seed 3 blog articles in CMS
 
 ### 2.8 Additional Pages `0/12`
 
