@@ -1,5 +1,6 @@
 import type { SchemaTypeDefinition } from "sanity";
 
+import { caseStudy } from "./caseStudy";
 import { faq } from "./faq";
 import { page } from "./page";
 import { project } from "./project";
@@ -14,6 +15,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   page,
   teamMember,
   project,
+  caseStudy,
   service,
   solution,
   testimonial,
