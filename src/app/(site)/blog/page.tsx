@@ -1,11 +1,13 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Blog — Anhloom",
-  description:
-    "Anhloom technical blog — AI, engineering, cloud, DevOps, and product insights from our team.",
-};
+import {
+  BlogListingContent,
+  BlogListingHero,
+} from "@/components/sections/blog/BlogListing";
 
 export default function BlogPage() {
-  return null;
+  return (
+    <>
+      <BlogListingHero />
+      <BlogListingContent />
+    </>
+  );
 }
