@@ -14,6 +14,14 @@
 
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
+
+  --gradient-hero: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+  --gradient-subtle: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-subtle) 100%);
+  --gradient-glow: radial-gradient(
+    ellipse at 50% 0%,
+    rgb(99 102 241 / 0.15) 0%,
+    transparent 70%
+  );
 }
 
 .dark {
