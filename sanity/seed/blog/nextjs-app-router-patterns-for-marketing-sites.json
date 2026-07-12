@@ -1,0 +1,37 @@
+{
+  "_type": "blogPost",
+  "_id": "blogPost-nextjs-app-router-patterns-for-marketing-sites",
+  "title": "Next.js App Router Patterns for Marketing Sites",
+  "slug": {
+    "_type": "slug",
+    "current": "nextjs-app-router-patterns-for-marketing-sites"
+  },
+  "excerpt": "How we structure content pages, CMS fallbacks, and static generation for fast marketing sites.",
+  "author": "Anh Th",
+  "authorRole": "Founder & CTO",
+  "category": "Engineering",
+  "publishedAt": "2026-05-28T09:00:00.000Z",
+  "readingTime": "6 min read",
+  "tags": [
+    "Next.js",
+    "React",
+    "Architecture"
+  ],
+  "sections": [
+    {
+      "id": "route-groups",
+      "heading": "Route groups and layouts",
+      "content": "We isolate marketing pages under a site route group with shared navbar and footer layouts, keeping studio and API routes separate from public content."
+    },
+    {
+      "id": "cms-fallback",
+      "heading": "CMS with static fallback",
+      "content": "Every content type ships with typed static data and a Sanity resolver. Builds succeed without CMS credentials while editors can override content in production."
+    },
+    {
+      "id": "ssg",
+      "heading": "Static generation strategy",
+      "content": "Detail pages use generateStaticParams from static slugs so deploys stay fast and predictable, with on-demand revalidation added when needed."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "_type": "blogPost",
+  "_id": "blogPost-shipping-rag-systems-to-production",
+  "title": "Shipping RAG Systems to Production",
+  "slug": {
+    "_type": "slug",
+    "current": "shipping-rag-systems-to-production"
+  },
+  "excerpt": "A practical playbook for moving retrieval-augmented generation from demo to production with observability and guardrails.",
+  "author": "Anh Th",
+  "authorRole": "Lead AI Engineer",
+  "category": "AI",
+  "publishedAt": "2026-06-12T09:00:00.000Z",
+  "readingTime": "8 min read",
+  "featured": true,
+  "tags": [
+    "RAG",
+    "LLM",
+    "MLOps"
+  ],
+  "sections": [
+    {
+      "id": "why-rag",
+      "heading": "Why RAG beats fine-tuning for most products",
+      "content": "Most teams reach for fine-tuning when they need domain knowledge. In practice, RAG delivers faster iteration, clearer attribution, and lower retraining cost for knowledge that changes frequently."
+    },
+    {
+      "id": "architecture",
+      "heading": "Reference architecture",
+      "content": "A production RAG stack typically includes ingestion pipelines, chunking strategy, vector storage, retrieval reranking, prompt templates, and evaluation harnesses tied to business metrics."
+    },
+    {
+      "id": "guardrails",
+      "heading": "Guardrails that matter",
+      "content": "Policy filters, citation requirements, and human escalation paths prevent the most common production failures. Instrument every stage so you can trace bad answers back to source documents."
+    }
+  ]
+}

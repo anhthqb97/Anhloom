@@ -7,7 +7,7 @@ import { ArticleShare } from "@/components/sections/blog/ArticleShare";
 import { ArticleTOC } from "@/components/sections/blog/ArticleTOC";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
-import { getAllBlogPostSlugs, getBlogPostBySlug } from "@/lib/blog-posts";
+import { getAllBlogPostSlugs, getBlogPostBySlug } from "@/lib/resolve-blog";
 
 type BlogArticlePageProps = {
   params: Promise<{ slug: string }>;
@@ -19,7 +19,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogArticlePageProps) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getBlogPostBySlug(slug);
 
   if (!post) {
     return { title: "Article Not Found — Anhloom" };
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: BlogArticlePageProps) {
 
 export default async function BlogArticlePage({ params }: BlogArticlePageProps) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getBlogPostBySlug(slug);
 
   if (!post) {
     notFound();

@@ -1,0 +1,37 @@
+{
+  "_type": "blogPost",
+  "_id": "blogPost-kubernetes-cost-controls-for-startups",
+  "title": "Kubernetes Cost Controls for Startups",
+  "slug": {
+    "_type": "slug",
+    "current": "kubernetes-cost-controls-for-startups"
+  },
+  "excerpt": "Practical ways to keep cloud bills predictable while you scale from MVP to production traffic.",
+  "author": "Anh Th",
+  "authorRole": "Cloud Architect",
+  "category": "Cloud",
+  "publishedAt": "2026-05-10T09:00:00.000Z",
+  "readingTime": "7 min read",
+  "tags": [
+    "Kubernetes",
+    "FinOps",
+    "AWS"
+  ],
+  "sections": [
+    {
+      "id": "right-sizing",
+      "heading": "Right-size before you optimize",
+      "content": "Start with resource requests based on measured usage, not guesses. Most early-stage clusters are over-provisioned by 40–60%."
+    },
+    {
+      "id": "autoscaling",
+      "heading": "Autoscaling with guardrails",
+      "content": "HPA and cluster autoscaler help, but cap maximum nodes and set budget alerts. Combine spot instances for non-critical workloads."
+    },
+    {
+      "id": "observability",
+      "heading": "Cost observability",
+      "content": "Tag every workload by team and environment. Review cost per feature monthly — it changes prioritization conversations quickly."
+    }
+  ]
+}

@@ -67,6 +67,7 @@ export type SiteSettings = {
   address?: string;
 };
 
+import type { BlogPost } from "@/lib/blog-posts";
 import type { ProjectDetail } from "@/lib/project-details";
 import type { ServiceDetail } from "@/lib/service-details";
 import type { SolutionDetail } from "@/lib/solution-details";
@@ -234,6 +235,62 @@ export async function getCmsProjectBySlug(
       architectureNote,
       technologyList,
       results
+    }`,
+    { slug },
+  );
+}
+
+export type CmsBlogPost = {
+  title: string;
+  slug: string;
+  excerpt?: string;
+  author?: string;
+  authorRole?: string;
+  category?: BlogPost["category"];
+  publishedAt?: string;
+  readingTime?: string;
+  featured?: boolean;
+  tags?: string[];
+  sections?: BlogPost["sections"];
+};
+
+export function mapCmsBlogPostToDetail(cms: CmsBlogPost): BlogPost {
+  return {
+    slug: cms.slug,
+    title: cms.title,
+    excerpt: cms.excerpt ?? "",
+    author: cms.author ?? "Anhloom",
+    authorRole: cms.authorRole ?? "Engineering",
+    category: cms.category ?? "Engineering",
+    publishedAt: cms.publishedAt?.slice(0, 10) ?? "",
+    readingTime: cms.readingTime ?? "5 min read",
+    featured: cms.featured,
+    tags: cms.tags ?? [],
+    sections: cms.sections ?? [],
+  };
+}
+
+export async function getCmsBlogPostBySlug(
+  slug: string,
+): Promise<CmsBlogPost | null> {
+  const client = getSanityClient();
+  if (!client) {
+    return null;
+  }
+
+  return client.fetch<CmsBlogPost | null>(
+    `*[_type == "blogPost" && slug.current == $slug][0]{
+      title,
+      "slug": slug.current,
+      excerpt,
+      author,
+      authorRole,
+      category,
+      publishedAt,
+      readingTime,
+      featured,
+      tags,
+      sections
     }`,
     { slug },
   );

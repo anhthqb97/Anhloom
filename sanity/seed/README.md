@@ -1,6 +1,6 @@
 # Sanity Seed Data
 
-Import service, solution, and project documents into your Sanity dataset.
+Import service, solution, project, and blog documents into your Sanity dataset.
 
 ## Import via Studio
 
@@ -9,6 +9,7 @@ Import service, solution, and project documents into your Sanity dataset.
    - `sanity/seed/services/`
    - `sanity/seed/solutions/`
    - `sanity/seed/projects/`
+   - `sanity/seed/blog/`
 
 ## Import via CLI
 
@@ -16,6 +17,7 @@ Import service, solution, and project documents into your Sanity dataset.
 npx sanity dataset import sanity/seed/exports/services.ndjson production
 npx sanity dataset import sanity/seed/exports/solutions.ndjson production
 npx sanity dataset import sanity/seed/exports/projects.ndjson production
+npx sanity dataset import sanity/seed/exports/blog.ndjson production
 ```
 
 Generate the export bundles:
