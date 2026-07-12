@@ -13,7 +13,7 @@
 @import "../styles/prose.css";
 
 @theme {
-  --font-sans: var(--font-geist-sans), var(--font-inter), system-ui, sans-serif;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
@@ -57,6 +57,18 @@
   h5,
   h6 {
     font-feature-settings: "ss01";
+  }
+
+  a {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  summary {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
   }
 }
 
