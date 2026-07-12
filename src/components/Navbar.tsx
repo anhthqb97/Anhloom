@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { type ReactNode } from "react";
+import { type ReactNode, useState } from "react";
 
 import { Container } from "@/components/Container";
 import {
@@ -82,6 +82,7 @@ type NavbarProps = {
 
 export function Navbar({ logo, children }: NavbarProps) {
   const scrolled = useScrollPosition();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header
@@ -106,6 +107,28 @@ export function Navbar({ logo, children }: NavbarProps) {
         <div className="flex flex-1 items-center justify-end gap-4">
           <NavbarDesktopLinks />
           {children}
+          <button
+            type="button"
+            className="inline-flex size-10 items-center justify-center rounded-sm text-text-primary laptop:hidden"
+            aria-expanded={mobileOpen}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            onClick={() => setMobileOpen((open) => !open)}
+          >
+            <svg
+              className="size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              aria-hidden="true"
+            >
+              {mobileOpen ? (
+                <path d="M6 6l12 12M18 6L6 18" />
+              ) : (
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </Container>
     </header>
