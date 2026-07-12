@@ -1,0 +1,237 @@
+# Phase 1 — Foundation (SDD Step 3: Tasks)
+
+> **SDD chain:** [constitution](../docs/sdd/constitution.md) → [spec](../docs/sdd/spec.md) → [plan](../docs/sdd/plan.md) → **tasks** → implement → validate
+> **143 tasks** · ~30–60 min each · Progress: [PROGRESS.md](../PROGRESS.md)
+> **AI:** Follow [AGENTS.md](../AGENTS.md)
+
+| Field | Value |
+|-------|-------|
+| **Spec refs** | Tech Stack, Homepage, About, Contact, CMS Requirements |
+| **Plan refs** | §2 Design System, §3 Components, §4.1–4.2, §7 Architecture |
+| **Weeks** | W1–W4 |
+| **Gate** | M1 — staging + CMS + CI |
+
+**Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
+
+**Progress:** `░░░░░░░░░░` **0%** (0 / 143)
+
+---
+
+### 1.1 Project Setup `0/12`
+
+- [ ] **P1-001** Run `create-next-app` with App Router + TypeScript
+- [ ] **P1-002** Enable TypeScript `strict` mode in `tsconfig.json`
+- [ ] **P1-003** Install Tailwind CSS v4
+- [ ] **P1-004** Configure PostCSS for Tailwind
+- [ ] **P1-005** Install ESLint (`next/core-web-vitals`)
+- [ ] **P1-006** Install Prettier + add `format` script
+- [ ] **P1-007** Add `.prettierrc` and `.editorconfig`
+- [ ] **P1-008** Configure `@/` path alias in `tsconfig.json`
+- [ ] **P1-009** Install Geist font package
+- [ ] **P1-010** Configure `next/font` — Geist Sans
+- [ ] **P1-011** Configure `next/font` — Geist Mono + Inter fallback
+- [ ] **P1-012** Create folder structure (`app`, `components`, `lib`, `hooks`, `types`, `styles`)
+
+### 1.2 Design Tokens `0/19`
+
+- [ ] **P1-013** Add primary Indigo color scale (50–900) to Tailwind
+- [ ] **P1-014** Add secondary Cyan tokens
+- [ ] **P1-015** Add accent Purple tokens
+- [ ] **P1-016** Add neutral gray scale
+- [ ] **P1-017** Add semantic colors (success, warning, error, info)
+- [ ] **P1-018** Add light mode bg/surface/text CSS variables
+- [ ] **P1-019** Add dark mode bg/surface/text CSS variables
+- [ ] **P1-020** Add display font sizes (xl, lg, md)
+- [ ] **P1-021** Add heading font sizes (xl, lg, md)
+- [ ] **P1-022** Add body font sizes (lg, md, sm) + label
+- [ ] **P1-023** Add spacing scale (4px base unit)
+- [ ] **P1-024** Add border radius tokens (sm → 2xl, full)
+- [ ] **P1-025** Add shadow tokens (sm, md, lg, xl, glow)
+- [ ] **P1-026** Add gradient CSS variables (hero, subtle, glow)
+- [ ] **P1-027** Define 5 breakpoints (mobile → ultra)
+- [ ] **P1-028** Write `globals.css` base styles + CSS vars
+- [ ] **P1-029** Build `Container` component (max-width per breakpoint)
+- [ ] **P1-030** Build `Section` component (padding variants)
+- [ ] **P1-031** Add `cn()` utility (clsx + tailwind-merge)
+
+### 1.3 UI Primitives `0/16`
+
+- [ ] **P1-032** `Button` base component with `forwardRef`
+- [ ] **P1-033** `Button` — primary variant
+- [ ] **P1-034** `Button` — secondary variant
+- [ ] **P1-035** `Button` — ghost variant
+- [ ] **P1-036** `Button` — accent variant
+- [ ] **P1-037** `Button` — size variants (sm, md, lg, xl)
+- [ ] **P1-038** `Button` — loading + disabled states
+- [ ] **P1-039** `Card` base wrapper
+- [ ] **P1-040** `CardHeader` sub-component
+- [ ] **P1-041** `CardBody` sub-component
+- [ ] **P1-042** `Badge` component
+- [ ] **P1-043** `Pill` component with tone variants
+- [ ] **P1-044** `Input` base component
+- [ ] **P1-045** `Textarea` component
+- [ ] **P1-046** `Select` component
+- [ ] **P1-047** `Checkbox` component
+
+### 1.4 Layout — Navbar `0/10`
+
+- [ ] **P1-048** `Navbar` shell (logo slot + nav area)
+- [ ] **P1-049** Desktop nav links (Services, Solutions, Portfolio, Blog, Careers)
+- [ ] **P1-050** `useScrollPosition` hook for sticky behavior
+- [ ] **P1-051** Navbar transparent → blurred bg on scroll
+- [ ] **P1-052** `MegaMenu` dropdown container + animation
+- [ ] **P1-053** MegaMenu — Services column with 6 links
+- [ ] **P1-054** MegaMenu — Solutions column with 7 links
+- [ ] **P1-055** Mobile hamburger toggle button
+- [ ] **P1-056** Mobile `Drawer` overlay + slide-in panel
+- [ ] **P1-057** Mobile drawer nav links + CTA buttons
+
+### 1.5 Layout — Footer `0/5`
+
+- [ ] **P1-058** Footer 4-column link groups (Company, Services, Resources, Legal)
+- [ ] **P1-059** Footer newsletter email input + submit
+- [ ] **P1-060** Footer social icon links
+- [ ] **P1-061** Footer copyright + bottom bar
+- [ ] **P1-062** Root `layout.tsx` — wrap pages with Navbar + Footer
+
+### 1.6 Homepage — Hero `0/8`
+
+- [ ] **P1-063** Hero 2-column layout (text left, visual right)
+- [ ] **P1-064** Hero headline — *We Help Products Bloom — From MVP to Scale*
+- [ ] **P1-065** Hero subtext — Anhloom growth + services copy
+- [ ] **P1-066** Hero primary CTA — "Book a Meeting"
+- [ ] **P1-067** Hero secondary CTA — "View Portfolio"
+- [ ] **P1-068** Hero animated gradient background
+- [ ] **P1-069** Hero dashboard mockup image/placeholder
+- [ ] **P1-070** Hero responsive layout (stack on mobile)
+
+### 1.7 Homepage — Stats & Trusted By `0/6`
+
+- [ ] **P1-071** `StatCard` component (label + value)
+- [ ] **P1-072** Stats bar section with 5 metrics
+- [ ] **P1-073** `LogoCarousel` component shell
+- [ ] **P1-074** Add 6 partner logos to carousel
+- [ ] **P1-075** Logo carousel CSS infinite scroll animation
+- [ ] **P1-076** Trusted By section heading + wrapper
+
+### 1.8 Homepage — Services & Solutions `0/8`
+
+- [ ] **P1-077** `ServiceCard` (icon, title, description, link)
+- [ ] **P1-078** Services 3×2 grid layout
+- [ ] **P1-079** Populate 6 service cards with content
+- [ ] **P1-080** Services section heading + intro text
+- [ ] **P1-081** `SolutionCard` component
+- [ ] **P1-082** Solutions section layout (grid / horizontal scroll)
+- [ ] **P1-083** Populate 7 solution cards with content
+- [ ] **P1-084** Solutions section heading + intro text
+
+### 1.9 Homepage — Process & Projects `0/9`
+
+- [ ] **P1-085** `Timeline` step component (number + title)
+- [ ] **P1-086** Process timeline — 8 steps vertical layout
+- [ ] **P1-087** Process section heading
+- [ ] **P1-088** `ProjectCard` (cover, category, tech, results)
+- [ ] **P1-089** Project filter tabs (AI, SaaS, FinTech, etc.)
+- [ ] **P1-090** Featured projects 3-column grid
+- [ ] **P1-091** Seed 6 sample project cards
+- [ ] **P1-092** Filter tab click → filter grid logic
+- [ ] **P1-093** Projects section heading
+
+### 1.10 Homepage — Tech, Testimonials, CTA `0/10`
+
+- [ ] **P1-094** `TechCategory` group component
+- [ ] **P1-095** Tech stack grid — Frontend category
+- [ ] **P1-096** Tech stack grid — Backend, Cloud, Database, AI categories
+- [ ] **P1-097** Tech stack section heading
+- [ ] **P1-098** `TestimonialCard` (photo, rating, quote, company)
+- [ ] **P1-099** Testimonials carousel with 3+ slides
+- [ ] **P1-100** Testimonials section heading
+- [ ] **P1-101** `CTABanner` gradient section
+- [ ] **P1-102** CTA headline + "Schedule Consultation" + "Contact Sales" buttons
+- [ ] **P1-103** Assemble all sections in `app/page.tsx`
+
+### 1.11 About Page `0/8`
+
+- [ ] **P1-104** About page route `app/about/page.tsx`
+- [ ] **P1-105** About hero with page title
+- [ ] **P1-106** Company story section (text + image)
+- [ ] **P1-107** Vision + Mission side-by-side cards
+- [ ] **P1-108** Core values 4-icon grid
+- [ ] **P1-109** Leadership `TeamCard` component
+- [ ] **P1-110** Leadership team 3-column grid
+- [ ] **P1-111** Company timeline vertical section
+
+### 1.12 Contact Page `0/7`
+
+- [ ] **P1-112** Contact page route `app/contact/page.tsx`
+- [ ] **P1-113** Contact form — name, email, company fields
+- [ ] **P1-114** Contact form — service dropdown + message textarea
+- [ ] **P1-115** Contact form client-side validation
+- [ ] **P1-116** Contact info panel (email, phone, address)
+- [ ] **P1-117** Google Maps embed placeholder
+- [ ] **P1-118** Social links in contact panel
+
+### 1.13 Privacy Page `0/2`
+
+- [ ] **P1-119** Privacy Policy page route with static content
+- [ ] **P1-120** Privacy page prose typography styling
+
+### 1.14 Sanity CMS `0/11`
+
+- [ ] **P1-121** Create Sanity project on sanity.io
+- [ ] **P1-122** Install `@sanity/client` + `next-sanity` packages
+- [ ] **P1-123** Sanity Studio config + local dev
+- [ ] **P1-124** Schema — `siteSettings`
+- [ ] **P1-125** Schema — `page`
+- [ ] **P1-126** Schema — `teamMember`
+- [ ] **P1-127** Schema — `service`
+- [ ] **P1-128** Schema — `testimonial`
+- [ ] **P1-129** Schema — `faq`
+- [ ] **P1-130** `lib/sanity.ts` client + GROQ fetch helpers
+- [ ] **P1-131** Connect Hero + About content to Sanity queries
+
+### 1.15 CI/CD `0/4`
+
+- [ ] **P1-132** GitHub Actions — lint + type-check on PR
+- [ ] **P1-133** GitHub Actions — build on merge to main
+- [ ] **P1-134** Staging deployment (Vercel or AWS)
+- [ ] **P1-135** `.env.example` with all required variables
+
+### 1.16 Docker — Frontend `0/8`
+
+> **Spec:** Infrastructure · Docker · **Plan:** §7.3 Docker Architecture
+
+- [ ] **P1-136** Create `frontend/` directory structure (or root if monolith)
+- [ ] **P1-137** `frontend/Dockerfile` — multi-stage production (deps → build → run)
+- [ ] **P1-138** `frontend/Dockerfile.dev` — dev image with hot reload
+- [ ] **P1-139** `frontend/.dockerignore` — exclude node_modules, .next
+- [ ] **P1-140** Enable `output: 'standalone'` in `next.config.ts`
+- [ ] **P1-141** `docker-compose.dev.yml` — frontend service (port 3000)
+- [ ] **P1-142** Verify `docker compose -f docker-compose.dev.yml up frontend --build`
+- [ ] **P1-143** `backend/` placeholder + stub `backend/Dockerfile` for Phase 4
+
+### Phase 1 Gate `0/8` — SDD Step 5: Validate
+
+> Verify against [spec.md](../docs/sdd/spec.md) Homepage, CMS, Deliverables.
+
+- [ ] Build passes (`npm run build`) with zero errors
+- [ ] Homepage all 10 sections render on mobile + desktop
+- [ ] Navbar mega menu + mobile drawer work
+- [ ] About + Contact pages responsive
+- [ ] Sanity Studio accessible and editable
+- [ ] CI pipeline runs on every PR
+- [ ] Staging URL accessible
+- [ ] Docker frontend builds and runs (`docker compose -f docker-compose.dev.yml up frontend`)
+
+## Weekly Plan (Phase 1)
+
+| Week | Groups | Tasks |
+|------|--------|-------|
+| **W1** | 1.1, 1.2, 1.3 | 47 |
+| **W2** | 1.4, 1.5, 1.6, 1.7, 1.8 | 31 |
+| **W3** | 1.9, 1.10, 1.11, 1.12, 1.13 | 36 |
+| **W4** | 1.14, 1.15, 1.16, Gate | 30 |
+
+---
+
+*SDD: [README](../docs/sdd/README.md) · Next: [PHASE-2.md](./PHASE-2.md)*
