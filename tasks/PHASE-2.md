@@ -13,7 +13,7 @@
 
 **Goal:** All content pages with CMS, SEO, structured data.
 
-**Progress:** `████░░░░░░` **43%** (42 / 98)
+**Progress:** `█████░░░░░` **51%** (50 / 98)
 
 ---
 
@@ -74,16 +74,16 @@
 - [x] **P2-041** Project detail — results metrics + image gallery
 - [x] **P2-042** Seed 6 portfolio projects in CMS
 
-### 2.6 Case Studies `0/8`
+### 2.6 Case Studies `8/8`
 
-- [ ] **P2-043** CMS schema — `caseStudy`
-- [ ] **P2-044** Case studies listing route `/case-studies`
-- [ ] **P2-045** Case study detail route `/case-studies/[slug]`
-- [ ] **P2-046** Case study — executive summary sidebar
-- [ ] **P2-047** Case study — challenges + research sections
-- [ ] **P2-048** Case study — solution + architecture diagram
-- [ ] **P2-049** Case study — development process timeline
-- [ ] **P2-050** Case study — results metrics + lessons learned
+- [x] **P2-043** CMS schema — `caseStudy`
+- [x] **P2-044** Case studies listing route `/case-studies`
+- [x] **P2-045** Case study detail route `/case-studies/[slug]`
+- [x] **P2-046** Case study — executive summary sidebar
+- [x] **P2-047** Case study — challenges + research sections
+- [x] **P2-048** Case study — solution + architecture diagram
+- [x] **P2-049** Case study — development process timeline
+- [x] **P2-050** Case study — results metrics + lessons learned
 
 ### 2.7 Blog `0/12`
 
