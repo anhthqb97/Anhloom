@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `█████░░░░░` **53%** (76 / 143)
+**Progress:** `██████░░░░` **59%** (84 / 143)
 
 ---
 
@@ -114,16 +114,16 @@
 - [x] **P1-075** Logo carousel CSS infinite scroll animation
 - [x] **P1-076** Trusted By section heading + wrapper
 
-### 1.8 Homepage — Services & Solutions `0/8`
+### 1.8 Homepage — Services & Solutions `8/8`
 
-- [ ] **P1-077** `ServiceCard` (icon, title, description, link)
-- [ ] **P1-078** Services 3×2 grid layout
-- [ ] **P1-079** Populate 6 service cards with content
-- [ ] **P1-080** Services section heading + intro text
-- [ ] **P1-081** `SolutionCard` component
-- [ ] **P1-082** Solutions section layout (grid / horizontal scroll)
-- [ ] **P1-083** Populate 7 solution cards with content
-- [ ] **P1-084** Solutions section heading + intro text
+- [x] **P1-077** `ServiceCard` (icon, title, description, link)
+- [x] **P1-078** Services 3×2 grid layout
+- [x] **P1-079** Populate 6 service cards with content
+- [x] **P1-080** Services section heading + intro text
+- [x] **P1-081** `SolutionCard` component
+- [x] **P1-082** Solutions section layout (grid / horizontal scroll)
+- [x] **P1-083** Populate 7 solution cards with content
+- [x] **P1-084** Solutions section heading + intro text
 
 ### 1.9 Homepage — Process & Projects `0/9`
 
