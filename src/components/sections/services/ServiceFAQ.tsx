@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FAQAccordion } from "@/components/FAQAccordion";
+import { FAQAssistant } from "@/components/faq/FAQAssistant";
 import { Container } from "@/components/Container";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Section } from "@/components/Section";
@@ -24,7 +24,7 @@ export function ServiceFAQ({ service }: ServiceFAQProps) {
             </h2>
           </div>
           <div className="mx-auto max-w-2xl">
-            <FAQAccordion items={service.faq} />
+            <FAQAssistant serviceTitle={service.title} items={service.faq} />
           </div>
         </Container>
       </Section>
@@ -37,6 +37,12 @@ export function ServiceFAQ({ service }: ServiceFAQProps) {
             Book a consultation and we&apos;ll help you plan the right approach.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link
+              href="/estimate"
+              className="inline-flex h-10 items-center justify-center rounded-sm border border-primary-600 bg-transparent px-4 text-body-md font-medium text-primary-600 transition-all hover:brightness-[1.04] hover:shadow-md active:scale-[0.98]"
+            >
+              Estimate Project Cost
+            </Link>
             <Link
               href="/contact?intent=consultation"
               className="inline-flex h-10 items-center justify-center rounded-sm bg-primary-600 px-4 text-body-md font-medium text-white transition-all hover:brightness-[1.04] hover:shadow-md active:scale-[0.98]"
