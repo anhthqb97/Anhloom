@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Card } from "@/components/Card";
+import { FooterSocial } from "@/components/FooterSocial";
 import { cn } from "@/lib/cn";
 
 const contactDetails = {
@@ -59,6 +60,13 @@ export function ContactInfo({ className }: { className?: string }) {
           aria-label="Google Maps embed placeholder"
         >
           Google Maps embed
+        </div>
+
+        <div className="mt-6">
+          <p className="text-label font-semibold uppercase tracking-wide text-text-muted">
+            Follow us
+          </p>
+          <FooterSocial className="mt-3" />
         </div>
       </div>
     </Card>
