@@ -9,11 +9,18 @@ from app.middleware.api_key import ApiKeyMiddleware
 from app.middleware.rate_limit import RateLimitMiddleware
 from app.middleware.sanitization import SanitizationMiddleware
 from app.routers.chat import router as chat_router
+from app.routers.estimate import router as estimate_router
+from app.routers.faq import router as faq_router
 from app.routers.health import router as health_router
+from app.routers.recommendations import router as recommendations_router
+from app.routers.requirements import router as requirements_router
+from app.routers.search import router as search_router
+from app.services.embeddings import blog_index
 
 
 @asynccontextmanager
 async def lifespan(_: FastAPI):
+    blog_index.build()
     init_db()
     yield
 
@@ -33,6 +40,11 @@ app.add_middleware(RateLimitMiddleware)
 
 app.include_router(health_router)
 app.include_router(chat_router)
+app.include_router(estimate_router)
+app.include_router(search_router)
+app.include_router(recommendations_router)
+app.include_router(faq_router)
+app.include_router(requirements_router)
 
 
 @app.get("/")
