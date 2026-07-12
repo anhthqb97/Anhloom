@@ -1,0 +1,53 @@
+{
+  "_type": "solution",
+  "_id": "solution-erp",
+  "title": "ERP",
+  "slug": {
+    "_type": "slug",
+    "current": "erp"
+  },
+  "headline": "Operations in sync",
+  "tagline": "Unified operations platform for finance, inventory, and reporting.",
+  "problems": [
+    {
+      "title": "Manual workflows",
+      "description": "Teams lose hours on repetitive tasks that should be automated."
+    },
+    {
+      "title": "Disconnected systems",
+      "description": "Data silos prevent a single view of customer and operations data."
+    },
+    {
+      "title": "Slow iteration",
+      "description": "Legacy stacks make it hard to ship improvements every sprint."
+    }
+  ],
+  "solutionSummary": "Modular ERP modules for inventory, procurement, finance, and reporting — integrated with your existing systems.",
+  "architectureNote": "A modular architecture with API gateway, event bus, and managed data stores — designed to scale horizontally and integrate with your stack.",
+  "features": [
+    {
+      "title": "Unified dashboard",
+      "description": "One place to monitor KPIs, alerts, and team activity."
+    },
+    {
+      "title": "Smart automation",
+      "description": "Rules and AI triggers that reduce manual handoffs."
+    },
+    {
+      "title": "Secure integrations",
+      "description": "APIs and webhooks that connect your existing tools safely."
+    }
+  ],
+  "benefits": [
+    "40% faster time-to-market",
+    "60% reduction in manual ops",
+    "99.9% platform uptime SLA"
+  ],
+  "integrations": [
+    "Stripe",
+    "Salesforce",
+    "Slack",
+    "HubSpot",
+    "AWS"
+  ]
+}
