@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { SolutionDetailHero } from "@/components/sections/solutions/SolutionDetailHero";
 import {
   getAllSolutionSlugs,
   getSolutionBySlug,
@@ -37,5 +38,5 @@ export default async function SolutionDetailPage({
     notFound();
   }
 
-  return null;
+  return <SolutionDetailHero solution={solution} />;
 }
