@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import { SlideUp } from "@/components/motion/SlideUp";
 import { Section } from "@/components/Section";
 import { StatCard } from "@/components/StatCard";
 
@@ -14,15 +15,17 @@ export function Stats() {
   return (
     <Section padding="sm" className="border-y border-border bg-bg-subtle">
       <Container>
-        <div className="grid grid-cols-2 gap-8 tablet:grid-cols-3 laptop:grid-cols-5 laptop:gap-6">
-          {stats.map((stat) => (
-            <StatCard
-              key={stat.label}
-              value={stat.value}
-              label={stat.label}
-            />
-          ))}
-        </div>
+        <SlideUp>
+          <div className="grid grid-cols-2 gap-8 tablet:grid-cols-3 laptop:grid-cols-5 laptop:gap-6">
+            {stats.map((stat) => (
+              <StatCard
+                key={stat.label}
+                value={stat.value}
+                label={stat.label}
+              />
+            ))}
+          </div>
+        </SlideUp>
       </Container>
     </Section>
   );
