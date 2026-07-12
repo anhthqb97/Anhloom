@@ -13,7 +13,7 @@
 
 **Goal:** Runnable Next.js app with design system, homepage, About/Contact, CMS, CI/CD.
 
-**Progress:** `███░░░░░░░` **33%** (47 / 143)
+**Progress:** `████░░░░░░` **40%** (57 / 143)
 
 ---
 
@@ -73,18 +73,18 @@
 - [x] **P1-046** `Select` component
 - [x] **P1-047** `Checkbox` component
 
-### 1.4 Layout — Navbar `0/10`
+### 1.4 Layout — Navbar `10/10`
 
-- [ ] **P1-048** `Navbar` shell (logo slot + nav area)
-- [ ] **P1-049** Desktop nav links (Services, Solutions, Portfolio, Blog, Careers)
-- [ ] **P1-050** `useScrollPosition` hook for sticky behavior
-- [ ] **P1-051** Navbar transparent → blurred bg on scroll
-- [ ] **P1-052** `MegaMenu` dropdown container + animation
-- [ ] **P1-053** MegaMenu — Services column with 6 links
-- [ ] **P1-054** MegaMenu — Solutions column with 7 links
-- [ ] **P1-055** Mobile hamburger toggle button
-- [ ] **P1-056** Mobile `Drawer` overlay + slide-in panel
-- [ ] **P1-057** Mobile drawer nav links + CTA buttons
+- [x] **P1-048** `Navbar` shell (logo slot + nav area)
+- [x] **P1-049** Desktop nav links (Services, Solutions, Portfolio, Blog, Careers)
+- [x] **P1-050** `useScrollPosition` hook for sticky behavior
+- [x] **P1-051** Navbar transparent → blurred bg on scroll
+- [x] **P1-052** `MegaMenu` dropdown container + animation
+- [x] **P1-053** MegaMenu — Services column with 6 links
+- [x] **P1-054** MegaMenu — Solutions column with 7 links
+- [x] **P1-055** Mobile hamburger toggle button
+- [x] **P1-056** Mobile `Drawer` overlay + slide-in panel
+- [x] **P1-057** Mobile drawer nav links + CTA buttons
 
 ### 1.5 Layout — Footer `0/5`
 
