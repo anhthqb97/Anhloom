@@ -4,7 +4,13 @@ import Link from "next/link";
 import { type ReactNode } from "react";
 
 import { Container } from "@/components/Container";
+import {
+  MegaMenu,
+  MegaMenuColumn,
+  MegaMenuLink,
+} from "@/components/MegaMenu";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { serviceNavLinks } from "@/lib/nav";
 import { cn } from "@/lib/cn";
 
 const desktopNavLinks = [
@@ -15,13 +21,28 @@ const desktopNavLinks = [
   { label: "Careers", href: "/careers", hasMegaMenu: false as const },
 ] as const;
 
+function ServicesMegaMenu() {
+  return (
+    <MegaMenu label="Services" href="/services">
+      <MegaMenuColumn title="Services" className="col-span-2">
+        {serviceNavLinks.map((link) => (
+          <MegaMenuLink key={link.href} href={link.href}>
+            {link.label}
+          </MegaMenuLink>
+        ))}
+      </MegaMenuColumn>
+    </MegaMenu>
+  );
+}
+
 function NavbarDesktopLinks({ className }: { className?: string }) {
   return (
     <nav
       className={cn("hidden items-center gap-6 laptop:flex", className)}
       aria-label="Main navigation"
     >
-      {desktopNavLinks.map((link) => (
+      <ServicesMegaMenu />
+      {desktopNavLinks.slice(1).map((link) => (
         <Link
           key={link.href}
           href={link.href}
