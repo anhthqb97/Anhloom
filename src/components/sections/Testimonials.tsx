@@ -1,16 +1,19 @@
 "use client";
 
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useState } from "react";
 
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { testimonials } from "@/lib/testimonials";
+import { motionTokens } from "@/lib/motion";
 import { cn } from "@/lib/cn";
 
 export function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeTestimonial = testimonials[activeIndex];
+  const shouldReduceMotion = useReducedMotion();
 
   const handlePrevious = () => {
     setActiveIndex(
@@ -38,14 +41,23 @@ export function Testimonials() {
           </p>
         </div>
         <div className="mx-auto max-w-3xl">
-          <TestimonialCard
-            key={activeTestimonial.name}
-            name={activeTestimonial.name}
-            role={activeTestimonial.role}
-            company={activeTestimonial.company}
-            quote={activeTestimonial.quote}
-            rating={activeTestimonial.rating}
-          />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTestimonial.name}
+              initial={shouldReduceMotion ? false : { opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={shouldReduceMotion ? undefined : { opacity: 0, x: -24 }}
+              transition={{ duration: motionTokens.duration.normal }}
+            >
+              <TestimonialCard
+                name={activeTestimonial.name}
+                role={activeTestimonial.role}
+                company={activeTestimonial.company}
+                quote={activeTestimonial.quote}
+                rating={activeTestimonial.rating}
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
         <div className="mt-8 flex items-center justify-center gap-4">
           <button
