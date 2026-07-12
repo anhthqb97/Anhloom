@@ -2,6 +2,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { ContactInfo } from "@/components/ContactInfo";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/seo";
 
 export const metadata = buildSiteMetadata({
@@ -21,7 +22,11 @@ export default function ContactPage() {
           </h1>
           <p className="mt-4 text-body-lg text-text-secondary">
             Tell us about your project and we&apos;ll respond within one
-            business day.
+            business day. Need a quick budget range first?{" "}
+            <Link href="/estimate" className="font-medium text-primary-600">
+              Try our AI cost estimator
+            </Link>
+            .
           </p>
         </div>
         <div className="grid gap-10 laptop:grid-cols-2 laptop:gap-16">
